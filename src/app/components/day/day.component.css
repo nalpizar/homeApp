@@ -1,0 +1,38 @@
+.task {
+    background: #efd199;
+    padding: 15px;
+    min-height: 57px;
+    border-bottom: 1px solid #ce8f5a;
+}
+
+.task div {
+    float: left;
+    width: 33%;
+}
+
+.task span {
+    color: #ce8f5a;
+    font-size: 14px;
+}
+
+.task-score {
+    font-size: 1.6rem;
+    color: #f9ff0c;
+}
+
+.task .actions {
+    float: right;
+}
+
+.task .actions a {
+    font-size: 20px;
+    color: #ce8f5a;
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.task .actions i {
+    margin: 0 auto;
+    display: table;
+}
