@@ -33,3 +33,25 @@
 body {
     font-family: ralewayregular;
 }
+
+button {
+    background: none;
+    border: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.modal-open .modal {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.modal.fade .modal-dialog {
+    transform: translateY(50%);
+}
+
+.modal-title {
+    width: 100%;
+    text-align: center;
+}

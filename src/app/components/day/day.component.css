@@ -36,3 +36,31 @@
     margin: 0 auto;
     display: table;
 }
+
+.usersSelect li {
+    display: inline-block;
+    width: 25%;
+    margin-left: 10px;
+}
+
+.usersSelect li:first-child {
+    margin-left: 0;
+}
+
+button.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+button.avatar:hover {
+    opacity: 0.8;
+}
+
+.modal-header {
+    background: #62c0c9;
+    color: #fff;
+}
+
+button.close {
+    color: #fff;
+}
