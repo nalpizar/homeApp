@@ -6,7 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
-
+  bgColor = '';
+  color = '';
+  hurry = true;
+  setHurry() {
+    if (this.hurry) {
+      this.bgColor = '#555377';
+      this.color = '#ffffff';
+    }
+  };
   constructor() { }
 
   ngOnInit() {

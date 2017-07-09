@@ -1,0 +1,66 @@
+.task {
+    background: #efd199;
+    padding: 15px;
+    min-height: 57px;
+    border-bottom: 1px solid #ce8f5a;
+}
+
+.task div {
+    float: left;
+    width: 33%;
+}
+
+.task span {
+    color: #ce8f5a;
+    font-size: 14px;
+}
+
+.task-score {
+    font-size: 1.6rem;
+    color: #f9ff0c;
+}
+
+.task .actions {
+    float: right;
+}
+
+.task .actions a {
+    font-size: 20px;
+    color: #ce8f5a;
+    width: 25%;
+    display: block;
+    float: left;
+}
+
+.task .actions i {
+    margin: 0 auto;
+    display: table;
+}
+
+.usersSelect li {
+    display: inline-block;
+    width: 25%;
+    margin-left: 10px;
+}
+
+.usersSelect li:first-child {
+    margin-left: 0;
+}
+
+button.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+button.avatar:hover {
+    opacity: 0.8;
+}
+
+.modal-header {
+    background: #62c0c9;
+    color: #fff;
+}
+
+button.close {
+    color: #fff;
+}

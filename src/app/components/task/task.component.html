@@ -1,3 +1,51 @@
-<p>
-  task works!
-</p>
+<div class="task" [style.backgroundColor]="bgColor">
+  <div class="task-name">
+    <span [style.color]="color">Feed the dog</span>
+  </div>
+  <div class="task-score">
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+  </div>
+  <div class="actions">
+    <a [style.color]="color" data-toggle="modal" data-target="#relieveUser">
+      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    </a>
+    <a (click)='setHurry()' [style.color]="color">
+      <i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Modal Relieve-->
+<div class="modal fade" id="relieveUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Relieve Task</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <ul class="usersSelect">
+          <li>
+            <button class="avatar" data-dismiss="modal">
+              <img src="../../../assets/images/avatar1.png" alt="Avatar1">
+            </button>
+          </li>
+          <li>
+            <button class="avatar" data-dismiss="modal">
+              <img src="../../../assets/images/avatar2.png" alt="Avatar2">
+            </button>
+          </li>
+          <li>
+            <button class="avatar" data-dismiss="modal">
+              <img src="../../../assets/images/avatar3.png" alt="Avatar1">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
