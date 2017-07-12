@@ -3,21 +3,16 @@ import {Star} from'./star';
 export class Score {
 
 	private id: number;
-	private star: Star;
-    private type: boolean; 
+	private stars: Star[] = [];
 
-
-	constructor(id: number, star: Star, type: boolean) {
+	constructor(id: number, stars:Star[]) {
 		this.setId(id);
-		this.setType(type);
-		this.setStar(star);
+		this.setStars(stars);
 	}
 
 	getId() { return this.id; }
-	getStar() { return this.star; }
-	getType() { return this.type; }
+	getStars() { return this.stars; }
 
 	setId(value) { this.id = value; }
-	setStar(value) { this.star= value; }
-	setType(value) { this.type = value; }
+	setStars(value) { this.stars= value; }
 } 
