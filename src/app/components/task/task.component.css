@@ -10,6 +10,12 @@
     width: 45%;
 }
 
+.task .task-name,
+.task .task-score {
+    height: 65px;
+    line-height: 65px;
+}
+
 .task span {
     color: #efd199;
     font-size: 1.8rem;
