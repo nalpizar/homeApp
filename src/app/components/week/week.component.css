@@ -1,10 +1,11 @@
 #week {
-    background: #ce8f5a;
+    background: #6287a2;
 }
 
 .carousel-control.right,
 .carousel-control.left {
     background-image: none;
+    height: 100px;
 }
 
 .carousel-control.left i,
