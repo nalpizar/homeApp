@@ -1,31 +1,29 @@
-import { Week } from './week';
-import { Avatar} from './avatar';
+import { Avatar } from './avatar';
+import { Reward } from './reward';
+
 export class User {
 
     private id: number;
     private name: string;
     private age: number;
     private avatar: Avatar;
-    private currentWeek: Week;
+    private rewardId: null;
 
-    constructor(id: number, name: string, age:number, avatar:Avatar, currentWeek: Week) {
+    constructor(id: number, name: string, age: number) {
         this.setId(id);
         this.setName(name);
         this.setAge(age);
-        this.setAvatar(avatar);
-        this.setCurrentWeek(currentWeek);
     }
 
     getId() { return this.id }
-    getName(){return this.name}
+    getName() { return this.name }
     getAge() { return this.age }
     getAvatar() { return this.avatar }
-    getCurrentWeek() { return this.currentWeek }
+    getRewardId() { return this.rewardId }
 
     setId(value) { this.id = value; }
     setName(value) { this.id = value; }
     setAge(value) { this.age = value; }
     setAvatar(value) { this.avatar = value; }
-    setCurrentWeek(value) { this.currentWeek = value; }
-
+    setRewardId(value) { this.rewardId = value; }
 }

@@ -1,10 +1,8 @@
-
 export class Avatar {
 
     private id: number;
     private name: string;
     private url: string;
-
 
     constructor(id: number, name: string, url: string) {
         this.setId(id);
@@ -19,5 +17,4 @@ export class Avatar {
     setId(value) { this.id = value; }
     setName(value) { this.name = value; }
     setUrl(value) { this.url = value; }
-
 } 
