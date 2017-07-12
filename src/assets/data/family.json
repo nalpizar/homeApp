@@ -1,0 +1,37 @@
+{
+    "id": 1,
+    "rewardIdId": null,
+    "miembros": [
+        [
+            {
+                "id": 1,
+                "name": "Tomás",
+                "age": 45,
+                "avatarId": "3",
+                "rewardId": null
+            },
+            {
+                "id": 2,
+                "name": "Lucía",
+                "age": 42,
+                "avatarId": "2",
+                "rewardId": null
+            },
+            {
+                "id": 3,
+                "name": "Natalia",
+                "age": 10,
+                "avatarId": "1",
+                "rewardId": null
+            },
+            {
+                "id": 4,
+                "name": "Sebastián",
+                "age": 8,
+                "avatarId": "4",
+                "rewardId": null
+            }
+        ]
+    ],
+    "week": "weekId"
+}
