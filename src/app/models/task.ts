@@ -16,10 +16,10 @@ export class Task {
     private swaped:boolean;
     private swapedTo: User;
     private score: Score;
-    private reward: Reward;
+	private userId: number;
 
 
-	constructor(id: number, name: string, hour: Date, reminder:Date, weight: number, started: boolean, completed:boolean, onHurry: boolean, swaped: boolean, swapedTo: User, score: Score, reward: Reward) {
+	constructor(id: number, name: string, hour: Date, reminder:Date, weight: number, started: boolean, completed:boolean, onHurry: boolean, swaped: boolean, swapedTo: User, score: Score, userId: number;) {
 		this.setId(id);
 		this.setName(name);
 		this.setHour(hour);
@@ -31,7 +31,7 @@ export class Task {
         this.setSwaped(swaped);
         this.setSwapedTo(swapedTo);
         this.setScore(score);
-        this.setReward(reward);
+		this.setUserId(userId);
 	}
 
 	getId() { return this.id; }
@@ -45,7 +45,7 @@ export class Task {
 	getSwaped() { return this.swaped; }
 	getSwapedTo() { return this.swapedTo; }
 	getScore() { return this.score; }
-	getReward() { return this.reward; }
+	getUserId() { return this.userId; }
 
 	setId(value) { this.id = value; }
 	setName(value) { this.name = value; }
@@ -58,6 +58,6 @@ export class Task {
 	setSwaped(value) { this.swaped = value; }
 	setSwapedTo(value) { this.swapedTo = value; }
 	setScore(value) { this.score = value; }
-    setReward(value) { this.reward= value; }
+	setUserId(value) { this.userId= value; }
 
 } 

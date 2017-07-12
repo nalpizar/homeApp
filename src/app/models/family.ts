@@ -5,7 +5,7 @@ import { Week } from './week';
 export class Family {
 
     private id: number;
-    private rewardId: null;
+    private rewardId: number;
     private members: User[] = [];
     private weekId: number;
 
