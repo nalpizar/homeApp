@@ -51,7 +51,35 @@ button:focus {
     transform: translateY(50%);
 }
 
+.modal-body span,
+.modal-title,
+.modal-footer .btn-default {
+    font-size: 1.5rem;
+    color: #78909C;
+    font-family: ralewayregular;
+}
+
+.modal-footer .btn-default {
+    color: #4DD0E1;
+}
+
 .modal-title {
     width: 100%;
-    text-align: center;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.modal-header,
+.modal-footer {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.modal-body span {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.modal-content {
+    border-radius: 0;
 }
