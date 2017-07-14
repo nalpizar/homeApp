@@ -1,37 +1,490 @@
 {
-    "id": 1,
-    "rewardIdId": null,
-    "miembros": [
-        [
-            {
-                "id": 1,
-                "name": "Tomás",
-                "age": 45,
-                "avatarId": "3",
-                "rewardId": null
-            },
-            {
-                "id": 2,
-                "name": "Lucía",
-                "age": 42,
-                "avatarId": "2",
-                "rewardId": null
-            },
-            {
-                "id": 3,
-                "name": "Natalia",
-                "age": 10,
-                "avatarId": "1",
-                "rewardId": null
-            },
-            {
-                "id": 4,
-                "name": "Sebastián",
-                "age": 8,
-                "avatarId": "4",
-                "rewardId": null
-            }
-        ]
+    "idFamily": 1,
+    "members": [
+        {
+            "id": 1,
+            "name": "Tomás",
+            "age": 45,
+            "avatarId": "3",
+            "skinId": "0",
+            "type": "admin"
+        },
+        {
+            "id": 2,
+            "name": "Lucía",
+            "age": 42,
+            "avatarId": "2",
+            "skinId": "0",
+            "type": "family"
+        },
+        {
+            "id": 3,
+            "name": "Natalia",
+            "age": 10,
+            "avatarId": "1",
+            "skinId": "0",
+            "type": "family"
+        },
+        {
+            "id": 4,
+            "name": "Sebastián",
+            "age": 8,
+            "avatarId": "4",
+            "skinId": "0",
+            "type": "family"
+        }
     ],
-    "week": "weekId"
+    "taskRepository": [
+        {
+            "id": 1,
+            "name": "Desayuno",
+            "weight": 3
+        },
+        {
+            "id": 2,
+            "name": "Almuerzo",
+            "weight": 3
+        },
+        {
+            "id": 3,
+            "name": "Merienda",
+            "weight": 3
+        },
+        {
+            "id": 4,
+            "name": "Cena",
+            "weight": 3
+        },
+        {
+            "id": 5,
+            "name": "Lavar Platos",
+            "weight": 3
+        }
+    ],
+    "week": [
+        {
+            "weekId": 1,
+            "days": [
+                {
+                    "dayId": 1,
+                    "dayName": "Lunes",
+                    "tasks": [
+                        {
+                            "id": 1,
+                            "name": "Desayuno",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "4"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Almuerzo",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Merienda",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "2"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Cena",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Lavar Platos",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "1"
+                        }
+                    ]
+                },
+                {
+                    "dayId": 2,
+                    "dayName": "Martes",
+                    "tasks": [
+                        {
+                            "id": 1,
+                            "name": "Desayuno2",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "4"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Almuerzo",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Merienda",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "2"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Cena",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Lavar Platos",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "1"
+                        }
+                    ]
+                },
+                {
+                    "dayId": 3,
+                    "dayName": "Miércoles",
+                    "tasks": [
+                        {
+                            "id": 1,
+                            "name": "Desayuno3",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "4"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Almuerzo",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Merienda",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "2"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Cena",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Lavar Platos",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "1"
+                        }
+                    ]
+                },
+                {
+                    "dayId": 4,
+                    "dayName": "Jueves",
+                    "tasks": [
+                        {
+                            "id": 1,
+                            "name": "Desayuno4",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "4"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Almuerzo",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Merienda",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "2"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Cena",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Lavar Platos",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "1"
+                        }
+                    ]
+                },
+                {
+                    "dayId": 5,
+                    "dayName": "Viernes",
+                    "tasks": [
+                        {
+                            "id": 1,
+                            "name": "Desayuno5",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "4"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Almuerzo",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Merienda",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "2"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Cena",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Lavar Platos",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "1"
+                        }
+                    ]
+                },
+                {
+                    "dayId": 6,
+                    "dayName": "Sábado",
+                    "tasks": [
+                        {
+                            "id": 1,
+                            "name": "Desayuno6",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "4"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Almuerzo",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Merienda",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "2"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Cena",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Lavar Platos",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "1"
+                        }
+                    ]
+                },
+                {
+                    "dayId": 7,
+                    "dayName": "Domingo",
+                    "tasks": [
+                        {
+                            "id": 1,
+                            "name": "Desayuno",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "4"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Almuerzo",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Merienda",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "2"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Cena",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "3"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Lavar Platos",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": "",
+                            "score": null,
+                            "userid": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rewards": [
+        {
+            "id": 1,
+            "name": "Palomitas de maíz",
+            "awardedTo": 1
+        },
+        {
+            "id": 2,
+            "name": "Camisa Nueva",
+            "awardedTo": 2
+        },
+        {
+            "id": 3,
+            "name": "Blusa nueva",
+            "awardedTo": 3
+        },
+        {
+            "id": 4,
+            "name": "Helado",
+            "awardedTo": 4
+        },
+        {
+            "id": 5,
+            "name": "Cine",
+            "awardedTo": 0
+        }
+    ]
 }

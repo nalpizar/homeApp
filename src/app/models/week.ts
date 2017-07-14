@@ -2,20 +2,20 @@ import { Day } from './day';
 export class Week {
 
     private id: number;
-    private weekDays: Day[] = [];
+    private days: Day[] = [];
 
     constructor(id: number) {
         this.setId(id);
     }
 
     getId() { return this.id }
-    getWeekDays() { return this.weekDays; }
+    getWeekDays() { return this.days; }
 
     setId(value) { this.id = value; }
-    setWeekDays(value) { this.weekDays = value; }
+    setWeekDays(value) { this.days = value; }
 
     //Class methods
     addWeekDays(day: Day) {
-        this.weekDays.push(day);
+        this.days.push(day);
     }
 }

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 0,
+        "skinName": "default",
+        "skinColor": "#ffffff"
+    },
+    {
+        "id": 1,
+        "skinName": "girlStyle",
+        "skinColor": "#ffffff"
+    },
+    {
+        "id": 2,
+        "skinName": "boyStyle",
+        "skinColor": "#ffffff"
+    },
+    {
+        "id": 3,
+        "skinName": "dadStyle",
+        "skinColor": "#ffffff"
+    },
+    {
+        "id": 4,
+        "skinName": "momStyle",
+        "skinColor": "#ffffff"
+    }
+]

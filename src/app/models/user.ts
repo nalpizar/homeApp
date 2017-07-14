@@ -1,15 +1,16 @@
 import { Avatar } from './avatar';
-import { Reward } from './reward';
+import { Skin } from './skin';
 
 export class User {
 
     private id: number;
     private name: string;
     private age: number;
-    private avatar: Avatar;
-    private rewardId: null;
+    private type: string; //admin or family
+    private avatarId: number;
+    private skinId: string;
 
-    constructor(id: number, name: string, age: number) {
+    constructor(id: number, name: string, age: number, type: string) {
         this.setId(id);
         this.setName(name);
         this.setAge(age);
@@ -18,12 +19,13 @@ export class User {
     getId() { return this.id }
     getName() { return this.name }
     getAge() { return this.age }
-    getAvatar() { return this.avatar }
-    getRewardId() { return this.rewardId }
+    getAvatar() { return this.avatarId }
+    getSkin() { return this.skinId }
 
     setId(value) { this.id = value; }
-    setName(value) { this.id = value; }
+    setName(value) { this.name = value; }
     setAge(value) { this.age = value; }
-    setAvatar(value) { this.avatar = value; }
-    setRewardId(value) { this.rewardId = value; }
+    setAvatar(value) { this.avatarId = value; }
+    setSkin(value) { this.skinId = value; }
+
 }

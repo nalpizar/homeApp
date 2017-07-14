@@ -1,30 +1,31 @@
 import { User } from './user';
 import { Reward } from './reward';
+import { TaskRep } from './taskRep';
 import { Week } from './week';
 
 export class Family {
 
-    private id: number;
-    private rewardId: null;
+    private idFamily: number;
     private members: User[] = [];
-    private weekId: number;
+    private taskRepository: TaskRep[] = [];
+    private week: Week[] = [];
+    private rewards: Reward[] = [];
 
-    constructor(id: number, ) {
-        this.setId(id);
+    constructor(idFamily: number) {
+        this.setId(idFamily);
     }
 
-    getId() { return this.id; }
-    getRewardId() { return this.rewardId; }
+    getId() { return this.idFamily; }
     getMembers() { return this.members; }
-    getWeekId() { return this.weekId; }
+    getTaskRep() { return this.taskRepository; }
 
-    setId(value) { this.id = value; }
-    setRewardId(value) { this.rewardId = value; }
+
+    setId(value) { this.idFamily = value; }
     setMembers(value) { this.members = value; }
-    setWeekId(value) { this.weekId = value; }
+    setTaskRep(value) { this.taskRepository = value; }
 
     //Class methods
-    public addMembers(user: User) {
-        this.members.push(user);
-    }
+    public addMembers(member: User) { this.members.push(member) };
+    public addTaskRep(taskRep: TaskRep) { this.taskRepository.push(taskRep) };
+
 }

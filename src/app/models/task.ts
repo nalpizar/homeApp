@@ -1,63 +1,48 @@
 import { User } from './user';
 import { Score } from './score';
-import {Reward} from'./reward';
+import { Reward } from './reward';
 
 
 export class Task {
 
 	private id: number;
 	private name: string;
-    private hour: Date;
-    private reminder: Date;
-    private weight: number;
-    private started: boolean;
-    private completed: boolean;
-    private onHurry:boolean;
-    private swaped:boolean;
-    private swapedTo: User;
-    private score: Score;
-    private reward: Reward;
+	private position: number;
+	private weight: number;
+	private status: number; //0=default - 1=started - 2=completed - 3=onHurry - 4=swaped
+	private swapedTo: User;
+	private score: Score;
+	private userId: number;
 
 
-	constructor(id: number, name: string, hour: Date, reminder:Date, weight: number, started: boolean, completed:boolean, onHurry: boolean, swaped: boolean, swapedTo: User, score: Score, reward: Reward) {
+
+	constructor(id: number, name: string, position: number, weight: number, status: number, swapedTo: User, score: Score, userId: number) {
 		this.setId(id);
 		this.setName(name);
-		this.setHour(hour);
-        this.setReminder(reminder);
-        this.setWeight(weight);
-        this.setStarted(started);
-        this.setCompleted(completed);
-        this.setOnHurry(onHurry);
-        this.setSwaped(swaped);
-        this.setSwapedTo(swapedTo);
-        this.setScore(score);
-        this.setReward(reward);
+		this.setPosition(position);
+		this.setWeight(weight);
+		this.setStatus(status);
+		this.setSwapedTo(swapedTo);
+		this.setScore(score);
+		this.setUserId(userId);
 	}
 
 	getId() { return this.id; }
 	getName() { return this.name; }
-	getHour() { return this.hour; }
-	getReminder() { return this.reminder; }
+	getPosition() { return this.position; }
 	getWeight() { return this.weight; }
-	getStarted() { return this.started; }
-	getCompleted() { return this.completed; }
-	getOnHurry() { return this.onHurry; }
-	getSwaped() { return this.swaped; }
+	getStatus() { return this.status; }
 	getSwapedTo() { return this.swapedTo; }
 	getScore() { return this.score; }
-	getReward() { return this.reward; }
+	getUserId() { return this.userId; }
 
 	setId(value) { this.id = value; }
 	setName(value) { this.name = value; }
-	setHour(value) { this.hour = value; }
-	setReminder(value) { this.reminder = value; }
+	setPosition(value) { this.position = value; }
 	setWeight(value) { this.weight = value; }
-	setStarted(value) { this.started = value; }
-	setCompleted(value) { this.completed = value; }
-	setOnHurry(value) { this.onHurry = value; }
-	setSwaped(value) { this.swaped = value; }
+	setStatus(value) { this.status = value; }
 	setSwapedTo(value) { this.swapedTo = value; }
 	setScore(value) { this.score = value; }
-    setReward(value) { this.reward= value; }
+	setUserId(value) { this.userId = value; }
 
 } 

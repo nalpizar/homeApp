@@ -3,21 +3,21 @@ export class Reward {
 
 	private id: number;
 	private name: string;
-    private type: boolean; // true single - false familiar
+	private awardedTo: number; // UserID or Family = 0 == default Null
 
 
-	constructor(id: number, name: string, type: boolean) {
+	constructor(id: number, name: string, awardedTo: number) {
 		this.setId(id);
 		this.setName(name);
-		this.setType(type);
+		this.setAwardedTo(awardedTo);
 	}
 
 	getId() { return this.id; }
 	getName() { return this.name; }
-	getType() { return this.type; }
+	getAwardedTo() { return this.awardedTo; }
 
 	setId(value) { this.id = value; }
 	setName(value) { this.name = value; }
-	setType(value) { this.type = value; }
+	setAwardedTo(value) { this.awardedTo = value; }
 
 } 
