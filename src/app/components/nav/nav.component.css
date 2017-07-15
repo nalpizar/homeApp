@@ -1,0 +1,37 @@
+#menu-toogle {
+    font-size: 4em;
+    color: #fff;
+    position: absolute;
+}
+
+header {
+    background: #7676db;
+    height: 45px;
+    width: 100%;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: 8;
+}
+
+.nav-container {
+    position: absolute;
+    width: 70%;
+    background: #fff;
+    min-height: 100%;
+    z-index: 2;
+    float: left;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.61);
+    width: 30%;
+    min-height: 100%;
+    float: right;
+    z-index: 1;
+    position: absolute;
+    margin-left: 70%;
+}
