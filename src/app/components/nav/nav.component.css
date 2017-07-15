@@ -1,17 +1,25 @@
 #menu-toogle {
-    font-size: 4em;
+    font-size: 2.5em;
     position: absolute;
+}
+
+#menu-toogle svg {
+    width: 40px;
+    height: 45px;
+    padding: 5px;
+    margin-left: 5px;
 }
 
 header {
     height: 45px;
     width: 100%;
+    font-family: 'ralewaylight';
 }
 
 .slide {
     position: absolute;
-    left: -70%;
-    width: 70%;
+    left: -80%;
+    width: 80%;
     height: 100%;
     background: #fff;
     transition: 1s;
@@ -38,4 +46,54 @@ header {
 .slide-overlay {
     visibility: visible;
     opacity: 1;
+}
+
+.user-info,
+.menu-options {
+    padding-bottom: 20px;
+    margin: 20px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.menu-options {
+    border-bottom: 0;
+}
+
+.menu-options ul {
+    padding-left: 0;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.menu-options ul li {
+    margin-bottom: 15px;
+}
+
+.menu-options ul li a {
+    color: #a2a2a2;
+}
+
+.menu-options ul li a i {
+    margin-right: 10px;
+}    
+
+.user-info img {
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+.user-info span {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 15px 0 0;
+    font-size: 2rem;
+    color: #4DD0E1;
+}
+
+.user-info .email {
+    color: #a2a2a2;
+    font-size: 1.4rem;
+    margin: 0;
 }
