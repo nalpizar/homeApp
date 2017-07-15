@@ -12,19 +12,11 @@ export class NavComponent implements OnInit {
   ngOnInit() {
   }
 
-  showMenu() {
-      var nav = document.getElementById('nav');
-      if (nav.style.display === 'none') {
-          nav.style.display = 'block';
-      } else {
-          nav.style.display = 'none';
-      }
-  }
-
-  hideMenu() {
-    var nav = document.getElementById('nav');
-    nav.style.display = 'none';
-      
+  toogleMenu() {
+      var slide = document.getElementById('slide');
+      var overlay = document.getElementById('overlay');
+      slide.classList.toggle("slide-menu");
+      overlay.classList.toggle("slide-overlay");
   }
 
 }
