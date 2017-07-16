@@ -14,6 +14,16 @@ header {
     height: 45px;
     width: 100%;
     font-family: 'ralewaylight';
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.app-logo {
+    margin: 0 auto;
+    display: block;
+    width: 93px;
+    padding-top: 10px;
+    color: #333;
+    text-decoration: none;
 }
 
 .slide {
@@ -24,6 +34,7 @@ header {
     background: #fff;
     transition: 1s;
     z-index: 8;
+    margin-top: 13px;
 }
 
 .slide-menu {
@@ -41,6 +52,7 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
+    margin-top: 13px;
 }
 
 .slide-overlay {

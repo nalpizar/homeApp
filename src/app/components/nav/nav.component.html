@@ -8,6 +8,7 @@
       </g>
     </svg>
   </a>
+  <a [routerLink] = "['/']" class="app-logo"> HOME-LOGO</a>
   <div id="wrapper" class="wrapper">
       <div id="slide" class="slide">
         <div class="user-info">
@@ -17,7 +18,7 @@
         </div>
         <div class="menu-options">
           <ul>
-            <li><a href="#"><i class="fa fa-gears" aria-hidden="true"></i> Configuration</a></li>
+            <li (click)="toogleMenu();"><a [routerLink] = "['/Configuration']"><i class="fa fa-gears" aria-hidden="true"></i> Configuration</a></li> 
             <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> View metrics</a></li>
             <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Switch user</a></li>     
           </ul>

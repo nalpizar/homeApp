@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -23,6 +24,12 @@ import { AdminTasksComponent } from './components/admin-tasks/admin-tasks.compon
 import { NewUserComponent } from './components/new-user/new-user.component';
 import { NewRewardComponent } from './components/new-reward/new-reward.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
+const appRoutes: Routes = [ 
+   { path: '', component: DashboardComponent },
+   { path: 'Configuration', component: ConfigComponent }
+]; 
 
 @NgModule({
   declarations: [
@@ -46,11 +53,13 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     AdminTasksComponent,
     NewUserComponent,
     NewRewardComponent,
-    SignUpComponent
+    SignUpComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
