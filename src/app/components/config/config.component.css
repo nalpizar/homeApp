@@ -1,57 +1,42 @@
-.config-actions {
-    display: inline-block;
+.carousel,
+.carousel-inner,
+.item.active {
+    position: absolute;
+    min-height: 100%;
+    display: block;
     width: 100%;
 }
-.config-actions button {
-    background: #ce8f5a;
+
+.item {
+    min-height: 636px;
+}
+
+.page-title {
+    font-family: 'ralewaylight';
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.nav-justified > li {
     width: 33.33%;
-    height: 55px;
-    float: left;
+}
+
+.nav-justified > li > a {
+    border-radius: 0;
+    margin-bottom: 0;
     color: #fff;
-    font-family: 'ralewaylight';
-    border-right: 1px solid #fff;
 }
 
-.config-actions button:last-child {
-    border-right: 0;
+.nav-pills > li + li {
+    margin-left: 0;
 }
 
-#configuration-carousel {
-    height: 45px;
-    background: #5ec0ca;
-}
-
-.carousel-control.right,
-.carousel-control.left {
-    background-image: none;
-}
-
-.carousel-control.left i,
-.carousel-control.right i {
-    left: 50%;
-    position: absolute;
-    top: 0;
-    z-index: 5;
-    display: inline-block;
-    color: #fff;
-    text-shadow: none;
-    font-size: 40px;
-}
-
-.carousel-control {
-    opacity: initial;
-}
-
-.item .container span {
-    margin: 5px auto;
-    display: table;
-    color: #fff;
-    font-size: 1.8rem;
-    font-family: 'ralewaylight';
-}
+.nav-pills > li[data-slide-to="0"] a { background-color: #5ec0ca; }
+.nav-pills > li[data-slide-to="1"] a { background-color: #ce8f5a; }
+.nav-pills > li[data-slide-to="2"] a { background-color: #6287a2; }
 
 .config-container {
-    margin-top: 10px;
     line-height: 1.4;
 }
 
@@ -63,10 +48,9 @@
     list-style: none;
     height: 55px;
     padding: 5px 20px;
-    border-bottom: 1px solid #ce8f5a;
+    border-bottom: 1px solid #fff;
     line-height: 40px;
-    color: #484848;
-    background: #efd199;
+    color: #fff;
 }
 
 .config-container ul li img {
@@ -77,14 +61,15 @@
 .config-container .tasks-heading {
     height: 55px;
     margin-bottom: 0;
-    background: #6287a2;
+    background: #ce8f5a;
+    border-bottom: 1px solid #fff;
 }
 
 .config-container .tasks-heading li {
     float: left;
-    border-bottom: 0;
+    border-bottom: 1px solid #fff;
     color: #fff;
-    background: #6287a2;
+    background: #ce8f5a;
 }
 
 .config-container .tasks-heading li:first-child {
@@ -114,4 +99,10 @@
 .config-container ul li .reward-type {
     width: 50%;
     float: right;
+}
+
+@media (min-width: 768px) {
+    .nav-justified > li {
+        width: 33.33%;
+    } 
 }
