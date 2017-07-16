@@ -1,4 +1,32 @@
 <h2 class="page-title">CONFIGURATION</h2>
+<button data-toggle="modal" data-target="#addModal" class="addbtn"><i class="fa fa-plus" aria-hidden="true"></i> Add new</button>
+
+<!-- Modal Add-->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Add New...</h4>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+      </div>
+      <div class="modal-body">
+        <span>Select your action:</span>
+        <div class="form-group">
+          <select class="form-control">
+            <option value="">Add new family member</option>
+            <option value="">Add new task</option>
+            <option value="">Add new reward</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
     <!-- Wrapper for slides -->
       <ul class="nav nav-pills nav-justified">
@@ -7,7 +35,7 @@
         <li data-target="#myCarousel" data-slide-to="2"><a href="#">Rewards</a></li>
     </ul>
     <div class="carousel-inner">
-        <div class="item active" style="background:#5ec0ca">
+        <div class="item active" style="background:#ce8f5a">
           <div class="config-container">
             <ul>
               <li>
@@ -26,7 +54,7 @@
           </div>
         </div>
         <!-- End Item -->
-        <div class="item" style="background:#ce8f5a">
+        <div class="item" style="background:#8d4c8e">
           <div class="config-container">
             <ul class="tasks-heading">
               <li>Weight</li>

@@ -31,9 +31,9 @@
 }
 
 body {
-    font-family: ralewayregular;
     font-size: 1.5em;
     line-height: 1.4;
+    font-family: 'ralewaylight';
 }
 
 button {
@@ -80,6 +80,12 @@ button:focus {
 .modal-body span {
     margin-bottom: 20px;
     display: block;
+}
+
+.modal-body .form-group select.form-control {
+    height: 37px;
+    font-size: 1em;
+    font-family: ralewayregular;
 }
 
 .modal-content {

@@ -1,3 +1,14 @@
+.addbtn {
+    background: #5ec0ca;
+    margin: 0 auto 15px;
+    display: block;
+    padding: 10px;
+    width: 177px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'ralewaylight';
+}
+
 .carousel,
 .carousel-inner,
 .item.active {
@@ -12,7 +23,6 @@
 }
 
 .page-title {
-    font-family: 'ralewaylight';
     text-align: center;
     margin: 20px 0;
     font-size: 1em;
@@ -32,8 +42,8 @@
     margin-left: 0;
 }
 
-.nav-pills > li[data-slide-to="0"] a { background-color: #5ec0ca; }
-.nav-pills > li[data-slide-to="1"] a { background-color: #ce8f5a; }
+.nav-pills > li[data-slide-to="0"] a { background-color: #ce8f5a; }
+.nav-pills > li[data-slide-to="1"] a { background-color: #8d4c8e; }
 .nav-pills > li[data-slide-to="2"] a { background-color: #6287a2; }
 
 .config-container {
@@ -61,7 +71,7 @@
 .config-container .tasks-heading {
     height: 55px;
     margin-bottom: 0;
-    background: #ce8f5a;
+    background: #8d4c8e;
     border-bottom: 1px solid #fff;
 }
 
@@ -69,7 +79,7 @@
     float: left;
     border-bottom: 1px solid #fff;
     color: #fff;
-    background: #ce8f5a;
+    background: #8d4c8e;
 }
 
 .config-container .tasks-heading li:first-child {
@@ -83,7 +93,7 @@
 
 .config-container .tasks-desc li .weight {
     width: 40px;
-    background: #6287a2;
+    background: #a56aa6;
     color: #fff;
     border-radius: 50%;
     display: block;
