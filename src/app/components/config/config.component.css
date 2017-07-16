@@ -1,0 +1,115 @@
+.config-actions {
+    display: inline-block;
+    width: 100%;
+}
+.config-actions button {
+    background: #ce8f5a;
+    width: 33.33%;
+    height: 55px;
+    float: left;
+    color: #fff;
+    font-family: 'ralewaylight';
+    border-right: 1px solid #fff;
+}
+
+.config-actions button:last-child {
+    border-right: 0;
+}
+
+#configuration-carousel {
+    height: 45px;
+    background: #5ec0ca;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.left i,
+.carousel-control.right i {
+    left: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    display: inline-block;
+    color: #fff;
+    text-shadow: none;
+    font-size: 40px;
+}
+
+.carousel-control {
+    opacity: initial;
+}
+
+.item .container span {
+    margin: 5px auto;
+    display: table;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'ralewaylight';
+}
+
+.config-container {
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.config-container ul {
+    padding-left: 0;
+}
+
+.config-container ul li {
+    list-style: none;
+    height: 55px;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ce8f5a;
+    line-height: 40px;
+    color: #484848;
+}
+
+.config-container ul li img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.config-container .tasks-heading {
+    height: 55px;
+    margin-bottom: 0;
+    background: #6287a2;
+}
+
+.config-container .tasks-heading li {
+    float: left;
+    border-bottom: 0;
+    color: #fff;
+}
+
+.config-container .tasks-heading li:first-child {
+    width: 66px;
+}
+
+.config-container .tasks-desc li {
+    width: 100%;
+    display: inline-block;
+}
+
+.config-container .tasks-desc li .weight {
+    width: 40px;
+    background: #6287a2;
+    color: #fff;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 28px;
+}
+
+.config-container .tasks-desc li .weight span {
+    margin: 0 auto;
+    display: table;
+}
+
+.config-container ul li .reward-type {
+    width: 50%;
+    float: right;
+}
