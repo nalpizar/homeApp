@@ -1,7 +1,4 @@
-<div class="item active">
-    <div class="container">
-        <span>{{day.dayName}} <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-    </div>
-    <app-tasks [tasks]='day.getTasks()'></app-tasks>
-
+<div class="container">
+    <span>{{day.dayName}} <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
 </div>
+<app-tasks [tasks]='day.getTasks()'></app-tasks>
