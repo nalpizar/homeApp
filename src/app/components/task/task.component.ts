@@ -9,16 +9,19 @@ export class TaskComponent implements OnInit {
   @Input() task;
   bgColor = '';
   color = '';
-  hurry = true;
-  setHurry() {
-    if (this.hurry) {
-      this.bgColor = '#555377';
-      this.color = '#ffffff';
-    }
+  setHurry(pTask) {
+    pTask.status = 3;
+    this.bgColor = '#555377';
+    this.color = '#ffffff';
   };
+
   constructor() { }
 
   ngOnInit() {
+    if (this.task.status == 3) {
+      this.bgColor = '#555377';
+      this.color = '#ffffff';
+    }
   }
 
 }

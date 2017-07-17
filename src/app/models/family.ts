@@ -18,6 +18,7 @@ export class Family {
     getId() { return this.idFamily; }
     getMembers() { return this.members; }
     getTaskRep() { return this.taskRepository; }
+    getDays() { return this.week[0].getWeekDays(); }
 
 
     setId(value) { this.idFamily = value; }

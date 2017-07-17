@@ -1,0 +1,11 @@
+.item .container span {
+    margin: 35px auto;
+    display: table;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.item .container span a {
+    color: #fff;
+    margin-left: 10px;
+}
