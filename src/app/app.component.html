@@ -1,10 +1,14 @@
-<app-nav (sendCont)='showContent($event)'></app-nav>
-<div *ngIf="showCont==1">
-    <app-dashboard></app-dashboard>
-</div>
-<div>
-    <app-config *ngIf="showCont==2"></app-config>
-</div>
-<div>
-    <app-stars *ngIf="showCont==3"></app-stars>
+<div *ngIf='isDataLoaded'>
+
+    <app-nav (sendCont)='showContent($event)'></app-nav>
+    <div *ngIf="showCont==1">
+        <app-dashboard [family]='family'></app-dashboard>
+    </div>
+    <div>
+        <app-config *ngIf="showCont==2"></app-config>
+    </div>
+    <div>
+        <app-stars *ngIf="showCont==3"></app-stars>
+    </div>
+
 </div>

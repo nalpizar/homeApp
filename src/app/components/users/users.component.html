@@ -1,61 +1,13 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> 
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-    <div class="item active">
-      <div class="container">
-        <div class="avatar">
-          <img src="../../../assets/images/avatar1.png" alt="">
-        </div>
-        <div class="user-info">
-          <span>Natalia</span>
-          <div class="score">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-        </div>
-      </div>
+    <div *ngFor='let user of members'>
+      <app-user [user]='user'></app-user>
     </div>
-    <div class="item">
-      <div class="container">
-        <div class="avatar">
-          <img src="../../../assets/images/avatar2.png" alt="">
-        </div>
-        <div class="user-info">
-          <span>Lucía</span>
-          <div class="score">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="container">
-        <div class="avatar">
-          <img src="../../../assets/images/avatar3.png" alt="">
-        </div>
-        <div class="user-info">
-          <span>Tomás</span>
-          <div class="score">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <i class="fa fa-angle-left" aria-hidden="true"></i>
-  </a> 
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <i class="fa fa-angle-right" aria-hidden="true"></i>
-  </a> 
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
 </div>

@@ -1,22 +1,47 @@
 [
     {
         "avatarId": 1,
-        "nombre": "Avatar1",
-        "url": "../../../assets/images/avatar1.png"
+        "nombre": "avatar1.png",
+        "url": "images/avatar1.png"
     },
     {
         "avatarId": 2,
-        "nombre": "Avatar2",
-        "url": "../../../assets/images/avatar2.png"
+        "nombre": "avatar1.png",
+        "url": "images/avatar1.png"
     },
     {
         "avatarId": 3,
-        "nombre": "Avatar3",
-        "url": "../../../assets/images/avatar3.png"
+        "nombre": "avatar3.png",
+        "url": "avatar3.png"
     },
     {
         "avatarId": 4,
-        "nombre": "Avatar4",
-        "url": "../../../assets/images/avatar4.png"
+        "nombre": "avatar4.png",
+        "url": "images/avatar4.png"
+    },
+    {
+        "avatarId": 5,
+        "nombre": "avatar5.png",
+        "url": "images/avatar5.png"
+    },
+    {
+        "avatarId": 6,
+        "nombre": "avatar6.png",
+        "url": "images/avatar6.png"
+    },
+    {
+        "avatarId": 7,
+        "nombre": "avatar7.png",
+        "url": "images/avatar7.png"
+    },
+    {
+        "avatarId": 8,
+        "nombre": "avatar8.png",
+        "url": "images/avatar8.png"
+    },
+    {
+        "avatarId": 9,
+        "nombre": "avatar9.png",
+        "url": "images/avatar9.png"
     }
 ]

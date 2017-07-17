@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Family } from '../../models/family';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,6 +11,8 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.family);
+
   }
 
 }

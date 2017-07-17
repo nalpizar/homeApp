@@ -1,0 +1,34 @@
+.item {
+    height: 100px;
+}
+
+.avatar {
+    width: 80px;
+    margin: 10px 10px 0 15%;
+    float: left;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.user-info {
+    float: left;
+    width: 48%;
+    font-size: 2rem;
+    margin: 19px 0;
+    display: grid;
+}
+
+.user-info span {
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+} 
+
+.user-info .score {
+    color: #ffe500;
+    width: 115px;
+    margin: 0 auto;
+}

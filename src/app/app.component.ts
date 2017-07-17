@@ -25,6 +25,8 @@ export class AppComponent {
   private taskRep: TaskRep[] = [];
   private skins: Skin[] = [];
 
+  isDataLoaded: boolean = false;
+
   constructor(private http: Http) {
     this.loadFromJson();
   }
@@ -83,6 +85,7 @@ export class AppComponent {
         this.family.rewards.push(tempReward);
       }
 
+      this.isDataLoaded = true;
 
 
       console.log(this.family);
@@ -98,7 +101,7 @@ export class AppComponent {
 
   }
 
-  showContent(pcont){
+  showContent(pcont) {
     this.showCont = pcont;
   }
 
