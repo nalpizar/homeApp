@@ -1,6 +1,6 @@
 <div class="task" [style.backgroundColor]="bgColor">
   <div class="task-name">
-    <span [style.color]="color">Feed the dog</span>
+    <span [style.color]="color">{{task.name}}</span>
   </div>
   <div class="task-score">
     <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -13,7 +13,7 @@
     <a [style.color]="color" data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
     </a>
-    <a (click)='setHurry()' [style.color]="color">
+    <a (click)='setHurry(task)' [style.color]="color">
       <i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
     </a>
   </div>

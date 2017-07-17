@@ -94,7 +94,7 @@
                             "name": "Merienda",
                             "position": 3,
                             "weight": 3,
-                            "status": 0,
+                            "status": 3,
                             "swapedTo": "",
                             "score": null,
                             "userid": "2"

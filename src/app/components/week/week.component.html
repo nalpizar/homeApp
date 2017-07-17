@@ -1,53 +1,13 @@
-<div id="week" class="carousel slide" data-ride="carousel" data-interval="false"> 
-  <div class="carousel-inner">
-    <div class="item active">
-      <div class="container">
-        <span>Monday <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-      </div>
-      <app-day></app-day>
-      
-    </div>
-    <div class="item">
-      <div class="container">
-        <span>Tuesday <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-      </div>
-      <app-day></app-day>
-    </div>
-    <div class="item">
-      <div class="container">
-        <span>Wednesday <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-      </div>
-      <app-day></app-day>
-    </div>
-    <div class="item">
-      <div class="container">
-        <span>Thursday <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-      </div>
-      <app-day></app-day>
-    </div>
-    <div class="item">
-      <div class="container">
-        <span>Friday <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-      </div>
-      <app-day></app-day>
-    </div>
-    <div class="item">
-      <div class="container">
-        <span>Saturday <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-      </div>
-      <app-day></app-day>
-    </div>
-    <div class="item">
-      <div class="container">
-        <span>Sunday <a href=""><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
-      </div>
-      <app-day></app-day>
-    </div>
+<div id="week" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner" *ngFor='let day of days'>
+
+    <app-day [day]='day'></app-day>
+
   </div>
   <a class="left carousel-control" href="#week" data-slide="prev">
       <i class="fa fa-angle-left" aria-hidden="true"></i>
-  </a> 
+  </a>
   <a class="right carousel-control" href="#week" data-slide="next">
     <i class="fa fa-angle-right" aria-hidden="true"></i>
-  </a> 
+  </a>
 </div>
