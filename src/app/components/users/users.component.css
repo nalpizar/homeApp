@@ -1,15 +1,9 @@
-#myCarousel {
+#usersCarousel {
     background: #62c0c9;
 }
 
-.carousel-control.right,
-.carousel-control.left {
-    background-image: none;
-}
-
-.carousel-control.left i,
-.carousel-control.right i {
-    left: 50%;
+.controls.left i,
+.controls.right i {
     position: absolute;
     top: 30px;
     z-index: 5;
@@ -19,6 +13,14 @@
     font-size: 40px;
 }
 
-.carousel-control {
+.controls.left i {
+    left: 0;
+}
+
+.controls.right i {
+    right: 0;
+}
+
+.controls {
     opacity: initial;
 }
