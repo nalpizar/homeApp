@@ -11,9 +11,28 @@ export class UsersComponent implements OnInit {
 
   @Input() members;
 
+  selectedId: number;
+
   constructor() {
   }
 
   ngOnInit() {
+    this.selectedId = 1;
+  }
+
+  prevUser() {
+    if (this.selectedId > 1) {
+      this.selectedId--;
+    } else {
+      return false;
+    }
+  }
+
+  nextUser() {
+    if (this.selectedId < (this.members.length)) {
+      this.selectedId++;
+    } else {
+      return false;
+    }
   }
 }
