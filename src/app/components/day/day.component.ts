@@ -6,10 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./day.component.css']
 })
 export class DayComponent implements OnInit {
+
   @Input() day;
   constructor() { }
 
+
   ngOnInit() {
+
   }
 
 }
