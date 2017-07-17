@@ -20,6 +20,7 @@ import { Skin } from './models/skin';
 })
 export class AppComponent {
   private family;
+  private showCont = 1;
   private avatars: Avatar[] = [];
   private taskRep: TaskRep[] = [];
   private skins: Skin[] = [];
@@ -95,6 +96,10 @@ export class AppComponent {
   loadFromJson() {
     this.loadData('../assets/data/family.json', '../assets/data/avatars.json', '../assets/data/skin.json');
 
+  }
+
+  showContent(pcont){
+    this.showCont = pcont;
   }
 
 

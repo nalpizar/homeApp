@@ -1,29 +1,34 @@
 <header>
   <a id="menu-toogle" (click)='toogleMenu()' aria-hidden="true">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+      enable-background="new 0 0 1000 1000" xml:space="preserve">
       <g>
-        <path d="M40.6,193.8h918.8c16.9,0,30.6-13.7,30.6-30.6c0-16.9-13.7-30.6-30.6-30.6H40.6c-16.9,0-30.6,13.7-30.6,30.6C10,180.1,23.7,193.8,40.6,193.8z"/>
-        <path d="M40.6,867.5h918.8c16.9,0,30.6-13.7,30.6-30.6c0-16.9-13.7-30.6-30.6-30.6H40.6c-16.9,0-30.6,13.7-30.6,30.6C10,853.8,23.7,867.5,40.6,867.5z"/>
-        <path d="M40.6,530.6h918.8c16.9,0,30.6-13.7,30.6-30.6c0-16.9-13.7-30.6-30.6-30.6H40.6C23.7,469.4,10,483.1,10,500C10,516.9,23.7,530.6,40.6,530.6z"/>
+        <path d="M40.6,193.8h918.8c16.9,0,30.6-13.7,30.6-30.6c0-16.9-13.7-30.6-30.6-30.6H40.6c-16.9,0-30.6,13.7-30.6,30.6C10,180.1,23.7,193.8,40.6,193.8z"
+        />
+        <path d="M40.6,867.5h918.8c16.9,0,30.6-13.7,30.6-30.6c0-16.9-13.7-30.6-30.6-30.6H40.6c-16.9,0-30.6,13.7-30.6,30.6C10,853.8,23.7,867.5,40.6,867.5z"
+        />
+        <path d="M40.6,530.6h918.8c16.9,0,30.6-13.7,30.6-30.6c0-16.9-13.7-30.6-30.6-30.6H40.6C23.7,469.4,10,483.1,10,500C10,516.9,23.7,530.6,40.6,530.6z"
+        />
       </g>
     </svg>
   </a>
-  <a [routerLink] = "['/']" class="app-logo"> HOME-LOGO</a>
+  <a (click)="sentCont(1)" class="app-logo"> HOME-LOGO</a>
   <div id="wrapper" class="wrapper">
-      <div id="slide" class="slide">
-        <div class="user-info">
-          <img src="../../../assets/images/avatar3.png" alt="Avatar1">
-          <span>Tomás</span>
-          <span class="email">tomas@gmail.com</span>
-        </div>
-        <div class="menu-options">
-          <ul>
-            <li (click)="toogleMenu();"><a [routerLink] = "['/Configuration']"><i class="fa fa-gears" aria-hidden="true"></i> Configuration</a></li> 
-            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> View metrics</a></li>
-            <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Switch user</a></li>     
-          </ul>
-        </div>
+    <div id="slide" class="slide">
+      <div class="user-info">
+        <img src="../../../assets/images/avatar3.png" alt="Avatar1">
+        <span>Tomás</span>
+        <span class="email">tomas@gmail.com</span>
       </div>
-      <div id="overlay" class="overlay" (click)='toogleMenu()'></div>
+      <div class="menu-options">
+        <ul>
+
+          <li (click)="toogleMenu()"><a href="#" (click)="sentCont(2)"><i class="fa fa-gears" aria-hidden="true"></i> Configuration</a></li>
+          <li (click)="toogleMenu()"><a href="#" (click)="sentCont(3)"><i class="fa fa-star-o" aria-hidden="true"></i> View metrics</a></li>
+          <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Switch user</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="overlay" class="overlay" (click)='toogleMenu()'></div>
   </div>
 </header>
