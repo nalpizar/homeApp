@@ -21,5 +21,7 @@ export class TaskRep {
     setName(value) { this.name = value; }
     setWeight(value) { this.weight = value; }
 
+    
+
 
 } 

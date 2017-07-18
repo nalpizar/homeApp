@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-config',
@@ -6,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./config.component.css']
 })
 export class ConfigComponent implements OnInit {
+
+  @Input() tasks;
+  @Input() family;
+
+  option: string;
+
+  onSelect(option: string) {
+    this.option = option
+  }
 
   constructor() { }
 

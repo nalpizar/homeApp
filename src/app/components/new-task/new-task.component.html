@@ -1,3 +1,16 @@
-<p>
-  new-task works!
-</p>
+<span>Task name {{family.id}}</span>
+<div class="form-group">
+  <input type="text" (change)='onTitleChange($event)' [value]='title' class="form-control" >
+</div>
+<span>Weight</span>
+<div class="form-group">
+  <select class="form-control" (change)='onWeightChange($event)' [value]='weight'>
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+    <option value="">5</option>
+  </select>
+</div>
+
+<input type="button" value="add" (click)="addNewTask()">
