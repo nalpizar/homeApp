@@ -3,7 +3,26 @@
     padding: 15px;
     min-height: 100px;
     border-bottom: 1px solid #efd199;
+    display: block;
 }
+.delete{
+    padding: 22px 35px;
+    background-color: #d33b18;
+    width: 100px;
+    z-index: 1;
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    top:0px;
+    font-size: 40px;
+    color: #ffffff;
+    }
+
+    .taskcont{
+        position: relative;
+        display: block;
+    }
+    .cont{z-index: 2;position: relative;}
 
 .task div {
     float: left;
@@ -73,3 +92,24 @@ button.avatar:hover {
 button.close {
     color: #fff;
 }
+
+.swipeleft{
+   left:-50px; 
+   top:0px;
+   transform: translate(-50px,0);
+   -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+   
+}
+.swiperight{
+  left:0px; 
+   top:0px;
+  transform: translate(0,0);
+  -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+

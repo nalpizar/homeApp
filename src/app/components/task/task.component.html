@@ -1,22 +1,27 @@
-<div class="task" [style.backgroundColor]="bgColor">
-  <div class="task-name">
-    <span [style.color]="color">{{task.name}}</span>
-  </div>
-  <div class="task-score">
-    <i class="fa fa-star-o" aria-hidden="true"></i>
-    <i class="fa fa-star-o" aria-hidden="true"></i>
-    <i class="fa fa-star-o" aria-hidden="true"></i>
-    <i class="fa fa-star-o" aria-hidden="true"></i>
-    <i class="fa fa-star-o" aria-hidden="true"></i>
-  </div>
-  <div class="actions">
-    <a [style.color]="color" data-toggle="modal" data-target="#relieveUser">
+<div class="taskcont">
+  <div [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
+    <div class="task" [style.backgroundColor]="bgColor">
+      <div class="task-name">
+        <span [style.color]="color">{{task.name}}</span>
+      </div>
+      <div class="task-score">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+      </div>
+      <div class="actions">
+        <a [style.color]="color" data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
     </a>
-    <a (click)='setHurry(task)' [style.color]="color">
+        <a (click)='setHurry(task)' [style.color]="color">
       <i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
     </a>
+      </div>
+    </div>
   </div>
+  <div class="delete" (click)='day.deleteTask(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
 </div>
 
 <!-- Modal Relieve-->
