@@ -1,0 +1,20 @@
+.addTask.modal-footer {
+    position: absolute;
+    width: 100%;
+    margin-left: -15px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.addTask.modal-footer button {
+    width: 50%;
+    float: left;
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+}
+
+.addTask.modal-footer button:first-child {
+    background: #5ec0ca;
+    color: #fff;
+}

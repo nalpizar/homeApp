@@ -1,5 +1,10 @@
 [
     {
+        "avatarId": 0,
+        "nombre": "avatar0.png",
+        "url": "images/avatar0.png"
+    },
+    {
         "avatarId": 1,
         "nombre": "avatar1.png",
         "url": "images/avatar1.png"

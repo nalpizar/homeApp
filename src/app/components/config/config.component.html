@@ -10,16 +10,16 @@
         <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
       </div>
       <div class="modal-body">
-        <span>Select your action:</span>
         <div class="form-group">
           <select class="form-control" (change)="onSelect($event.target.value)">
+            <option value="">Select your action</option>
             <option value="new_member">Add new family member</option>
             <option value="new_task">Add new task</option>
             <option value="new_reward">Add new reward</option>
           </select>
         </div>
         <div *ngIf="option === 'new_member'">
-          Add new member
+          <app-new-user [family]='family'></app-new-user>
         </div>
         <div *ngIf="option === 'new_task'">
           <app-new-task [family]='family'></app-new-task>
@@ -46,18 +46,10 @@
   <div class="carousel-inner">
     <div class="item active" style="background:#ce8f5a">
       <div class="config-container">
-        <ul>
+        <ul *ngFor='let user of family.getMembers()'>
           <li>
-            <img src="../../../assets/images/avatar3.png" alt="">
-            <span>Tomás</span>
-          </li>
-          <li>
-            <img src="../../../assets/images/avatar2.png" alt="">
-            <span>Lucía</span>
-          </li>
-          <li>
-            <img src="../../../assets/images/avatar1.png" alt="">
-            <span>Natalia</span>
+            <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
+            <span>{{user.name}}</span>
           </li>
         </ul>
       </div>
