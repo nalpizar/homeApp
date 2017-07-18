@@ -4,13 +4,10 @@
 </div>
 <span>Weight</span>
 <div class="form-group">
-  <select class="form-control" (change)='onWeightChange($event)' [value]='weight'>
-    <option value="">1</option>
-    <option value="">2</option>
-    <option value="">3</option>
-    <option value="">4</option>
-    <option value="">5</option>
-  </select>
+  <select class="form-control" (change)='onWeightChange($event)'>
+    <option value="">Select a weight</option>
+    <option *ngFor="let weight of weights" [value]="weight.id">{{weight.name}}</option>
+  </select>  
 </div>
 
 <div class="modal-footer addTask">

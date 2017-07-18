@@ -28,6 +28,14 @@ export class NewTaskComponent implements OnInit {
     this.family.addTaskRep(temptask);
     this.title = 'title';
   }
+
+  weights:any[] = [
+    {id:1,name:'1'},
+    {id:2,name:'2'},
+    {id:3,name:'3'},
+    {id:4,name:'4'},
+    {id:5,name:'5'}
+  ];
  
   constructor() { }
 
