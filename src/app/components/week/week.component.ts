@@ -7,6 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class WeekComponent implements OnInit {
   @Input() days;
+  @Input() taskRepo;
+  @Input() currentUserId;
+
   constructor() { }
 
   ngOnInit() {

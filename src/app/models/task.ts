@@ -1,6 +1,5 @@
 import { User } from './user';
 import { Score } from './score';
-import { Reward } from './reward';
 
 
 export class Task {
@@ -10,13 +9,13 @@ export class Task {
 	private position: number;
 	private weight: number;
 	private status: number; //0=default - 1=started - 2=completed - 3=onHurry - 4=swaped
-	private swapedTo: User;
+	private swapedTo: number;
 	private score: Score;
 	private userId: number;
 
 
 
-	constructor(id: number, name: string, position: number, weight: number, status: number, swapedTo: User, score: Score, userId: number) {
+	constructor(id: number, name: string, position: number, weight: number, status: number, swapedTo: number, score: Score, userId: number) {
 		this.setId(id);
 		this.setName(name);
 		this.setPosition(position);

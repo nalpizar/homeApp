@@ -1,7 +1,7 @@
 <div>
-    <app-users [members]='family.getMembers()'></app-users>
+    <app-users (emitId)='currentId($event)' [members]='family.getMembers()'></app-users>
 </div>
 
 <div>
-    <app-week [days]='family.getDays()'></app-week>
+    <app-week [days]='family.getDays()' [taskRepo]='family.getTaskRep()' [currentUserId]='currentUserId'></app-week>
 </div>

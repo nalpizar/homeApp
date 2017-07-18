@@ -8,22 +8,17 @@
       </div>
       <div class="modal-body">
 
-
         <span>Tasks:</span>
        <form>
-        <select>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
+        <select (change)='onSelectChange($event)'>
+            <option *ngFor='let task of taskRepo'><div>{{task.getId()}} - </div> <div>{{task.getName()}}</div>  <div>Weight: {{task.getWeight()}}</div></option>
         </select>
        </form>
-
-       
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-default btn-add" data-dismiss="modal">Add</button>
+        <button type="button" class="btn btn-default btn-add" (click)="onDone()" data-dismiss="modal">Add</button>
       </div>
     </div>
   </div>

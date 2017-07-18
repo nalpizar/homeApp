@@ -18,11 +18,15 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
     this.selectedId = 1;
+    this.emitId.emit(this.selectedId);
   }
+
+  @Output() emitId = new EventEmitter;
 
   prevUser() {
     if (this.selectedId > 1) {
       this.selectedId--;
+      this.emitId.emit(this.selectedId);
     } else {
       return false;
     }
@@ -31,8 +35,10 @@ export class UsersComponent implements OnInit {
   nextUser() {
     if (this.selectedId < (this.members.length)) {
       this.selectedId++;
+      this.emitId.emit(this.selectedId);
     } else {
       return false;
     }
   }
+
 }

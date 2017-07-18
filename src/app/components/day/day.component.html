@@ -1,9 +1,6 @@
 <div class="container">
     <span>{{day.dayName}} <a [style.color]="color" data-toggle="modal" data-target="#newTask"><i class="fa fa-file-o" aria-hidden="true"></i></a></span>
 </div>
-<<<<<<< HEAD
-<app-add-task></app-add-task>
-<app-tasks [tasks]='day.getTasks()'></app-tasks>
-=======
 <app-tasks [day]='day'></app-tasks>
->>>>>>> 34d04551a6a298a616a4545b2cca9c38dd7fde52
+<app-add-task [taskRepo]='taskRepo' [day]='day' [currentUserId]='currentUserId'></app-add-task>
+
