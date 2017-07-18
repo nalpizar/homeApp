@@ -1,6 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Family } from '../../models/family';
-import { User } from '../../models/user';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -10,29 +8,11 @@ import { User } from '../../models/user';
 export class UsersComponent implements OnInit {
 
   @Input() members;
-
-  selectedId: number;
+  @Input() family;
 
   constructor() {
   }
 
-  ngOnInit() {
-    this.selectedId = 1;
-  }
+  ngOnInit() { }
 
-  prevUser() {
-    if (this.selectedId > 1) {
-      this.selectedId--;
-    } else {
-      return false;
-    }
-  }
-
-  nextUser() {
-    if (this.selectedId < (this.members.length)) {
-      this.selectedId++;
-    } else {
-      return false;
-    }
-  }
 }

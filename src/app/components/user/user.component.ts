@@ -11,12 +11,13 @@ import { Avatar } from '../../models/avatar';
 export class UserComponent implements OnInit {
 
   @Input() user;
+
   avatarName: string;
-  userSelected = null;
 
   constructor() { }
 
   ngOnInit() {
     this.avatarName = "avatar" + (this.user.getAvatar()) + ".png";
   }
+
 }
