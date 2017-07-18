@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-
+import 'hammerjs';
+import 'hammer-timejs';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ProfileComponent } from './components/profile/profile.component';
@@ -26,10 +28,10 @@ import { NewRewardComponent } from './components/new-reward/new-reward.component
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
-const appRoutes: Routes = [ 
-   { path: '', component: DashboardComponent },
-   { path: 'Configuration', component: ConfigComponent }
-]; 
+const appRoutes: Routes = [
+  { path: '', component: DashboardComponent },
+  { path: 'Configuration', component: ConfigComponent }
+];
 
 @NgModule({
   declarations: [
@@ -58,6 +60,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
