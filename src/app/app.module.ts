@@ -25,6 +25,7 @@ import { NewUserComponent } from './components/new-user/new-user.component';
 import { NewRewardComponent } from './components/new-reward/new-reward.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AddTaskComponent } from './components/add-task/add-task.component';
 
 const appRoutes: Routes = [ 
    { path: '', component: DashboardComponent },
@@ -54,7 +55,8 @@ const appRoutes: Routes = [
     NewUserComponent,
     NewRewardComponent,
     SignUpComponent,
-    DashboardComponent
+    DashboardComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
