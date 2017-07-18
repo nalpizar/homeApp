@@ -1,3 +1,16 @@
-<p>
-  new-task works!
-</p>
+<span>Task name {{family.id}}</span>
+<div class="form-group">
+  <input type="text" (change)='onTitleChange($event)' [value]='title' class="form-control" >
+</div>
+<span>Weight</span>
+<div class="form-group">
+  <select class="form-control" (change)='onWeightChange($event)'>
+    <option value="">Select a weight</option>
+    <option *ngFor="let weight of weights" [value]="weight.id">{{weight.name}}</option>
+  </select>  
+</div>
+
+<div class="modal-footer addTask">
+  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addNewTask()">Add</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+</div>

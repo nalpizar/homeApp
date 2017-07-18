@@ -12,11 +12,20 @@
       <div class="modal-body">
         <span>Select your action:</span>
         <div class="form-group">
-          <select class="form-control">
-            <option value="">Add new family member</option>
-            <option value="">Add new task</option>
-            <option value="">Add new reward</option>
+          <select class="form-control" (change)="onSelect($event.target.value)">
+            <option value="new_member">Add new family member</option>
+            <option value="new_task">Add new task</option>
+            <option value="new_reward">Add new reward</option>
           </select>
+        </div>
+        <div *ngIf="option === 'new_member'">
+          Add new member
+        </div>
+        <div *ngIf="option === 'new_task'">
+          <app-new-task [family]='family'></app-new-task>
+        </div>
+        <div *ngIf="option === 'new_reward'">
+          Add new reward
         </div>
       </div>
       <div class="modal-footer">
@@ -60,22 +69,10 @@
           <li>Weight</li>
           <li>Task description</li>
         </ul>
-        <ul class="tasks-desc">
+        <ul class="tasks-desc" *ngFor='let task of tasks'>
           <li>
-            <span class="weight"><span>3</span></span>
-            <span>Feed the dog</span>
-          </li>
-          <li>
-            <span class="weight"><span>3</span></span>
-            <span>Feed the dog</span>
-          </li>
-          <li>
-            <span class="weight"><span>3</span></span>
-            <span>Feed the dog</span>
-          </li>
-          <li>
-            <span class="weight"><span>3</span></span>
-            <span>Feed the dog</span>
+            <span class="weight"><span>{{task.weight}}</span></span>
+            <span>{{task.name}}</span>
           </li>
         </ul>
       </div>
