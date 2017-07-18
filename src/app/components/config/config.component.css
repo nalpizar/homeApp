@@ -124,15 +124,10 @@
 
 #addModal button {
     width: 50%;
-    float: left;
+    float: right;
     border-radius: 0;
     height: 50px;
     margin: 0;
-}
-
-#addModal button:first-child {
-    background: #5ec0ca;
-    color: #fff;
 }
 
 .modal.fade .modal-dialog {
