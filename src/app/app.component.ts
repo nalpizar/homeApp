@@ -51,7 +51,7 @@ export class AppComponent {
       this.family = new Family(data.idFamily);
 
       for (var member of data.members) {
-        let tempMember = new User(member.id, member.name, member.age, member.type);
+        let tempMember = new User(member.id, member.name, member.age, member.type, member.avatar);
         tempMember.setAvatar(member.avatarId);
         tempMember.setSkin(member.skinId);
         this.family.members.push(tempMember);

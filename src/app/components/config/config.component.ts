@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { User } from '../../models/user';
 
 @Component({
   selector: 'app-config',
@@ -8,8 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ConfigComponent implements OnInit {
 
-  @Input() tasks;
   @Input() family;
+  @Input() tasks;
+  @Input() users;
 
   option: string;
 
@@ -20,6 +21,7 @@ export class ConfigComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

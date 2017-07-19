@@ -1,16 +1,13 @@
-<div id="usersCarousel">
-  <div class="container">
-    <div *ngFor='let user of members'>
-      <div *ngIf="user.id==selectedId">
-        <app-user [user]='user'></app-user>
-      </div>
+<div id="usersCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="item" [ngClass]="{'active': user.id == 1}" *ngFor='let user of members'>
+      <app-user [user]='user'></app-user>
     </div>
-
-    <a class="controls left" (click)='prevUser()'>
-    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </div>
+  <a class="left carousel-control" href="#usersCarousel" data-slide="prev">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
   </a>
-    <a class="controls right" (click)=nextUser()>
+  <a class="right carousel-control" href="#usersCarousel" data-slide="next">
     <i class="fa fa-angle-right" aria-hidden="true"></i>
   </a>
-  </div>
 </div>

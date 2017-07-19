@@ -10,10 +10,11 @@ export class User {
     private avatarId: number;
     private skinId: string;
 
-    constructor(id: number, name: string, age: number, type: string) {
+    constructor(id: number, name: string, age: number, type: string, avatarId: number) {
         this.setId(id);
         this.setName(name);
         this.setAge(age);
+        this.setAvatar(avatarId);
     }
 
     getId() { return this.id }
