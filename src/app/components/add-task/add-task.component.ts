@@ -13,7 +13,7 @@ export class AddTaskComponent implements OnInit {
 
   @Input() taskRepo;
   @Input() currentUserId;
-  @Input() day;
+  @Input() currentDay;
 
   constructor() { }
 
@@ -46,7 +46,7 @@ export class AddTaskComponent implements OnInit {
     console.log(this.taskName, this.taskWeight, this.currentUserId)
     var newTask = new Task(12, this.taskName, 9, this.taskWeight, 0, 0, null, this.currentUserId);
     console.log(newTask);
-    this.day.addTask(newTask);
+    this.currentDay.addTask(newTask);
   }
 
 

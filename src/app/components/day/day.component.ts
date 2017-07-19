@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-day',
@@ -10,9 +10,19 @@ export class DayComponent implements OnInit {
   @Input() taskRepo;
   @Input() currentUserId;
 
+  @Output() emitCurrentDay = new EventEmitter;
+  
+ 
+
   constructor() { }
 
   ngOnInit() {
+     
   }
+
+  sendDay(day){
+    this.emitCurrentDay.emit(day);
+  }
+  
 
 }
