@@ -1,0 +1,7 @@
+<div class="taskcont">
+    <div [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
+        <span class="weight"><span>{{task.weight}}</span></span>
+        <span>{{task.name}}</span>
+    </div>
+    <div class="delete" (click)='deleteTaskRep(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div>

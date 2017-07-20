@@ -61,12 +61,9 @@
           <li>Weight</li>
           <li>Task description</li>
         </ul>
-        <ul class="tasks-desc" *ngFor='let task of tasks'>
-          <li>
-            <span class="weight"><span>{{task.weight}}</span></span>
-            <span>{{task.name}}</span>
-          </li>
-        </ul>
+
+        <app-repo-tasks [tasks]='family.getTaskRep()'></app-repo-tasks>
+
       </div>
     </div>
     <!-- End Item -->

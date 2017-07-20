@@ -29,6 +29,8 @@ import { NewRewardComponent } from './components/new-reward/new-reward.component
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
+import { RepoTaskComponent } from './components/./repo-task/repo-task.component';
+import { RepoTasksComponent } from './components/./repo-tasks/repo-tasks.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -59,7 +61,9 @@ const appRoutes: Routes = [
     NewRewardComponent,
     SignUpComponent,
     DashboardComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    RepoTaskComponent,
+    RepoTasksComponent
   ],
   imports: [
     BrowserModule,
