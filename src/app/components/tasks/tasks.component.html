@@ -1,3 +1,6 @@
-<div *ngFor='let task of day.getTasks(); let i = index'>
-  <app-task [task]='task' [day]='day' [index]='i' [users]='users'></app-task>
+<div *ngFor="let task of day.getTasks(); let i = index">
+
+  <div *ngIf="task.userId == currentUserId">
+    <app-task [task]='task' [day]='day' [index]='i' [users]='users'></app-task>
+  </div>
 </div>
