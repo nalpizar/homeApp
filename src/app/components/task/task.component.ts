@@ -9,6 +9,7 @@ export class TaskComponent implements OnInit {
   @Input() task;
   @Input() day;
   @Input() index;
+  @Input() users;
   myClass = 'cont';
   bgColor = '';
   color = '';

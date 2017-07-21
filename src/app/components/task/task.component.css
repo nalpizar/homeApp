@@ -65,9 +65,13 @@
     display: table;
 }
 
+.usersSelect {
+    padding: 0;
+}
+
 .usersSelect li {
     display: inline-block;
-    width: 25%;
+    width: 15%;
     margin-left: 10px;
 }
 
@@ -75,19 +79,18 @@
     margin-left: 0;
 }
 
-button.avatar img {
+button img {
     width: 100%;
     height: auto;
 }
 
-button.avatar:hover {
+button:hover {
     opacity: 0.8;
 }
 
-/*.modal-header {
-    background: #62c0c9;
-    color: #fff;
-}*/
+button.selected img{
+    border: 1px solid #000;
+}
 
 button.close {
     color: #fff;

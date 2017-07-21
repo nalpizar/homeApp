@@ -35,24 +35,16 @@
       <div class="modal-body">
         <span>Members:</span>
         <ul class="usersSelect">
-          <li>
-            <button class="avatar" data-dismiss="modal">
-              <img src="../../../assets/images/avatar1.png" alt="Avatar1">
-            </button>
-          </li>
-          <li>
-            <button class="avatar" data-dismiss="modal">
-              <img src="../../../assets/images/avatar2.png" alt="Avatar2">
-            </button>
-          </li>
-          <li>
-            <button class="avatar" data-dismiss="modal">
-              <img src="../../../assets/images/avatar3.png" alt="Avatar1">
+          <li *ngFor='let user of users'>
+            <button [ngClass]="{'selected': isSelected}" (click)='isSelected = !isSelected'>
+              <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
+              <span>{{user.name}}</span>
             </button>
           </li>
         </ul>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Swap Task</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>
