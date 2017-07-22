@@ -68,22 +68,33 @@
     margin-right: 10px;
 }
 
-.config-container .tasks-heading {
+.config-container .tasks-heading, .config-container .users-heading {
     height: 55px;
     margin-bottom: 0;
-    background: #8d4c8e;
     border-bottom: 1px solid #fff;
 }
 
-.config-container .tasks-heading li {
+.config-container .tasks-heading, .config-container .tasks-heading li {
+    background: #8d4c8e;
+}
+
+.config-container .users-heading, .config-container .users-heading li {
+    background: #ce8f5a;
+}
+
+.config-container .tasks-heading li, .config-container .users-heading li {
     float: left;
     border-bottom: 1px solid #fff;
     color: #fff;
-    background: #8d4c8e;
 }
 
-.config-container .tasks-heading li:first-child {
+.config-container .tasks-heading li:first-child, .config-container .users-heading li:first-child {
     width: 90px;
+}
+
+.config-container .users-heading li:nth-child(2) {
+    width: 150px;
+    text-align: center;
 }
 
 .config-container .tasks-desc li {
