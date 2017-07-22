@@ -30,8 +30,6 @@ export class TaskComponent implements OnInit {
       this.bgColor = '#555377';
       this.color = '#ffffff';
     }
-    console.log(this.currentUserId);
-
   }
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
