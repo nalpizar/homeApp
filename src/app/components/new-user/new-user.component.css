@@ -1,4 +1,4 @@
-.addTask.modal-footer {
+.addModalBtn.modal-footer {
     position: absolute;
     width: 100%;
     margin-left: -15px;
@@ -6,7 +6,7 @@
     margin-top: 30px;
 }
 
-.addTask.modal-footer button {
+.addModalBtn.modal-footer button {
     width: 50%;
     float: left;
     border-radius: 0;
@@ -14,7 +14,12 @@
     margin: 0;
 }
 
-.addTask.modal-footer button:first-child {
+.addModalBtn.modal-footer button:hover {
+    background: none;
+    border:0;
+}
+
+.addModalBtn.modal-footer button:first-child {
     background: #5ec0ca;
     color: #fff;
 }
