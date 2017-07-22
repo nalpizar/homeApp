@@ -1,6 +1,6 @@
 <div id="usersCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-    <div [attr.title]='user.id' class="userSel item" [ngClass]="{'active': user.id == 1}" *ngFor='let user of members'>
+    <div [attr.id]='user.id' class="userSel item" [ngClass]="{'active': user.id == 1}" *ngFor='let user of members'>
       <app-user [user]='user'></app-user>
     </div>
   </div>

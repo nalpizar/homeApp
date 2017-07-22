@@ -25,26 +25,42 @@ export class UsersComponent implements OnInit {
   @Output() emitId = new EventEmitter;
 
   setUserNext() {
-
-    if (this.members.length == this.selectedId) {
-      this.selectedId = Number(document.getElementsByClassName("userSel item active")[0].getAttribute('title'));
-      this.selectedId = 1;
+    this.selectedId = Number(document.getElementsByClassName("userSel item active")[0].getAttribute('id'));
+    let tempIndex: number;
+    tempIndex = this.members.length;
+    tempIndex--;
+    if (this.members[tempIndex].id == this.selectedId) {
+      this.selectedId = this.members[0].id;
       this.emitId.emit(this.selectedId);
     } else {
-      this.selectedId = Number(document.getElementsByClassName("userSel item active")[0].getAttribute('title'));
-      this.selectedId++;
+      let tempId;
+      for (let i in this.members) {
+        if (this.selectedId == this.members[i].id) {
+          let tempIndex = Number(i) + 1;
+          tempId = this.members[Number(tempIndex)].id;
+        }
+      }
+      this.selectedId = tempId;
       this.emitId.emit(this.selectedId);
     }
   }
 
   setUserPrev() {
-    if (this.selectedId == 1) {
-      this.selectedId = Number(document.getElementsByClassName("userSel item active")[0].getAttribute('title'));
-      this.selectedId = this.members.length;
+    this.selectedId = Number(document.getElementsByClassName("userSel item active")[0].getAttribute('id'));
+    let tempIndex = this.members.length;
+    tempIndex--;
+    if (this.selectedId == this.members[0].id) {
+      this.selectedId = this.members[tempIndex].id;
       this.emitId.emit(this.selectedId);
     } else {
-      this.selectedId = Number(document.getElementsByClassName("userSel item active")[0].getAttribute('title'));
-      this.selectedId--;
+      let tempId;
+      for (let i in this.members) {
+        if (this.selectedId == this.members[i].id) {
+          let tempIndex = Number(i) - 1;
+          tempId = this.members[Number(tempIndex)].id;
+        }
+      }
+      this.selectedId = tempId;
       this.emitId.emit(this.selectedId);
     }
   }

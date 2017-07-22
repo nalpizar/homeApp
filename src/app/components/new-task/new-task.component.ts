@@ -25,11 +25,8 @@ export class NewTaskComponent implements OnInit {
 
   addNewTask() {
     let index = this.family.getTaskRep().length;
-    console.log(index);
     index--;
-    console.log(index);
     let newId = this.family.getTaskRep()[index].getId();
-    console.log(newId);
     newId++;
     let temptask = new TaskRep(newId, this.title, this.weight);
     this.family.addTaskRep(temptask);
