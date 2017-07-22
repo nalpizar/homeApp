@@ -9,7 +9,7 @@ export class UsersComponent implements OnInit {
 
   @Input() members;
   @Input() family;
-  selectedId: number = 0;
+  selectedId: number;
 
   constructor() {
   }
@@ -17,7 +17,6 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
     this.selectedId = 1;
-    this.emitId.emit(this.selectedId);
   }
 
   @Output() emitId = new EventEmitter;
@@ -39,4 +38,10 @@ export class UsersComponent implements OnInit {
       return false;
     }
   }
+
+  sendSelectedId(){
+    this.emitId.emit(this.selectedId);
+  }
+
+
 }
