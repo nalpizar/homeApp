@@ -9,18 +9,19 @@ import { Day } from '../../models/day';
 export class WeekComponent implements OnInit {
   @Input() days;
   @Input() taskRepo;
+  @Input() users;
   @Input() currentUserId;
-  
-  currentDay:Day;
+
+  currentDay: Day;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  catchDay(event){
-      this.currentDay = event;
-      console.log(this.currentDay);
+  catchDay(event) {
+    this.currentDay = event;
+    console.log(this.currentDay);
   }
 
 }

@@ -46,12 +46,14 @@
   <div class="carousel-inner">
     <div class="item active" style="background:#ce8f5a">
       <div class="config-container">
-        <ul *ngFor='let user of family.getMembers()'>
-          <li>
-            <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
-            <span>{{user.name}}</span>
-          </li>
+        <ul class="users-heading">
+          <li>Avatar</li>
+          <li>Name</li>
+          <li>Age</li>
         </ul>
+
+        <app-users-config [users]='family.getMembers()'></app-users-config>
+
       </div>
     </div>
     <!-- End Item -->
@@ -61,12 +63,9 @@
           <li>Weight</li>
           <li>Task description</li>
         </ul>
-        <ul class="tasks-desc" *ngFor='let task of tasks'>
-          <li>
-            <span class="weight"><span>{{task.weight}}</span></span>
-            <span>{{task.name}}</span>
-          </li>
-        </ul>
+
+        <app-repo-tasks [tasks]='family.getTaskRep()'></app-repo-tasks>
+
       </div>
     </div>
     <!-- End Item -->

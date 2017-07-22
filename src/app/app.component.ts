@@ -69,7 +69,7 @@ export class AppComponent {
         for (var day of week.days) {
           let tempDay = new Day(day.id, day.dayName);
           for (var task of day.tasks) {
-            let tempTask = new Task(task.id, task.name, task.position, task.weight, task.status, task.swapedTo, task.score, task.userId);
+            let tempTask = new Task(task.id, task.name, task.position, task.weight, task.status, task.swapedTo, task.score, task.userid);
             tempDay.addTask(tempTask);
           }
           tempWeek.addWeekDays(tempDay);

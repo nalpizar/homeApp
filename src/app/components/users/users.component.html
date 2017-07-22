@@ -1,13 +1,13 @@
 <div id="usersCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-    <div class="item" [ngClass]="{'active': user.id == 1}" *ngFor='let user of members'>
+    <div [attr.id]='user.id' class="userSel item" [ngClass]="{'active': user.id == 1}" *ngFor='let user of members'>
       <app-user [user]='user'></app-user>
     </div>
   </div>
-  <a class="left carousel-control" href="#usersCarousel" data-slide="prev" (click)='prevUser()'>
+  <a class="left carousel-control" href="#usersCarousel" data-slide="prev" (click)="setUserPrev()">
       <i class="fa fa-angle-left" aria-hidden="true"></i>
   </a>
-  <a class="right carousel-control" href="#usersCarousel" data-slide="next" (click)='nextUser()'>
+  <a class="right carousel-control" href="#usersCarousel" data-slide="next" (click)="setUserNext()">
     <i class="fa fa-angle-right" aria-hidden="true"></i>
   </a>
 </div>

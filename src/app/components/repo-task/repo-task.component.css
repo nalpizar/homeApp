@@ -1,0 +1,58 @@
+.weight {
+    width: 40px;
+    background: #a56aa6;
+    color: #fff;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.weight span {
+    margin: 0 auto;
+    display: table;
+}
+
+
+
+.swipeleft{
+   left:-50px; 
+   top:0px;
+   transform: translate(-50px,0);
+   -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+   
+}
+.swiperight{
+  left:0px; 
+   top:0px;
+  transform: translate(0,0);
+  -webkit-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.delete{
+    padding: 6px 35px;
+    background-color: #d33b18;
+    width: 100px;
+    height: 55px;
+    z-index: 1;
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    top:0px;
+    font-size: 32px;
+    color: #ffffff;
+    }
+
+    .cont{height: 55px;
+    padding: 5px 20px;
+    border-bottom: 1px solid #fff;
+    line-height: 40px;
+    color: #fff;z-index: 2;position: relative;background: #8d4c8e;}
+
+

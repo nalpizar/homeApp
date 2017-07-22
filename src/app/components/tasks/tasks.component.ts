@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
   @Input() day;
+  @Input() users;
+  @Input() currentUserId;
 
   constructor() { }
 

@@ -1,36 +1,21 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { User } from '../../models/user';
 
 @Component({
-  selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.css']
+  selector: 'app-user-config',
+  templateUrl: './user-config.component.html',
+  styleUrls: ['./user-config.component.css']
 })
-export class TaskComponent implements OnInit {
-  @Input() task;
-  @Input() day;
+export class UserConfigComponent implements OnInit {
+  @Input() user;
   @Input() index;
   @Input() users;
-  @Input() currentUserId;
   myClass = 'cont';
-  bgColor = '';
-  color = '';
-  user: User;
-  sameUser = false;
-  setHurry(pTask) {
-    pTask.status = 3;
-    this.bgColor = '#555377';
-    this.color = '#ffffff';
-  };
 
   constructor() { }
 
   ngOnInit() {
-    if (this.task.status == 3) {
-      this.bgColor = '#555377';
-      this.color = '#ffffff';
-    }
   }
+
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
     //This event is not triggering.
@@ -42,6 +27,10 @@ export class TaskComponent implements OnInit {
       this.myClass = "cont swipeleft";
 
     }
+  }
+
+  deleteUser(index) {
+    this.users.splice(index, 1);
   }
 
 }

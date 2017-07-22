@@ -27,7 +27,14 @@ export class NewUserComponent implements OnInit {
   }
 
   addNewUser() {
-    let user = new User(0, this.name, this.age, this.type, this.avatar);
+    let index = this.family.getMembers().length;
+    console.log(index);
+    index--;
+    console.log(index);
+    let newId = this.family.getMembers()[index].getId();
+    console.log(newId);
+    newId++;
+    let user = new User(newId, this.name, this.age, this.type, this.avatar);
     this.family.addMembers(user);
     this.name = 'name';
     console.table(this.family.getMembers());
