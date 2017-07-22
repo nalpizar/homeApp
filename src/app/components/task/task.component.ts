@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { User } from '../../models/user';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-task',
@@ -15,8 +14,9 @@ export class TaskComponent implements OnInit {
   myClass = 'cont';
   bgColor = '';
   color = '';
-  user: User;
-  sameUser = false;
+
+  @Output() sendTaskSelected = new EventEmitter;
+
   setHurry(pTask) {
     pTask.status = 3;
     this.bgColor = '#555377';
@@ -40,8 +40,11 @@ export class TaskComponent implements OnInit {
     }
     if (action === this.SWIPE_ACTION.LEFT) {
       this.myClass = "cont swipeleft";
-
     }
+  }
+
+  sendTask() {
+    this.sendTaskSelected.emit(this.task);
   }
 
 }

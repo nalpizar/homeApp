@@ -12,7 +12,7 @@
         <i class="fa fa-star-o" aria-hidden="true"></i>
       </div>
       <div class="actions">
-        <a [style.color]="color" data-toggle="modal" data-target="#relieveUser">
+        <a (click)='sendTask()' [style.color]="color" data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
     </a>
         <a (click)='setHurry(task)' [style.color]="color">
@@ -22,36 +22,4 @@
     </div>
   </div>
   <div class="delete" (click)='day.deleteTask(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
-</div>
-
-<!-- Modal Relieve-->
-<div class="modal fade" id="relieveUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Swap Task</h4>
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
-      </div>
-      <div class="modal-body">
-        <span>Members:</span>
-        <ul class="usersSelect">
-          <li *ngFor='let user of users'>
-            <div *ngIf="currentUserId != user.getId()" [ngClass]="nodisplay" class="user">
-              <label for="{{user.getId()}}">
-                <input type="radio" id="{{user.getId()}}" name="selectedUser">
-                <span>
-                  <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
-                  {{user.name}}
-                </span>
-              </label>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Swap Task</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-      </div>
-    </div>
-  </div>
 </div>

@@ -1,6 +1,5 @@
 <div *ngFor="let task of day.getTasks(); let i = index">
-
   <div *ngIf="task.userId == currentUserId">
-    <app-task [task]='task' [day]='day' [index]='i' [users]='users' [currentUserId]='currentUserId'></app-task>
+    <app-task [task]='task' [day]='day' [index]='i' [users]='users' [currentUserId]='currentUserId' (sendTaskSelected)="receivedTaskSelected($event)"></app-task>
   </div>
 </div>
