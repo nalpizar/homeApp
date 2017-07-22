@@ -71,7 +71,6 @@
 
 .usersSelect li {
     display: inline-block;
-    width: 15%;
     margin-left: 10px;
 }
 
@@ -79,17 +78,38 @@
     margin-left: 0;
 }
 
-button img {
-    width: 100%;
+label{
+  display: block;
+  position: relative;
+  padding: 5px;
+  z-index: 9;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+label img {
+    display: block;
+    width: 60px;
     height: auto;
 }
 
-button:hover {
+label:hover {
     opacity: 0.8;
 }
 
-button.selected img{
-    border: 1px solid #000;
+ input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+} 
+
+input[type=radio]:checked + label {
+    padding: 5px;
+    background: #ebebeb;
+    border: 1px solid #adadad;
+    border-radius: .25rem;
+    color: #4DD0E1;
 }
 
 button.close {

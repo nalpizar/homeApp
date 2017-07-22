@@ -36,10 +36,13 @@
         <span>Members:</span>
         <ul class="usersSelect">
           <li *ngFor='let user of users'>
-            <button [ngClass]="{'selected': isSelected}" (click)='isSelected = !isSelected'>
-              <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
-              <span>{{user.name}}</span>
-            </button>
+            <div *ngIf="currentUserId != user.getId()">
+              <input type="radio" id="{{user.getId()}}" name="selectedUser">
+              <label for="{{user.getId()}}">
+                <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
+                {{user.name}}
+              </label>
+            </div>
           </li>
         </ul>
       </div>
