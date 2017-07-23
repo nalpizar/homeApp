@@ -34,6 +34,8 @@ import { RepoTasksComponent } from './components/./repo-tasks/repo-tasks.compone
 import { UsersConfigComponent } from './components/./users-config/users-config.component';
 import { UserConfigComponent } from './components/./user-config/user-config.component';
 import { SwapUserComponent } from './components/./swap-user/swap-user.component';
+import { SwapTasksComponent } from './components/./swap-tasks/swap-tasks.component';
+import { SwapTaskComponent } from './components/./swap-task/swap-task.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -69,7 +71,9 @@ const appRoutes: Routes = [
     RepoTasksComponent,
     UsersConfigComponent,
     UserConfigComponent,
-    SwapUserComponent
+    SwapUserComponent,
+    SwapTasksComponent,
+    SwapTaskComponent
   ],
   imports: [
     BrowserModule,

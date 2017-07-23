@@ -1,0 +1,5 @@
+<div *ngFor="let task of day.getTasks(); let i = index">
+    <div *ngIf="task.swapedTo == currentUserId">
+        <app-swap-task [task]='task' [day]='day' [index]='i' [users]='users' [currentUserId]='currentUserId'></app-swap-task>
+    </div>
+</div>

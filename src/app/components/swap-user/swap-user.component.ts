@@ -23,6 +23,7 @@ export class SwapUserComponent implements OnInit {
     this.currentTask.setSwapedTo(swapedTo);
     console.log(this.currentTask);
 
+    this.swapedToId = null;
   }
 
   onSwapedTo(event) {

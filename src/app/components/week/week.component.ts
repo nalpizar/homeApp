@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Day } from '../../models/day';
+import { Task } from '../../models/task';
 
 @Component({
   selector: 'app-week',
