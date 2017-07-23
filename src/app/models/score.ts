@@ -15,4 +15,9 @@ export class Score {
 
 	setId(value) { this.id = value; }
 	setStars(value) { this.stars= value; }
+
+	//Class methods
+    addStar(star: Star) {
+        this.stars.push(star);
+    }
 } 

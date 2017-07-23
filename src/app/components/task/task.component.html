@@ -4,13 +4,7 @@
       <div class="task-name">
         <span [style.color]="color">{{task.name}}</span>
       </div>
-      <div class="task-score">
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-      </div>
+      <app-stars></app-stars>
       <div class="actions">
         <a [style.color]="color" data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>

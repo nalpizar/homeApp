@@ -1,8 +1,7 @@
 export class Star {
 
 	private id: number;
-    private status: boolean; 
-
+    private status: boolean;
 
 	constructor(id: number, status: boolean) {
 		this.setId(id);

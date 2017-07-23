@@ -35,10 +35,6 @@
     color: #efd199;
     font-size: 1.8rem;
 }
-.task-score {
-    font-size: 2.1rem;
-    color: #ffe500;
-}
 .task .actions {
     float: right;
     width: 10%;
