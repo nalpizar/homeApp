@@ -67,11 +67,61 @@
             "days": [
                 {
                     "dayId": 1,
-                    "dayName": "Lunes",
+                    "dayName": "Monday",
                     "tasks": [
                         {
                             "id": 1,
-                            "name": "Desayuno",
+                            "name": "Breakfast",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 1,
+                            "name": "Dinner",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 1,
+                            "name": "Lunch",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 1,
+                            "name": "Brush the dog",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean dog's teeth",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 1,
+                            "name": "Feed the dog",
                             "position": 1,
                             "weight": 3,
                             "status": 0,
@@ -81,7 +131,7 @@
                         },
                         {
                             "id": 2,
-                            "name": "Almuerzo",
+                            "name": "Wash all pillows",
                             "position": 2,
                             "weight": 3,
                             "status": 0,
@@ -90,18 +140,48 @@
                             "userid": 3
                         },
                         {
-                            "id": 3,
-                            "name": "Merienda",
-                            "position": 3,
+                            "id": 2,
+                            "name": "Deep clean the fridge",
+                            "position": 2,
                             "weight": 3,
-                            "status": 3,
+                            "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 2
+                            "userid": 3
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wash windows",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 2,
+                            "name": "Dust all surfaces",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
                         },
                         {
                             "id": 4,
-                            "name": "Cena",
+                            "name": "Clean dishwasher",
                             "position": 4,
                             "weight": 3,
                             "status": 0,
@@ -110,8 +190,119 @@
                             "userid": 3
                         },
                         {
+                            "id": 3,
+                            "name": "Take out the trash",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wipe of bathroom",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean furniture",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wash mattress covers",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean inside of oven",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        
+                        {
                             "id": 5,
-                            "name": "Lavar Platos",
+                            "name": "Clean kitchen",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
                             "position": 5,
                             "weight": 3,
                             "status": 0,
@@ -123,32 +314,122 @@
                 },
                 {
                     "dayId": 2,
-                    "dayName": "Martes",
+                    "dayName": "Tuesday",
                     "tasks": [
                         {
-                            "id": 1,
-                            "name": "Desayuno2",
-                            "position": 1,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 4
-                        },
-                        {
                             "id": 2,
-                            "name": "Almuerzo",
+                            "name": "Deep clean the fridge",
                             "position": 2,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 3
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wash windows",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Dust all surfaces",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 4,
+                            "name": "Clean dishwasher",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
                         },
                         {
                             "id": 3,
-                            "name": "Merienda",
+                            "name": "Take out the trash",
                             "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean kitchen",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -157,8 +438,68 @@
                         },
                         {
                             "id": 4,
-                            "name": "Cena",
+                            "name": "Clean dishwasher",
                             "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Take out the trash",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wipe of bathroom",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean furniture",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wash mattress covers",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean inside of oven",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -167,44 +508,194 @@
                         },
                         {
                             "id": 5,
-                            "name": "Lavar Platos",
+                            "name": "Clean kitchen",
                             "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 1
+                            "userid": 3
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
                         }
                     ]
                 },
                 {
                     "dayId": 3,
-                    "dayName": "Miércoles",
+                    "dayName": "Wednesday",
                     "tasks": [
                         {
-                            "id": 1,
-                            "name": "Desayuno3",
-                            "position": 1,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 4
-                        },
-                        {
                             "id": 2,
-                            "name": "Almuerzo",
+                            "name": "Deep clean the fridge",
                             "position": 2,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 3
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wash windows",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Dust all surfaces",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 4,
+                            "name": "Clean dishwasher",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
                         },
                         {
                             "id": 3,
-                            "name": "Merienda",
+                            "name": "Take out the trash",
                             "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean kitchen",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -213,8 +704,68 @@
                         },
                         {
                             "id": 4,
-                            "name": "Cena",
+                            "name": "Clean dishwasher",
                             "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Take out the trash",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wipe of bathroom",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean furniture",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wash mattress covers",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean inside of oven",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -223,44 +774,194 @@
                         },
                         {
                             "id": 5,
-                            "name": "Lavar Platos",
+                            "name": "Clean kitchen",
                             "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 1
+                            "userid": 3
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
                         }
                     ]
                 },
                 {
                     "dayId": 4,
-                    "dayName": "Jueves",
+                    "dayName": "Thursday",
                     "tasks": [
                         {
-                            "id": 1,
-                            "name": "Desayuno4",
-                            "position": 1,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 4
-                        },
-                        {
                             "id": 2,
-                            "name": "Almuerzo",
+                            "name": "Deep clean the fridge",
                             "position": 2,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 3
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wash windows",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Dust all surfaces",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 4,
+                            "name": "Clean dishwasher",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
                         },
                         {
                             "id": 3,
-                            "name": "Merienda",
+                            "name": "Take out the trash",
                             "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean kitchen",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -269,8 +970,68 @@
                         },
                         {
                             "id": 4,
-                            "name": "Cena",
+                            "name": "Clean dishwasher",
                             "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Take out the trash",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wipe of bathroom",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean furniture",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wash mattress covers",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean inside of oven",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -279,44 +1040,194 @@
                         },
                         {
                             "id": 5,
-                            "name": "Lavar Platos",
+                            "name": "Clean kitchen",
                             "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 1
+                            "userid": 3
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
                         }
                     ]
                 },
                 {
                     "dayId": 5,
-                    "dayName": "Viernes",
+                    "dayName": "Friday",
                     "tasks": [
                         {
-                            "id": 1,
-                            "name": "Desayuno5",
-                            "position": 1,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 4
-                        },
-                        {
                             "id": 2,
-                            "name": "Almuerzo",
+                            "name": "Deep clean the fridge",
                             "position": 2,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 3
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wash windows",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Dust all surfaces",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 4,
+                            "name": "Clean dishwasher",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
                         },
                         {
                             "id": 3,
-                            "name": "Merienda",
+                            "name": "Take out the trash",
                             "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean kitchen",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -325,8 +1236,68 @@
                         },
                         {
                             "id": 4,
-                            "name": "Cena",
+                            "name": "Clean dishwasher",
                             "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Take out the trash",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wipe of bathroom",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean furniture",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wash mattress covers",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean inside of oven",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -335,44 +1306,194 @@
                         },
                         {
                             "id": 5,
-                            "name": "Lavar Platos",
+                            "name": "Clean kitchen",
                             "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 1
+                            "userid": 3
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
                         }
                     ]
                 },
                 {
                     "dayId": 6,
-                    "dayName": "Sábado",
+                    "dayName": "Saturday",
                     "tasks": [
                         {
-                            "id": 1,
-                            "name": "Desayuno6",
-                            "position": 1,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 4
-                        },
-                        {
                             "id": 2,
-                            "name": "Almuerzo",
+                            "name": "Deep clean the fridge",
                             "position": 2,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 3
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wash windows",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Dust all surfaces",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 4,
+                            "name": "Clean dishwasher",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
                         },
                         {
                             "id": 3,
-                            "name": "Merienda",
+                            "name": "Take out the trash",
                             "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean kitchen",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -381,8 +1502,68 @@
                         },
                         {
                             "id": 4,
-                            "name": "Cena",
+                            "name": "Clean dishwasher",
                             "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Take out the trash",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wipe of bathroom",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean furniture",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wash mattress covers",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean inside of oven",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -391,44 +1572,195 @@
                         },
                         {
                             "id": 5,
-                            "name": "Lavar Platos",
+                            "name": "Clean kitchen",
                             "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 1
+                            "userid": 3
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
                         }
+                        
                     ]
                 },
                 {
                     "dayId": 7,
-                    "dayName": "Domingo",
+                    "dayName": "Sunday",
                     "tasks": [
                         {
-                            "id": 1,
-                            "name": "Desayuno",
-                            "position": 1,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 4
-                        },
-                        {
                             "id": 2,
-                            "name": "Almuerzo",
+                            "name": "Deep clean the fridge",
                             "position": 2,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 3
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wash windows",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Dust all surfaces",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 2,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 4,
+                            "name": "Clean dishwasher",
+                            "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
                         },
                         {
                             "id": 3,
-                            "name": "Merienda",
+                            "name": "Take out the trash",
                             "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 1
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean kitchen",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -437,8 +1769,68 @@
                         },
                         {
                             "id": 4,
-                            "name": "Cena",
+                            "name": "Clean dishwasher",
                             "position": 4,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 2
+                        },
+                        {
+                            "id": 3,
+                            "name": "Take out the trash",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wipe of bathroom",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean furniture",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Wash mattress covers",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 3,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": "Clean inside of oven",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 3
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
@@ -447,13 +1839,73 @@
                         },
                         {
                             "id": 5,
-                            "name": "Lavar Platos",
+                            "name": "Clean kitchen",
                             "position": 5,
                             "weight": 3,
                             "status": 0,
                             "swapedTo": 0,
                             "score": null,
-                            "userid": 1
+                            "userid": 3
+                        },
+                        {
+                            "id": 5,
+                            "name": "Clean up spills",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Make beds",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Deal with the email",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Wash dishes",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 5,
+                            "name": "Put things in their place",
+                            "position": 5,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
+                        },
+                        {
+                            "id": 3,
+                            "name": " Clean out closets",
+                            "position": 3,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": null,
+                            "userid": 4
                         }
                     ]
                 }
