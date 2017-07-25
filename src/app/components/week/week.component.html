@@ -1,6 +1,6 @@
 <div id="week" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-    <div class="item" [ngClass]="{'active': day.dayName == 'Lunes'}" *ngFor='let day of days'>
+    <div class="item" [ngClass]="{'active': day.dayName == 'Monday'}" *ngFor='let day of days'>
       <app-day (emitCurrentDay)="catchDay($event)" (emitCurrentTask)="catchTask($event)" [day]='day' [taskRepo]='taskRepo' [users]='users'
         [currentUserId]='currentUserId'></app-day>
     </div>
