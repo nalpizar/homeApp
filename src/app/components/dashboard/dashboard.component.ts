@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Family } from '../../models/family';
 
 @Component({
@@ -10,19 +10,22 @@ export class DashboardComponent implements OnInit {
   @Input() family;
   @Input() currentProfile;
   @Input() users;
-  
+  currentUserId;
   constructor() { }
 
-  currentUserId:number = 1;
+
+
+
 
   ngOnInit() {
-    console.log(this.family);
-
+    this.currentUserId = this.currentProfile;
+    console.log(this.currentUserId);
   }
 
-  currentId(event){
-      this.currentUserId = event;
-      console.log(this.currentUserId)
+
+  currentId(event) {
+    this.currentUserId = event;
+    console.log(this.currentUserId)
   }
 
 }

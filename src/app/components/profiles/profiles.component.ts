@@ -11,11 +11,15 @@ export class ProfilesComponent implements OnInit {
   @Input() users;
   @Input() user;
   @Output() currentProfile: EventEmitter<any> = new EventEmitter;
-
-  recievedCurrentProfile(user:User) {
+  @Output() sendCont: EventEmitter<any> = new EventEmitter;
+  recievedCurrentProfile(user) {
     this.currentProfile.emit(user);
   }
-  
+
+  recievedCont(cont) {
+    this.sendCont.emit(cont);
+  }
+
   constructor() { }
 
   ngOnInit() {
