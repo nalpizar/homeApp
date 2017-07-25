@@ -20,7 +20,7 @@ import { Skin } from './models/skin';
 })
 export class AppComponent {
   private family;
-  private showCont = 1;
+  private showCont = 4;
   private avatars: Avatar[] = [];
   private taskRep: TaskRep[] = [];
   private skins: Skin[] = [];
@@ -103,12 +103,16 @@ export class AppComponent {
 
   }
 
-  recievedCurrentProfile(user){
+  recievedCurrentProfile(user) {
     this.currentProfile = user;
   }
 
   showContent(pcont) {
     this.showCont = pcont;
+  }
+
+  recievedCont(cont) {
+    this.showCont = cont;
   }
 
 

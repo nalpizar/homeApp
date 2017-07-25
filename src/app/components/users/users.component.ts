@@ -9,20 +9,28 @@ export class UsersComponent implements OnInit {
 
   @Input() members;
   @Input() family;
-  selectedId: number = 1;
-
+  @Input() currentProfile;
+  @Input() users;
+  private selectedId;
+  @Output() emitId = new EventEmitter;
   constructor() {
+    this.selectedProfile();
+
   }
 
 
   ngOnInit() {
+  }
 
+  selectedProfile() {
+
+    this.selectedId == this.currentProfile;
     this.emitId.emit(this.selectedId);
 
 
   }
 
-  @Output() emitId = new EventEmitter;
+
 
   setUserNext() {
     this.selectedId = Number(document.getElementsByClassName("userSel item active")[0].getAttribute('id'));

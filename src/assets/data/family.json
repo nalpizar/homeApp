@@ -37,27 +37,63 @@
     "taskRepository": [
         {
             "id": 1,
-            "name": "Desayuno",
+            "name": "Breakfast",
             "weight": 3
         },
         {
             "id": 2,
-            "name": "Almuerzo",
+            "name": "Lunch",
             "weight": 3
         },
         {
             "id": 3,
-            "name": "Merienda",
+            "name": "Clean dog's teeth",
             "weight": 3
         },
         {
             "id": 4,
-            "name": "Cena",
+            "name": "Dinner",
             "weight": 3
         },
         {
             "id": 5,
-            "name": "Lavar Platos",
+            "name": "Feed the dog",
+            "weight": 3
+        }
+
+        ,{
+            "id": 5,
+            "name": "Wash all pillows",
+            "weight": 3
+        },
+        {
+            "id": 5,
+            "name": "Deep clean the fridge",
+            "weight": 5
+        },
+        {
+            "id": 5,
+            "name": "Dust all surfaces",
+            "weight": 3
+        },
+        {
+            "id": 5,
+            "name": "Clean out closets",
+            "weight": 3
+        },
+        {
+            "id": 5,
+            "name": "Clean kitchen",
+            "weight": 3
+        },
+        {
+            "id": 5,
+            "name": "Clean up spills",
+            "weight": 3
+        },
+        {
+            "id": 5,
+            "name": "Make beds",
             "weight": 3
         }
     ],
@@ -367,7 +403,7 @@
                         },
                         {
                             "id": 3,
-                            "name": " Clean out closets",
+                            "name": "Clean out closets",
                             "position": 3,
                             "weight": 3,
                             "status": 0,
