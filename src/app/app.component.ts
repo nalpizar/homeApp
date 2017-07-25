@@ -25,12 +25,14 @@ export class AppComponent {
   private taskRep: TaskRep[] = [];
   private skins: Skin[] = [];
 
+  private users: User[] = [];
+  private currentProfile = 1;
+
   isDataLoaded: boolean = false;
 
   constructor(private http: Http) {
     this.loadFromJson();
   }
-
 
   loadData(familyUrl: string, avatarUrl: string, skinUrl: string) {
     this.http.get(avatarUrl).map(res => res.json()).subscribe((data) => {
@@ -55,6 +57,7 @@ export class AppComponent {
         tempMember.setAvatar(member.avatarId);
         tempMember.setSkin(member.skinId);
         this.family.members.push(tempMember);
+
       }
 
 
@@ -87,7 +90,6 @@ export class AppComponent {
 
       this.isDataLoaded = true;
 
-
       console.log(this.family);
       console.log(this.avatars);
       console.log(this.skins);
@@ -99,6 +101,10 @@ export class AppComponent {
   loadFromJson() {
     this.loadData('../assets/data/family.json', '../assets/data/avatars.json', '../assets/data/skin.json');
 
+  }
+
+  recievedCurrentProfile(user){
+    this.currentProfile = user;
   }
 
   showContent(pcont) {

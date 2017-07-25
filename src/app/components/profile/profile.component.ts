@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -9,11 +9,17 @@ export class ProfileComponent implements OnInit {
 
   @Input() user;
   @Input() users;
+  @Output() currentProfile = new EventEmitter;
+
+  sendCurrentProfile() {
+    this.currentProfile.emit(this.user.id);
+  }
 
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

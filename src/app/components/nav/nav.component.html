@@ -15,10 +15,12 @@
   <a (click)="sentCont(1)" class="app-logo"> HOME-LOGO</a>
   <div id="wrapper" class="wrapper">
     <div id="slide" class="slide">
-      <div class="user-info">
-        <img src="../../../assets/images/avatar3.png" alt="Avatar1">
-        <span>Tomás</span>
-        <span class="email">tomas@gmail.com</span>
+      <div class="user-info" *ngFor='let user of users'>
+        <div *ngIf="user.getId() == currentProfile">
+          <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="Avatar1">
+          <span>{{user.name}}</span>
+          <!--<span class="email">tomas@gmail.com</span>-->
+        </div>
       </div>
       <div class="menu-options">
         <ul>
