@@ -1,2 +1,2 @@
 <h1>Choose your user</h1>
-<app-profiles [users]='family.getMembers()'></app-profiles>
+<app-profiles [users]='family.getMembers()' (currentProfile)='recievedCurrentProfile($event)'></app-profiles>

@@ -1,5 +1,5 @@
 <div *ngIf='isDataLoaded'>
-    <app-nav (sendCont)='showContent($event)'></app-nav>
+    <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
     <div *ngIf="showCont==1">
         <app-dashboard [family]='family'></app-dashboard>
     </div>
@@ -10,7 +10,7 @@
         <app-stars *ngIf="showCont==3"></app-stars>
     </div>
     <div>
-        <app-profile-selector *ngIf="showCont==4" [family]='family' [users]='family.getMembers()'></app-profile-selector>
+        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' *ngIf="showCont==4" [family]='family' [user]='user' [users]='family.getMembers()'></app-profile-selector>
     </div>
 
 </div>
