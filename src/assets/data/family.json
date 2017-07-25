@@ -107,7 +107,823 @@
                     "tasks": [
                         {
                             "id": 1,
+                            "name": "Deal with the email",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 1
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wash windows",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 1
+                        },
+                        {
+                            "id": 1,
+                            "name": "Dust all surfaces",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 1
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 1
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 2
+                        },
+                        {
+                            "id": 1,
+                            "name": "Deal with the email",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 2
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wash windows",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 2
+                        },
+                        {
+                            "id": 1,
+                            "name": "Dust all surfaces",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 2
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 2
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean dishwasher",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 2
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean dishwasher",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 1
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean dishwasher",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Make beds",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Take out the trash",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wipe of bathroom",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean up spills",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wash mattress covers",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Deal with the email",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wash windows",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Dust all surfaces",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Wipe kitchen cabinets",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean dishwasher",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 3
+                        },
+                        {
+                            "id": 1,
                             "name": "Breakfast",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 4
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean inside of oven",
+                            "position": 1,
+                            "weight": 3,
+                            "status": 0,
+                            "swapedTo": 0,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
+                            "userid": 4
+                        },
+                        {
+                            "id": 1,
+                            "name": "Clean out closets",
                             "position": 1,
                             "weight": 3,
                             "status": 0,
