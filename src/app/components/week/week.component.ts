@@ -14,6 +14,7 @@ export class WeekComponent implements OnInit {
   @Input() currentUserId;
 
   currentDay: Day;
+  currentTask: Task;
 
   constructor() { }
 
@@ -23,6 +24,11 @@ export class WeekComponent implements OnInit {
   catchDay(event) {
     this.currentDay = event;
     console.log(this.currentDay);
+  }
+
+  catchTask(event) {
+    this.currentTask = event;
+    console.log(this.currentTask);
   }
 
 }

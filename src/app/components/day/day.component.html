@@ -3,5 +3,3 @@
 </div>
 <app-tasks (sendTaskSelected)='taskReceived($event)' [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks></app-tasks>
 <app-swap-tasks [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks></app-swap-tasks>
-
-<app-swap-user [currentTask]='currentTask' [currentUserId]='currentUserId' [users]='users'></app-swap-user>
