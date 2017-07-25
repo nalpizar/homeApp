@@ -76,7 +76,31 @@
                             "weight": 3,
                             "status": 0,
                             "swapedTo": "",
-                            "score": null,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
                             "userid": 4
                         },
                         {
@@ -86,7 +110,31 @@
                             "weight": 3,
                             "status": 0,
                             "swapedTo": "",
-                            "score": null,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
                             "userid": 3
                         },
                         {
@@ -96,7 +144,31 @@
                             "weight": 3,
                             "status": 3,
                             "swapedTo": "",
-                            "score": null,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
                             "userid": 2
                         },
                         {
@@ -106,7 +178,31 @@
                             "weight": 3,
                             "status": 0,
                             "swapedTo": "",
-                            "score": null,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
                             "userid": 3
                         },
                         {
@@ -116,7 +212,31 @@
                             "weight": 3,
                             "status": 0,
                             "swapedTo": "",
-                            "score": null,
+                            "score": {
+                                "id":1,
+                                "stars":[
+                                    {
+                                      "id":1,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":2,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":3,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":4,
+                                      "status": false  
+                                    },
+                                    {
+                                      "id":5,
+                                      "status": false  
+                                    }
+                                ]
+                            },
                             "userid": 1
                         }
                     ]

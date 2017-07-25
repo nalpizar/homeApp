@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import {Task} from './../../models/task';
 import {TaskRep} from './../../models/taskRep';
 import {Day} from './../../models/day';
+import {Star} from './../../models/star';
+import {Score} from './../../models/score';
 
 
 @Component({
@@ -43,8 +45,19 @@ export class AddTaskComponent implements OnInit {
 
   onDone() {
 
-    console.log(this.taskName, this.taskWeight, this.currentUserId)
-    var newTask = new Task(12, this.taskName, 9, this.taskWeight, 0, 0, null, this.currentUserId);
+    var newScore = new Score(1);
+    let numbers =[1,2,3,4,5];
+
+    for (let num of numbers) {
+
+    var newStar = new Star(num,false);
+    newScore.addStar(newStar)
+  }
+  
+  //console.log(newScore);
+
+    //console.log(this.taskName, this.taskWeight, this.currentUserId)
+    var newTask = new Task(12, this.taskName, 9, this.taskWeight, 0, 0, newScore, this.currentUserId);
     console.log(newTask);
     this.currentDay.addTask(newTask);
   }

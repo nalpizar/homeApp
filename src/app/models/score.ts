@@ -5,9 +5,8 @@ export class Score {
 	private id: number;
 	private stars: Star[] = [];
 
-	constructor(id: number, stars:Star[]) {
+	constructor(id: number) {
 		this.setId(id);
-		this.setStars(stars);
 	}
 
 	getId() { return this.id; }

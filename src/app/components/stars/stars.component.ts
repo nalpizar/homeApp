@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {Star} from'../../models/star';
 import {Score} from'../../models/score';
 
@@ -11,18 +11,56 @@ export class StarsComponent implements OnInit {
 
   constructor() { }
 
+  @Input() task;
+
   ngOnInit() {
   }
 
-  star1 = new Star(1, false);
-  star2 = new Star(2, false);
-  star3 = new Star(3, false);
-  star4 = new Star(4, false);
-  star5 = new Star(5, false);
-
   rateScore(value){
-    console.log(value);
-  }
+
+    var currentStars = this.task.getScore().getStars();
+
+    //Reset all the values for the stars in case the user press more than one time
+    for(let currentStar of currentStars){
+      currentStar.setStatus(false);
+    }
+
+    switch(value) { 
+      case 1: { 
+          currentStars[0].setStatus(true);
+          break; 
+      }
+      case 2: { 
+          currentStars[0].setStatus(true);
+          currentStars[1].setStatus(true);
+          break; 
+      }
+      case 3: { 
+          currentStars[0].setStatus(true);
+          currentStars[1].setStatus(true);
+          currentStars[2].setStatus(true);
+          break; 
+      }
+      case 4: { 
+          currentStars[0].setStatus(true);
+          currentStars[1].setStatus(true);
+          currentStars[2].setStatus(true);
+          currentStars[3].setStatus(true);
+          break; 
+      }
+      case  5: { 
+          currentStars[0].setStatus(true);
+          currentStars[1].setStatus(true);
+          currentStars[2].setStatus(true);
+          currentStars[3].setStatus(true);
+          currentStars[4].setStatus(true);
+          break; 
+      }
+    }
+
+    console.log(currentStars);
+  
+}
 
 
 
