@@ -50,11 +50,11 @@ export class AddTaskComponent implements OnInit {
 
     for (let num of numbers) {
 
-    var newStar = new Star(num,false);
-    newScore.addStar(newStar)
-  }
-  
-  //console.log(newScore);
+      var newStar = new Star(num,false);
+      newScore.addStar(newStar)
+    }
+    
+    //console.log(newScore);
 
     //console.log(this.taskName, this.taskWeight, this.currentUserId)
     var newTask = new Task(12, this.taskName, 9, this.taskWeight, 0, 0, newScore, this.currentUserId);

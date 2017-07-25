@@ -1,11 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.css']
+  selector: 'app-swap-task',
+  templateUrl: './swap-task.component.html',
+  styleUrls: ['./swap-task.component.css']
 })
-export class TaskComponent implements OnInit {
+export class SwapTaskComponent implements OnInit {
+
   @Input() task;
   @Input() day;
   @Input() index;

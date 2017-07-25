@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Task } from '../../models/task';
 
 @Component({
   selector: 'app-tasks',
@@ -9,11 +10,16 @@ export class TasksComponent implements OnInit {
   @Input() day;
   @Input() users;
   @Input() currentUserId;
+  @Input() tasks;
+
+  @Output() sendTaskSelected = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
-
   }
 
+  receivedTaskSelected(task: Task) {
+    this.sendTaskSelected.emit(task);
+  }
 }

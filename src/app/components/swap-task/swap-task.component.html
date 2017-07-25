@@ -4,7 +4,13 @@
       <div class="task-name">
         <span [style.color]="color">{{task.name}}</span>
       </div>
-      <app-stars [task]='task'></app-stars>
+      <div class="task-score">
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+      </div>
       <div class="actions">
         <a (click)='sendTask()' [style.color]="color" data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
@@ -16,5 +22,4 @@
     </div>
   </div>
   <div class="delete" (click)='day.deleteTask(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
-  <div class="swaped" *ngIf="task.swapedTo"></div>
 </div>

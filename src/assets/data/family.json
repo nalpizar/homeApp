@@ -75,7 +75,7 @@
                             "position": 1,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": {
                                 "id":1,
                                 "stars":[
@@ -109,7 +109,7 @@
                             "position": 2,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": {
                                 "id":1,
                                 "stars":[
@@ -143,7 +143,7 @@
                             "position": 3,
                             "weight": 3,
                             "status": 3,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": {
                                 "id":1,
                                 "stars":[
@@ -177,7 +177,7 @@
                             "position": 4,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": {
                                 "id":1,
                                 "stars":[
@@ -211,7 +211,7 @@
                             "position": 5,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": {
                                 "id":1,
                                 "stars":[
@@ -251,7 +251,7 @@
                             "position": 1,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 4
                         },
@@ -261,7 +261,7 @@
                             "position": 2,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -271,7 +271,7 @@
                             "position": 3,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 2
                         },
@@ -281,7 +281,7 @@
                             "position": 4,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -291,7 +291,7 @@
                             "position": 5,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 1
                         }
@@ -307,7 +307,7 @@
                             "position": 1,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 4
                         },
@@ -317,7 +317,7 @@
                             "position": 2,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -327,7 +327,7 @@
                             "position": 3,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 2
                         },
@@ -337,7 +337,7 @@
                             "position": 4,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -347,7 +347,7 @@
                             "position": 5,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 1
                         }
@@ -363,7 +363,7 @@
                             "position": 1,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 4
                         },
@@ -373,7 +373,7 @@
                             "position": 2,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -383,7 +383,7 @@
                             "position": 3,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 2
                         },
@@ -393,7 +393,7 @@
                             "position": 4,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -403,7 +403,7 @@
                             "position": 5,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 1
                         }
@@ -419,7 +419,7 @@
                             "position": 1,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 4
                         },
@@ -429,7 +429,7 @@
                             "position": 2,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -439,7 +439,7 @@
                             "position": 3,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 2
                         },
@@ -449,7 +449,7 @@
                             "position": 4,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -459,7 +459,7 @@
                             "position": 5,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 1
                         }
@@ -475,7 +475,7 @@
                             "position": 1,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 4
                         },
@@ -485,7 +485,7 @@
                             "position": 2,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -495,7 +495,7 @@
                             "position": 3,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 2
                         },
@@ -505,7 +505,7 @@
                             "position": 4,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -515,7 +515,7 @@
                             "position": 5,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 1
                         }
@@ -531,7 +531,7 @@
                             "position": 1,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 4
                         },
@@ -541,7 +541,7 @@
                             "position": 2,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -551,7 +551,7 @@
                             "position": 3,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 2
                         },
@@ -561,7 +561,7 @@
                             "position": 4,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 3
                         },
@@ -571,7 +571,7 @@
                             "position": 5,
                             "weight": 3,
                             "status": 0,
-                            "swapedTo": "",
+                            "swapedTo": 0,
                             "score": null,
                             "userid": 1
                         }

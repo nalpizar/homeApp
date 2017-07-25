@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Day } from '../../models/day';
+import { Task } from '../../models/task';
 
 @Component({
   selector: 'app-week',
@@ -13,6 +14,7 @@ export class WeekComponent implements OnInit {
   @Input() currentUserId;
 
   currentDay: Day;
+  currentTask: Task;
 
   constructor() { }
 
@@ -22,6 +24,11 @@ export class WeekComponent implements OnInit {
   catchDay(event) {
     this.currentDay = event;
     console.log(this.currentDay);
+  }
+
+  catchTask(event) {
+    this.currentTask = event;
+    console.log(this.currentTask);
   }
 
 }

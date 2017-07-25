@@ -60,12 +60,20 @@ header {
     opacity: 1;
 }
 
-.user-info,
 .menu-options {
-    padding-bottom: 20px;
-    margin: 20px;
+    padding-bottom: 20px;  
+    padding-top: 20px;
     border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
 }
+
+.menu-options,
+.user-info {
+    margin: 20px;
+}
+
+
+/**/
 
 .menu-options {
     border-bottom: 0;
