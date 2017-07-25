@@ -15,16 +15,17 @@
                                 <input type="radio" id="{{user.getId()}}" name="selectedUser" value="{{user.getId()}}" (change)='onSwapedTo($event)'>
                                 <span>
                                 <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
-                                {{user.name}}
+                                <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="" class="check">
+                                <!--{{user.name}}-->
                                 </span>
                             </label>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <div class="modal-footer modal-footer addModalBtn">
                 <button type="button" class="btn btn-default btn-ok" data-dismiss="modal" (click)='swaped()'>Swap Task</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>

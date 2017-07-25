@@ -1,11 +1,18 @@
-.btn-add{
-    background:#4DD0E1;
-    color:#ffffff;
+.addModalBtn.modal-footer {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
 }
 
-select{
-    border: solid 1px #4DD0E1;
-    font-size: 1.5rem;
-    color: #78909C;
-    font-family: ralewayregular;
+.addModalBtn.modal-footer button {
+    width: 50%;
+    float: left;
+    border-radius: 0;
+    height: 50px;
+    margin: 0;
+}
+
+.addModalBtn.modal-footer button:first-child {
+    background: #5ec0ca;
+    color: #fff;
 }
