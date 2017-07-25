@@ -13,8 +13,7 @@ export class DayComponent implements OnInit {
   @Input() currentUserId;
 
   @Output() emitCurrentDay = new EventEmitter;
-
-  currentTask = null;
+  @Output() emitCurrentTask = new EventEmitter;
 
   constructor() { }
 
@@ -27,8 +26,7 @@ export class DayComponent implements OnInit {
   }
 
   taskReceived(task: Task) {
-    console.log(task);
-    this.currentTask = task;
+    this.emitCurrentTask.emit(task);
   }
 
 }
