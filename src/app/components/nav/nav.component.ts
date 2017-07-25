@@ -7,14 +7,12 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   @Output() sendCont = new EventEmitter();
+  @Input() currentProfile;
+  @Input() users;
 
   sentCont(pCont) {
       this.sendCont.emit(pCont);
   }
-
-  @Input() currentProfile;
-  @Input() users;
-
 
   constructor() { }
 

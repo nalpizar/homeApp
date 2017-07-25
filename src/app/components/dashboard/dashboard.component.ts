@@ -8,6 +8,9 @@ import { Family } from '../../models/family';
 })
 export class DashboardComponent implements OnInit {
   @Input() family;
+  @Input() currentProfile;
+  @Input() users;
+  
   constructor() { }
 
   currentUserId:number = 1;

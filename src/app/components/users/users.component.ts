@@ -9,6 +9,9 @@ export class UsersComponent implements OnInit {
 
   @Input() members;
   @Input() family;
+  @Input() currentProfile;
+  @Input() users;
+
   selectedId: number = 1;
 
   constructor() {
@@ -16,6 +19,8 @@ export class UsersComponent implements OnInit {
 
 
   ngOnInit() {
+
+    this.selectedId == this.currentProfile;
 
     this.emitId.emit(this.selectedId);
 

@@ -1,5 +1,12 @@
 <div>
-    <app-users (emitId)='currentId($event)' [members]='family.getMembers()'></app-users>
+    <app-users (emitId)='currentId($event)' [members]='family.getMembers()' [currentProfile]='currentProfile'></app-users>
+    <!--ejemplo-->
+    <!--<div class="user-info" *ngFor='let user of users'>
+        <div *ngIf="user.getId() == currentProfile">
+            <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="Avatar1">
+            <span>{{user.name}}</span>
+        </div>
+    </div>-->
 </div>
 
 <div>

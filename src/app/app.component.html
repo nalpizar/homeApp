@@ -1,7 +1,7 @@
 <div *ngIf='isDataLoaded'>
     <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
     <div *ngIf="showCont==1">
-        <app-dashboard [family]='family'></app-dashboard>
+        <app-dashboard [family]='family' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-dashboard>
     </div>
     <div>
         <app-config *ngIf="showCont==2" [family]='family' [tasks]='family.getTaskRep()' [users]='family.getMembers()'></app-config>
