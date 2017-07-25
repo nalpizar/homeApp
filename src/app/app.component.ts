@@ -74,12 +74,12 @@ export class AppComponent {
         for (var day of week.days) {
           let tempDay = new Day(day.id, day.dayName);
           for (var task of day.tasks) {
-            let tempScore =new Score(task.score);
-            let numbers =[1,2,3,4,5];
+            let tempScore = new Score(task.score);
+            let numbers = [1, 2, 3, 4, 5];
             for (let num of numbers) {
-                var newStar = new Star(num,false);
-                tempScore.addStar(newStar)
-                }
+              var newStar = new Star(num, false);
+              tempScore.addStar(newStar)
+            }
             let tempTask = new Task(task.id, task.name, task.position, task.weight, task.status, task.swapedTo, tempScore, task.userid);
             tempDay.addTask(tempTask);
           }

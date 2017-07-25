@@ -1,3 +1,34 @@
-<p>
-  new-reward works!
-</p>
+<span>Awarded to: {{family.id}}</span>
+<ul class="usersSelect">
+  <li>
+    <div class="user">
+      <label for="family">
+        <input type="radio" id="0" name="rewardTo" value="0" (change)='onAwardedTo($event)'>
+        <span>
+          <img src="../../../assets/images/avatarFamily.png" alt="family avatar">
+          Familiar
+        </span>
+      </label>
+    </div>
+  </li>
+  <li *ngFor='let user of users'>
+    <div class="user">
+      <label for="{{user.getId()}}">
+          <input type="radio" id="{{user.getId()}}" name="rewardTo" value="{{user.getId()}}" (change)='onAwardedTo($event)'>
+          <span>
+          <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
+          {{user.name}}
+          </span>
+      </label>
+    </div>
+  </li>
+</ul>
+<span>Premio</span>
+<div class="form-group">
+  <input type="text" (change)='onNameChange($event)' [value]='name' class="form-control">
+</div>
+
+<div class="modal-footer addUser addModalBtn">
+  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addAward()">Add</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+</div>
