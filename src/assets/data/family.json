@@ -62,37 +62,37 @@
         }
 
         ,{
-            "id": 5,
+            "id": 6,
             "name": "Wash all pillows",
             "weight": 3
         },
         {
-            "id": 5,
+            "id": 7,
             "name": "Deep clean the fridge",
             "weight": 5
         },
         {
-            "id": 5,
+            "id": 8,
             "name": "Dust all surfaces",
             "weight": 3
         },
         {
-            "id": 5,
+            "id": 9,
             "name": "Clean out closets",
             "weight": 3
         },
         {
-            "id": 5,
+            "id": 10,
             "name": "Clean kitchen",
             "weight": 3
         },
         {
-            "id": 5,
+            "id": 11,
             "name": "Clean up spills",
             "weight": 3
         },
         {
-            "id": 5,
+            "id": 12,
             "name": "Make beds",
             "weight": 3
         }

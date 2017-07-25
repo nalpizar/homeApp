@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {Task} from './../../models/task';
 import {TaskRep} from './../../models/taskRep';
 import {Day} from './../../models/day';
@@ -26,26 +26,10 @@ export class AddTaskComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  onSelectChange(event){ // Gets the index in the select and loops trought the taskRepo to find the task needed.
-   
-    var flag = event.target.value[0];
+  sendTask(tempTask:Task){
     
-    for(var task of this.taskRepo){
-      
-      if(flag == task.getId() ){
-        this.currentTask = task;
-        this.taskName = this.currentTask.getName();
-        this.taskWeight = this.currentTask.getWeight();
-      }
-
-    }
-
-  }
-
-  onDone() {
-
     var newScore = new Score(1);
+
     let numbers =[1,2,3,4,5];
 
     for (let num of numbers) {
@@ -54,12 +38,12 @@ export class AddTaskComponent implements OnInit {
       newScore.addStar(newStar)
     }
     
-    //console.log(newScore);
 
-    //console.log(this.taskName, this.taskWeight, this.currentUserId)
-    var newTask = new Task(12, this.taskName, 9, this.taskWeight, 0, 0, newScore, this.currentUserId);
+    var newTask = new Task(12, tempTask.getName(), 9, tempTask.getWeight(), 0, 0, newScore, this.currentUserId);
     console.log(newTask);
     this.currentDay.addTask(newTask);
+
+    
   }
 
 
