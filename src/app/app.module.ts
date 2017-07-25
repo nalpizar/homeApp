@@ -36,6 +36,8 @@ import { UserConfigComponent } from './components/./user-config/user-config.comp
 import { SwapUserComponent } from './components/./swap-user/swap-user.component';
 import { SwapTasksComponent } from './components/./swap-tasks/swap-tasks.component';
 import { SwapTaskComponent } from './components/./swap-task/swap-task.component';
+import { ProfileSelectorComponent } from './components/profile-selector/profile-selector.component';
+import { ProfilesComponent } from './components/profiles/profiles.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -73,7 +75,9 @@ const appRoutes: Routes = [
     UserConfigComponent,
     SwapUserComponent,
     SwapTasksComponent,
-    SwapTaskComponent
+    SwapTaskComponent,
+    ProfileSelectorComponent,
+    ProfilesComponent
   ],
   imports: [
     BrowserModule,

@@ -9,5 +9,8 @@
     <div>
         <app-stars *ngIf="showCont==3"></app-stars>
     </div>
+    <div>
+        <app-profile-selector *ngIf="showCont==4" [family]='family' [users]='family.getMembers()'></app-profile-selector>
+    </div>
 
 </div>
