@@ -4,7 +4,7 @@
         <app-dashboard [family]='family' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-dashboard>
     </div>
     <div>
-        <app-config *ngIf="showCont==2" [family]='family' [tasks]='family.getTaskRep()' [users]='family.getMembers()'></app-config>
+        <app-config *ngIf="showCont==2" [family]='family' [tasks]='family.getTaskRep()' [users]='family.getMembers()' [rewards]='family.rewards'></app-config>
     </div>
     <div>
         <app-stars *ngIf="showCont==3"></app-stars>

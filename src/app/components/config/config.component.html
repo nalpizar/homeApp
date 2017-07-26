@@ -25,7 +25,7 @@
           <app-new-task [family]='family'></app-new-task>
         </div>
         <div *ngIf="option === 'new_reward'">
-          Add new reward
+          <app-new-reward [family]='family' [users]='users' [rewards]='rewards'></app-new-reward>
         </div>
       </div>
       <div class="modal-footer">

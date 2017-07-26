@@ -8,17 +8,18 @@
       </div>
       <div class="modal-body">
 
-        <span>Tasks:</span>
-       <form>
-        <select (change)='onSelectChange($event)'>
-            <option *ngFor='let task of taskRepo'><div>{{task.getId()}} - </div> <div>{{task.getName()}}</div>  <div>Weight: {{task.getWeight()}}</div></option>
-        </select>
-       </form>
+        <div class="windowTasks">
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor='let task of taskRepo' (click)="sendTask(this.task)" data-dismiss="modal" >
+              <div>{{task.getName()}}  <br/> Weight: {{task.getWeight()}}</div>
+              
+            </li>
+          </ul>
+        </div>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-default btn-add" (click)="onDone()" data-dismiss="modal">Add</button>
       </div>
     </div>
   </div>
