@@ -1,0 +1,7 @@
+<div class="rewardscont">
+  <ul [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
+    <li><img src="../../../assets/images/avatar{{rewardedId}}.png" alt="user avatar"></li>
+    <li><span>{{reward.name}}</span></li>
+  </ul>
+  <div class="delete" (click)='deleteReward(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div>

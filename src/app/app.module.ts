@@ -38,6 +38,8 @@ import { SwapTasksComponent } from './components/./swap-tasks/swap-tasks.compone
 import { SwapTaskComponent } from './components/./swap-task/swap-task.component';
 import { ProfileSelectorComponent } from './components/profile-selector/profile-selector.component';
 import { ProfilesComponent } from './components/profiles/profiles.component';
+import { RewardsConfigComponent } from './components/rewards-config/rewards-config.component';
+import { RewardConfigComponent } from './components/reward-config/reward-config.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
@@ -77,7 +79,9 @@ const appRoutes: Routes = [
     SwapTasksComponent,
     SwapTaskComponent,
     ProfileSelectorComponent,
-    ProfilesComponent
+    ProfilesComponent,
+    RewardsConfigComponent,
+    RewardConfigComponent
   ],
   imports: [
     BrowserModule,

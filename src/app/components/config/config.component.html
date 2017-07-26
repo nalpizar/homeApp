@@ -71,23 +71,13 @@
     <!-- End Item -->
     <div class="item" style="background:#6287a2">
       <div class="config-container">
-        <ul>
-          <li>
-            <img src="../../../assets/images/avatar2.png" alt="">
-            <span class="name">Lucía</span>
-            <span class="reward-type">Dinner</span>
-          </li>
-          <li>
-            <img src="../../../assets/images/avatar2.png" alt="">
-            <span class="name">Lucía</span>
-            <span class="reward-type">Movies</span>
-          </li>
-          <li>
-            <img src="../../../assets/images/avatar1.png" alt="">
-            <span class="name">Natalia</span>
-            <span class="reward-type">Chocolate</span>
-          </li>
+        <ul class="rewards-heading">
+          <li>User</li>
+          <li>Reward</li>
         </ul>
+
+        <app-rewards-config [users]='users' [rewards]='rewards'></app-rewards-config>
+
       </div>
     </div>
     <!-- End Item -->

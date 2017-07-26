@@ -68,7 +68,7 @@
     margin-right: 10px;
 }
 
-.config-container .tasks-heading, .config-container .users-heading {
+.config-container .tasks-heading, .config-container .users-heading, .config-container .rewards-heading {
     height: 55px;
     margin-bottom: 0;
     border-bottom: 1px solid #fff;
@@ -82,18 +82,27 @@
     background: #ce8f5a;
 }
 
-.config-container .tasks-heading li, .config-container .users-heading li {
+.config-container .rewards-heading, .config-container .rewards-heading li {
+    background: #6287a2;
+}
+
+.config-container .tasks-heading li, .config-container .users-heading li, .config-container .rewards-heading li {
     float: left;
     border-bottom: 1px solid #fff;
     color: #fff;
 }
 
-.config-container .tasks-heading li:first-child, .config-container .users-heading li:first-child {
+.config-container .tasks-heading li:first-child, .config-container .users-heading li:first-child, .config-container .rewards-heading li:first-child {
     width: 90px;
 }
 
 .config-container .users-heading li:nth-child(2) {
     width: 150px;
+    text-align: center;
+}
+
+.config-container .rewards-heading li:nth-child(2) {
+    width: 300px;
     text-align: center;
 }
 

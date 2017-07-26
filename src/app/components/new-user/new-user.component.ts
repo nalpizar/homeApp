@@ -16,7 +16,7 @@ export class NewUserComponent implements OnInit {
   name: string = 'name';
   age: number = 0;
   type: string = 'family';
-  avatar: number = 0;
+  avatar: number = 100;
 
   onNameChange(event) {
     this.name = event.target.value;
