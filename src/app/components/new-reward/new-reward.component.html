@@ -6,7 +6,7 @@
         <input type="radio" id="0" name="rewardTo" value="0" (change)='onAwardedTo($event)'>
         <span>
           <img src="../../../assets/images/avatarFamily.png" alt="family avatar">
-          Familiar
+          <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="" class="check">
         </span>
       </label>
     </div>
@@ -17,7 +17,7 @@
           <input type="radio" id="{{user.getId()}}" name="rewardTo" value="{{user.getId()}}" (change)='onAwardedTo($event)'>
           <span>
           <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
-          {{user.name}}
+          <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="" class="check">
           </span>
       </label>
     </div>
