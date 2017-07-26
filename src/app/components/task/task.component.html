@@ -1,7 +1,7 @@
-<div class="taskcont">
+<div class="taskcont" >
   <div [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
     <div class="task" [style.backgroundColor]="bgColor">
-      <div class="task-name">
+      <div class="task-name" (click)='changeStates(task)'>
         <span [style.color]="color">{{task.name}}</span>
       </div>
       <app-stars [task]='task'></app-stars>
