@@ -20,8 +20,7 @@ export class AddTaskComponent implements OnInit {
   constructor() { }
 
   taskName:string = '';
-  taskWeight:number;
-  currentTask:Task = null;
+  taskWeight:number
 
   ngOnInit() {
   }

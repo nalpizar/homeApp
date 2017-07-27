@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {Task} from'../../models/task';
 import {Star} from'../../models/star';
 import {Score} from'../../models/score';
 
@@ -13,14 +14,39 @@ export class StarsComponent implements OnInit {
 
   @Input() task;
 
-  ngOnInit() {
-  }
+
+  currentStars:Star[] = [];
 
   emptyStar = true;
   emptyStar2 = true; 
   emptyStar3 = true; 
   emptyStar4 = true; 
   emptyStar5 = true;
+
+  ngOnInit() {
+
+        this.currentStars = this.task.getScore().getStars();
+
+       if(this.currentStars[0].getStatus() == false){
+            this.emptyStar = true;
+        }else{this.emptyStar = false;}
+
+        if(this.currentStars[1].getStatus() == false){
+            this.emptyStar2 = true;
+        }else{this.emptyStar2 = false;}
+
+        if(this.currentStars[2].getStatus() == false){
+            this.emptyStar3 = true;
+        }else{this.emptyStar3 = false;}
+
+        if(this.currentStars[3].getStatus() == false){
+            this.emptyStar4 = true;
+        }else{this.emptyStar4 = false;}
+
+        if(this.currentStars[4].getStatus() == false){
+            this.emptyStar5 = true;
+        }else{this.emptyStar5 = false;}
+  }
 
   
 
@@ -65,14 +91,15 @@ export class StarsComponent implements OnInit {
   }
 
 
-
+ showScore(){
+     var currentStars = this.task.getScore().getStars();
+        console.log(currentStars);
+    }
 
   rateScore(value){
 
-    var currentStars = this.task.getScore().getStars();
-
     //Reset all the values for the stars in case the user press more than one time
-    for(let currentStar of currentStars){
+    for(let currentStar of this.currentStars){
       currentStar.setStatus(false);
     }
 
@@ -81,37 +108,36 @@ export class StarsComponent implements OnInit {
     this.emptyStar3 = true;
     this.emptyStar4 = true;
     this.emptyStar5 = true;
-    
 
     switch(value) { 
       case 1: { 
-          currentStars[0].setStatus(true);
+          this.currentStars[0].setStatus(true);
           this.emptyStar = false;
 
           break; 
       }
       case 2: { 
-          currentStars[0].setStatus(true);
-          currentStars[1].setStatus(true);
+          this.currentStars[0].setStatus(true);
+          this.currentStars[1].setStatus(true);
           this.emptyStar = false;
           this.emptyStar2 = false;
 
           break; 
       }
       case 3: { 
-          currentStars[0].setStatus(true);
-          currentStars[1].setStatus(true);
-          currentStars[2].setStatus(true);
+          this.currentStars[0].setStatus(true);
+          this.currentStars[1].setStatus(true);
+          this.currentStars[2].setStatus(true);
           this.emptyStar = false;
           this.emptyStar2 = false;
           this.emptyStar3 = false;
           break; 
       }
       case 4: { 
-          currentStars[0].setStatus(true);
-          currentStars[1].setStatus(true);
-          currentStars[2].setStatus(true);
-          currentStars[3].setStatus(true);
+          this.currentStars[0].setStatus(true);
+          this.currentStars[1].setStatus(true);
+          this.currentStars[2].setStatus(true);
+          this.currentStars[3].setStatus(true);
           this.emptyStar = false;
           this.emptyStar2 = false;
           this.emptyStar3 = false;
@@ -120,11 +146,11 @@ export class StarsComponent implements OnInit {
           break; 
       }
       case  5: { 
-          currentStars[0].setStatus(true);
-          currentStars[1].setStatus(true);
-          currentStars[2].setStatus(true);
-          currentStars[3].setStatus(true);
-          currentStars[4].setStatus(true);
+          this.currentStars[0].setStatus(true);
+          this.currentStars[1].setStatus(true);
+          this.currentStars[2].setStatus(true);
+          this.currentStars[3].setStatus(true);
+          this.currentStars[4].setStatus(true);
           this.emptyStar = false;
           this.emptyStar2 = false;
           this.emptyStar3 = false;
@@ -135,7 +161,7 @@ export class StarsComponent implements OnInit {
       }
     }
 
-    console.log(currentStars);
+    console.log(this.currentStars);
   
 }
 
