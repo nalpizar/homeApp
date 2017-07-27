@@ -14,7 +14,6 @@ export class StarsComponent implements OnInit {
 
   @Input() task;
 
-
   currentStars:Star[] = [];
 
   emptyStar = true;
@@ -24,8 +23,8 @@ export class StarsComponent implements OnInit {
   emptyStar5 = true;
 
   ngOnInit() {
-
-        this.currentStars = this.task.getScore().getStars();
+      
+      this.currentStars = this.task.getScore().getStars();
 
        if(this.currentStars[0].getStatus() == false){
             this.emptyStar = true;
@@ -90,11 +89,6 @@ export class StarsComponent implements OnInit {
       return classes;
   }
 
-
- showScore(){
-     var currentStars = this.task.getScore().getStars();
-        console.log(currentStars);
-    }
 
   rateScore(value){
 
