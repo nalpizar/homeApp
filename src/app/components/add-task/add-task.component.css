@@ -1,13 +1,17 @@
-
 .modal.fade .modal-dialog {
     -webkit-transform: translateY(10%);
     transform: translateY(10%);
 }
 
-
-
 li {
-    font-size: 1.5rem;
-    color: #78909C;
-    font-family: ralewayregular;
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.windowTasks ul {
+    height: 195px;
+    overflow: auto;
+    border: 1px solid #a2a2a2;
+    padding-left: 0;
 }
