@@ -32,7 +32,7 @@ export class TaskComponent implements OnInit {
 
   changeStates(pTask){
     
-    if(pTask.status == 0 || 3 ){
+    if(pTask.status == 0 || pTask.status == 3 ){
 
       pTask.status = 1;
       this.bgColor = '#349B72';
