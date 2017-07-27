@@ -59,9 +59,8 @@
             "id": 5,
             "name": "Feed the dog",
             "weight": 3
-        }
-
-        ,{
+        },
+        {
             "id": 6,
             "name": "Wash all pillows",
             "weight": 3
@@ -113,27 +112,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -147,27 +146,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -181,27 +180,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -215,27 +214,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -249,27 +248,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -283,27 +282,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -317,27 +316,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -351,27 +350,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -385,27 +384,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -419,27 +418,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -453,27 +452,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -487,27 +486,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -521,27 +520,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -555,27 +554,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -589,27 +588,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -623,27 +622,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -657,27 +656,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -691,27 +690,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -725,27 +724,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -759,27 +758,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -793,27 +792,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -827,27 +826,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -861,27 +860,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -895,27 +894,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -929,27 +928,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -963,27 +962,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -997,27 +996,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -1031,27 +1030,27 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
@@ -1065,227 +1064,30 @@
                             "status": 0,
                             "swapedTo": 0,
                             "score": {
-                                "id":1,
-                                "stars":[
+                                "id": 1,
+                                "stars": [
                                     {
-                                      "id":1,
-                                      "status": false  
+                                        "id": 1,
+                                        "status": false
                                     },
                                     {
-                                      "id":2,
-                                      "status": false  
+                                        "id": 2,
+                                        "status": false
                                     },
                                     {
-                                      "id":3,
-                                      "status": false  
+                                        "id": 3,
+                                        "status": false
                                     },
                                     {
-                                      "id":4,
-                                      "status": false  
+                                        "id": 4,
+                                        "status": false
                                     },
                                     {
-                                      "id":5,
-                                      "status": false  
+                                        "id": 5,
+                                        "status": false
                                     }
                                 ]
                             },
-                            "userid": 1
-                        }
-                    ]
-                },
-                {
-                    "dayId": 2,
-                    "dayName": "Martes",
-                    "tasks": [
-                        {
-                            "id": 1,
-                            "name": "Feed the dog",
-                            "position": 1,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 4
-                        },
-                        {
-                            "id": 2,
-                            "name": "Wash all pillows",
-                            "position": 2,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 3
-                        },
-                        {
-                            "id": 2,
-                            "name": "Deep clean the fridge",
-                            "position": 2,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 3
-                        },
-                        {
-                            "id": 2,
-                            "name": "Wash windows",
-                            "position": 2,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 3
-                        },
-                        {
-                            "id": 2,
-                            "name": "Dust all surfaces",
-                            "position": 2,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 3
-                        },
-                        {
-                            "id": 2,
-                            "name": "Wipe kitchen cabinets",
-                            "position": 2,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 3
-                        },
-                        {
-                            "id": 4,
-                            "name": "Clean dishwasher",
-                            "position": 4,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 3
-                        },
-                        {
-                            "id": 3,
-                            "name": "Take out the trash",
-                            "position": 3,
-                            "weight": 3,
-                            "status": 3,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 2
-                        },
-                        {
-                            "id": 3,
-                            "name": "Wipe of bathroom",
-                            "position": 3,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 2
-                        },
-                        {
-                            "id": 3,
-                            "name": "Clean furniture",
-                            "position": 3,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 2
-                        },
-                        {
-                            "id": 3,
-                            "name": "Wash mattress covers",
-                            "position": 3,
-                            "weight": 3,
-                            "status": 3,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 2
-                        },
-                        {
-                            "id": 3,
-                            "name": "Clean inside of oven",
-                            "position": 3,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 2
-                        },
-                        {
-                            "id": 3,
-                            "name": "Clean out closets",
-                            "position": 3,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 2
-                        },
-                        
-                        {
-                            "id": 5,
-                            "name": "Clean kitchen",
-                            "position": 5,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 1
-                        },
-                        {
-                            "id": 5,
-                            "name": "Clean up spills",
-                            "position": 5,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 1
-                        },
-                        {
-                            "id": 5,
-                            "name": "Make beds",
-                            "position": 5,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 1
-                        },
-                        {
-                            "id": 5,
-                            "name": "Deal with the email",
-                            "position": 5,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 1
-                        },
-                        {
-                            "id": 5,
-                            "name": "Wash dishes",
-                            "position": 5,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
-                            "userid": 1
-                        },
-                        {
-                            "id": 5,
-                            "name": "Put things in their place",
-                            "position": 5,
-                            "weight": 3,
-                            "status": 0,
-                            "swapedTo": 0,
-                            "score": null,
                             "userid": 1
                         }
                     ]
@@ -2618,7 +2420,6 @@
                             "score": null,
                             "userid": 4
                         }
-                        
                     ]
                 },
                 {
