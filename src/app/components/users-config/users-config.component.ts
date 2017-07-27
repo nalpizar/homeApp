@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class UsersConfigComponent implements OnInit {
 
   @Input() users;
+  @Input() family;
 
   constructor() { }
 
