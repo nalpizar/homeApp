@@ -1,4 +1,8 @@
 
+.modal.fade .modal-dialog {
+    -webkit-transform: translateY(35%);
+    transform: translateY(35%);
+}
 
 li {
     list-style: none;
