@@ -8,4 +8,5 @@
 .container span a {
     color: #fff;
     margin-left: 10px;
+    vertical-align: middle;
 }
