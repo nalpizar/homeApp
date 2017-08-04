@@ -19,13 +19,13 @@
           </select>
         </div>
         <div *ngIf="option === 'new_member'">
-          <app-new-user [family]='family'></app-new-user>
+          <app-new-user [family]='family' [af]='af'></app-new-user>
         </div>
         <div *ngIf="option === 'new_task'">
-          <app-new-task [family]='family'></app-new-task>
+          <app-new-task [family]='family' [af]='af'></app-new-task>
         </div>
         <div *ngIf="option === 'new_reward'">
-          <app-new-reward [family]='family' [users]='users' [rewards]='rewards'></app-new-reward>
+          <app-new-reward [family]='family' [af]='af' [users]='users' [rewards]='rewards'></app-new-reward>
         </div>
       </div>
       <div class="modal-footer">
@@ -52,7 +52,7 @@
           <li>Age</li>
         </ul>
 
-        <app-users-config [family]='family' [users]='family.getMembers()'></app-users-config>
+        <app-users-config [family]='family' [af]='af' [users]='family.getMembers()'></app-users-config>
 
       </div>
     </div>
@@ -64,7 +64,7 @@
           <li>Task description</li>
         </ul>
 
-        <app-repo-tasks [tasks]='family.getTaskRep()'></app-repo-tasks>
+        <app-repo-tasks [tasks]='family.getTaskRep()' [family]='family' [af]='af'></app-repo-tasks>
 
       </div>
     </div>
@@ -76,7 +76,7 @@
           <li>Reward</li>
         </ul>
 
-        <app-rewards-config [users]='users' [rewards]='rewards'></app-rewards-config>
+        <app-rewards-config [family]='family' [af]='af' [users]='users' [rewards]='rewards'></app-rewards-config>
 
       </div>
     </div>

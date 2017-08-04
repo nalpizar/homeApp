@@ -9,6 +9,8 @@ export class RewardsConfigComponent implements OnInit {
 
   @Input() users;
   @Input() rewards;
+  @Input() family;
+  @Input() af;
 
   constructor() { }
 

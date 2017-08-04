@@ -15,6 +15,7 @@ export class Task {
 
 
 
+
 	constructor(id: number, name: string, position: number, weight: number, status: number, swapedTo: number, score: Score, userId: number) {
 		this.setId(id);
 		this.setName(name);
@@ -24,6 +25,7 @@ export class Task {
 		this.setSwapedTo(swapedTo);
 		this.setScore(score);
 		this.setUserId(userId);
+
 	}
 
 	getId() { return this.id; }
@@ -35,6 +37,7 @@ export class Task {
 	getScore() { return this.score; }
 	getUserId() { return this.userId; }
 
+
 	setId(value) { this.id = value; }
 	setName(value) { this.name = value; }
 	setPosition(value) { this.position = value; }
@@ -43,5 +46,6 @@ export class Task {
 	setSwapedTo(value) { this.swapedTo = value; }
 	setScore(value) { this.score = value; }
 	setUserId(value) { this.userId = value; }
+
 
 } 

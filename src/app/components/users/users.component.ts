@@ -11,6 +11,7 @@ export class UsersComponent implements OnInit {
   @Input() family;
   @Input() currentProfile;
   @Input() users;
+
   private selectedId;
   @Output() emitId = new EventEmitter;
   constructor() {

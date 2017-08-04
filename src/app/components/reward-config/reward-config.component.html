@@ -1,6 +1,12 @@
 <div class="rewardscont">
   <ul [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
-    <li><img src="../../../assets/images/avatar{{rewardedId}}.png" alt="user avatar"></li>
+
+    <li>
+      <div *ngFor='let user of users'>
+        <img *ngIf="user.getId() == rewardedId" src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
+      </div>
+      <img *ngIf="rewardedId == 0" src="../../../assets/images/avatar0.png" alt="user avatar">
+    </li>
     <li><span>{{reward.name}}</span></li>
   </ul>
   <div class="delete" (click)='deleteReward(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>

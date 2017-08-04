@@ -10,6 +10,8 @@ export class RewardConfigComponent implements OnInit {
   @Input() index;
   @Input() rewards;
   @Input() users;
+  @Input() family;
+  @Input() af;
   myClass = 'cont';
 
   rewardedId = null;
@@ -35,6 +37,7 @@ export class RewardConfigComponent implements OnInit {
 
   deleteReward(index) {
     this.rewards.splice(index, 1);
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
   }
 
 }

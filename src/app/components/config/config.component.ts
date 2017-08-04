@@ -9,10 +9,11 @@ import { User } from '../../models/user';
 })
 export class ConfigComponent implements OnInit {
 
-  @Input() family;
   @Input() tasks;
   @Input() users;
   @Input() rewards;
+  @Input() af;
+  @Input() family;
 
   option: string;
 

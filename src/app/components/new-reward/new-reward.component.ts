@@ -9,10 +9,11 @@ import { Reward } from '../../models/reward';
 export class NewRewardComponent implements OnInit {
 
   @Input() family;
+  @Input() af;
   @Input() users;
   @Input() rewards;
 
-  name: string = 'name';
+  name: string = 'Reward';
   awardedTo: number = null;
 
   constructor() { }
@@ -21,31 +22,33 @@ export class NewRewardComponent implements OnInit {
   }
 
   addAward() {
-    let index = this.rewards.length;
-    console.log(index);
-    index--;
-    console.log(index);
-    let newId = this.rewards[index].getId();
-    console.log(newId);
-    newId++;
-    let reward = new Reward(newId, this.name, this.awardedTo);
-    this.rewards.push(reward);
-    console.table(this.rewards);
+    let user = false;
+    for (var reward of this.rewards) {
+      if (reward.getAwardedTo() == this.awardedTo) {
+        user = true;
+      }
+    }
+    if (user == false) {
+      let index = this.rewards.length;
+      index--;
+      let newId = this.rewards[index].getId();
+      newId++;
+      let rewardTo = new Reward(newId, this.name, this.awardedTo);
+      this.family.addRewards(rewardTo);
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+      this.awardedTo = null;
+      this.name = 'Reward';
+    }
 
-    this.awardedTo = null;
-    this.name = 'name';
+
   }
 
   onAwardedTo(event) {
     this.awardedTo = parseInt(event.target.value);
-    console.log(this.awardedTo);
-
   }
 
   onNameChange(event) {
     this.name = event.target.value;
-    console.log(this.name);
-
   }
 
 }

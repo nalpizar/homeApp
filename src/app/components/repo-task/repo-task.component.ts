@@ -9,6 +9,8 @@ export class RepoTaskComponent implements OnInit {
   @Input() task;
   @Input() index;
   @Input() tasks;
+  @Input() af;
+  @Input() family;
   myClass = 'cont';
   constructor() { }
 
@@ -29,7 +31,16 @@ export class RepoTaskComponent implements OnInit {
   }
 
   deleteTaskRep(index) {
+    for (var day of this.family.getDays()) {
+      let usertasks = day.getTasks()
+      for (var i = usertasks.length - 1; i >= 0; i--) {
+        if (usertasks[i].getId() == this.task.getId()) {
+          usertasks.splice(i, 1);
+        }
+      }
+    }
     this.tasks.splice(index, 1);
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
   }
 
 

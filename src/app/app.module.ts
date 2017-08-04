@@ -6,6 +6,20 @@ import { RouterModule, Routes } from '@angular/router';
 import 'hammerjs';
 import 'hammer-timejs';
 
+import { AngularFireModule } from 'angularfire2';
+// New imports to update based on AngularFire2 version 4
+import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+export const firebaseConfig = {
+  apiKey: "AIzaSyCPp31K8IjrhMDSaCNkoRNGiUa8VY2fQm8",
+  authDomain: "familyapp-fdcf1.firebaseapp.com",
+  databaseURL: "https://familyapp-fdcf1.firebaseio.com",
+  projectId: "familyapp-fdcf1",
+  storageBucket: "familyapp-fdcf1.appspot.com",
+  messagingSenderId: "822973351476"
+};
+
+
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ProfileComponent } from './components/profile/profile.component';
@@ -87,7 +101,10 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

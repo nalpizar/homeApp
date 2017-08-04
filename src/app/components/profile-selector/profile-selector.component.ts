@@ -13,6 +13,7 @@ export class ProfileSelectorComponent implements OnInit {
   @Input() user;
   @Output() sendCont: EventEmitter<any> = new EventEmitter;
   @Output() currentProfile: EventEmitter<any> = new EventEmitter;
+  @Input() af;
 
   recievedCurrentProfile(user) {
     this.currentProfile.emit(user);

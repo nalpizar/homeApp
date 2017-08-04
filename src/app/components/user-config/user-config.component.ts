@@ -10,6 +10,7 @@ export class UserConfigComponent implements OnInit {
   @Input() index;
   @Input() users;
   @Input() family;
+  @Input() af;
   myClass = 'cont';
 
   constructor() { }
@@ -45,7 +46,7 @@ export class UserConfigComponent implements OnInit {
       }
     }
     this.users.splice(index, 1);
-    console.log(this.family.getDays());
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
   }
 
 }

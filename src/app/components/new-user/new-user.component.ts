@@ -9,6 +9,7 @@ import { User } from '../../models/user';
 })
 export class NewUserComponent implements OnInit {
 
+  @Input() af;
   @Input() family;
 
   private user: User[] = [];
@@ -28,16 +29,14 @@ export class NewUserComponent implements OnInit {
 
   addNewUser() {
     let index = this.family.getMembers().length;
-    console.log(index);
     index--;
-    console.log(index);
     let newId = this.family.getMembers()[index].getId();
-    console.log(newId);
     newId++;
     let user = new User(newId, this.name, this.age, this.type, this.avatar);
+    user.setSkin(0);
     this.family.addMembers(user);
-    this.name = 'name';
-    console.table(this.family.getMembers());
+    this.name = '';
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
   }
 
   constructor() { }

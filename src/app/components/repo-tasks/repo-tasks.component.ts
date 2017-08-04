@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class RepoTasksComponent implements OnInit {
   @Input() tasks;
+  @Input() af;
+  @Input() family;
   constructor() { }
 
   ngOnInit() {

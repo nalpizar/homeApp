@@ -1,9 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {Task} from './../../models/task';
-import {TaskRep} from './../../models/taskRep';
-import {Day} from './../../models/day';
-import {Star} from './../../models/star';
-import {Score} from './../../models/score';
+import { Task } from './../../models/task';
+import { TaskRep } from './../../models/taskRep';
+import { Day } from './../../models/day';
+import { Star } from './../../models/star';
+import { Score } from './../../models/score';
 
 
 @Component({
@@ -17,32 +17,33 @@ export class AddTaskComponent implements OnInit {
   @Input() currentUserId;
   @Input() currentDay;
 
+
   constructor() { }
 
-  taskName:string = '';
-  taskWeight:number
+  taskName: string = '';
+  taskWeight: number
 
   ngOnInit() {
   }
 
-  sendTask(tempTask:Task){
-    
+  sendTask(tempTask: Task) {
+
     var newScore = new Score(1);
 
-    let numbers =[1,2,3,4,5];
+    let numbers = [1, 2, 3, 4, 5];
 
     for (let num of numbers) {
 
-      var newStar = new Star(num,false);
+      var newStar = new Star(num, false);
       newScore.addStar(newStar)
     }
-    
 
-    var newTask = new Task(12, tempTask.getName(), 9, tempTask.getWeight(), 0, 0, newScore, this.currentUserId);
+
+    var newTask = new Task(tempTask.getId(), tempTask.getName(), 9, tempTask.getWeight(), 0, 0, newScore, this.currentUserId);
     console.log(newTask);
     this.currentDay.addTask(newTask);
 
-    
+
   }
 
 

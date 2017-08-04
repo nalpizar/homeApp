@@ -10,6 +10,7 @@ export class DashboardComponent implements OnInit {
   @Input() family;
   @Input() currentProfile;
   @Input() users;
+  @Input() af;
   currentUserId;
   constructor() { }
 

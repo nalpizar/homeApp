@@ -1,16 +1,16 @@
 <div *ngIf='isDataLoaded'>
     <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
     <div *ngIf="showCont==1">
-        <app-dashboard [family]='family' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-dashboard>
+        <app-dashboard [family]='family' [af]='af' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-dashboard>
     </div>
     <div>
-        <app-config *ngIf="showCont==2" [family]='family' [tasks]='family.getTaskRep()' [users]='family.getMembers()' [rewards]='family.rewards'></app-config>
+        <app-config *ngIf="showCont==2" [family]='family' [af]='af' [tasks]='family.getTaskRep()' [users]='family.getMembers()' [rewards]='family.rewards'></app-config>
     </div>
     <div>
         <app-stars *ngIf="showCont==3"></app-stars>
     </div>
     <div>
-        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' *ngIf="showCont==4" [family]='family' [user]='user'
+        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' *ngIf="showCont==4" [family]='family' [af]='af' [user]='user'
             [users]='family.getMembers()' (sendCont)='recievedCont($event)'></app-profile-selector>
     </div>
 

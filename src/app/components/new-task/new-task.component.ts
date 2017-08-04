@@ -9,6 +9,7 @@ import { TaskRep } from '../../models/taskRep';
 export class NewTaskComponent implements OnInit {
 
   @Input() family;
+  @Input() af;
 
   private taskRep: TaskRep[] = [];
 
@@ -24,14 +25,28 @@ export class NewTaskComponent implements OnInit {
   }
 
   addNewTask() {
+
     let index = this.family.getTaskRep().length;
-    index--;
-    let newId = this.family.getTaskRep()[index].getId();
-    newId++;
-    let temptask = new TaskRep(newId, this.title, this.weight);
-    this.family.addTaskRep(temptask);
-    this.title = 'title';
-    console.log(this.family.getTaskRep())
+
+    if (this.family.getTaskRep().length > 0) {
+      index--;
+      let newId = this.family.getTaskRep()[index].getId();
+      newId++;
+      let temptask = new TaskRep(newId, this.title, this.weight);
+      this.family.addTaskRep(temptask);
+      this.title = 'title';
+
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+    } else {
+
+      let newId = 1;
+      let temptask = new TaskRep(newId, this.title, this.weight);
+      this.family.addTaskRep(temptask);
+      this.title = 'title';
+
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+    }
+
   }
 
   weights: any[] = [
