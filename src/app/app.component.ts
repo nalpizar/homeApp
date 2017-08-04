@@ -147,6 +147,7 @@ export class AppComponent {
 
   showContent(pcont) {
     this.showCont = pcont;
+    console.log(pcont)
   }
 
   recievedCont(cont) {

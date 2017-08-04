@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthService } from './shared/auth.service';
 import 'hammerjs';
 import 'hammer-timejs';
 
@@ -56,8 +57,7 @@ import { RewardsConfigComponent } from './components/rewards-config/rewards-conf
 import { RewardConfigComponent } from './components/reward-config/reward-config.component';
 
 const appRoutes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'Configuration', component: ConfigComponent }
+  { path: '', component: SignInComponent }
 ];
 
 @NgModule({
@@ -101,12 +101,12 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {useHash: true}),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
