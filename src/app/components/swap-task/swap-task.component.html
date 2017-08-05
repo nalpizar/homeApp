@@ -1,23 +1,18 @@
 <div class="taskcont">
   <div [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
     <div class="task" [style.backgroundColor]="bgColor">
-      <div class="task-name">
+      <div class="task-name" (click)='changeStates(task)'>
         <span [style.color]="color">{{task.name}}</span>
       </div>
-      <div class="task-score">
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-      </div>
+      <app-stars [task]='task'></app-stars>
       <div class="actions">
-        <a (click)='sendTask()' [style.color]="color" data-toggle="modal" data-target="#relieveUser" *ngIf="currentProfile == task.swapedTo">
-      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-    </a>
-        <a (click)='setHurry(task)' [style.color]="color">
-      <i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
-    </a>
+        <a *ngIf="currentProfile == task.swapedTo && task.status == 0" (click)='sendTask()' [style.color]="color" data-toggle="modal"
+          data-target="#relieveUser">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </a>
+        <a *ngIf="currentProfile != task.swapedTo" (click)='setHurry(task)' [style.color]="color">
+          <i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
   </div>

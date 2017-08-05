@@ -6,7 +6,8 @@
       </div>
       <app-stars [task]='task'></app-stars>
       <div class="actions">
-        <a *ngIf="currentProfile == task.userId" (click)='sendTask()' [style.color]="color" data-toggle="modal" data-target="#relieveUser">
+        <a *ngIf="currentProfile == task.userId && task.status == 0" (click)='sendTask()' [style.color]="color" data-toggle="modal"
+          data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
     </a>
         <a *ngIf="currentProfile != task.userId" (click)='setHurry(task)' [style.color]="color">

@@ -26,6 +26,25 @@ export class SwapTaskComponent implements OnInit {
     this.color = '#ffffff';
   };
 
+  changeStates(pTask) {
+
+    if (pTask.status == 0 || pTask.status == 3) {
+
+      pTask.status = 1;
+      this.bgColor = '#349B72';
+      this.color = '#ffffff';
+
+    } else {
+      if (pTask.status == 1) {
+
+        pTask.status = 2;
+        this.bgColor = '#9B7C34';
+        this.color = '#ffffff';
+
+      }
+    };
+  };
+
   constructor() { }
 
   ngOnInit() {

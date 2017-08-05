@@ -3,4 +3,5 @@
 </div>
 <app-tasks (sendTaskSelected)='taskReceived($event)' [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks
     [currentProfile]='currentProfile'></app-tasks>
-<app-swap-tasks [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks [currentProfile]='currentProfile'></app-swap-tasks>
+<app-swap-tasks (sendTaskSelected)='taskReceived($event)' [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks
+    [currentProfile]='currentProfile'></app-swap-tasks>
