@@ -8,6 +8,9 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs/Observable';
 import * as firebase from 'firebase/app';
 
+import { AuthService } from './shared/auth.service';
+
+
 import { Task } from './models/task';
 import { User } from './models/user';
 import { Reward } from './models/reward';
@@ -35,6 +38,10 @@ export class AppComponent {
 
   private users: User[] = [];
   private currentProfile = 1;
+
+  private isLoggedIn: Boolean;
+  private user_displayName: String;
+  private user_email: String;
 
 
   user: Observable<firebase.User>;
