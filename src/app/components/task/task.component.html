@@ -9,7 +9,7 @@
         <a *ngIf="currentProfile == task.userId" (click)='sendTask()' [style.color]="color" data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
     </a>
-        <a (click)='setHurry(task)' [style.color]="color">
+        <a *ngIf="currentProfile != task.userId" (click)='setHurry(task)' [style.color]="color">
       <i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
     </a>
       </div>
