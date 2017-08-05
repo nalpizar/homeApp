@@ -18,19 +18,19 @@ export class SignInComponent implements OnInit {
   ngOnInit() {
     this.auth.getAuthState().subscribe(
     (user) => this.user = user);
-    
   }
 
   loginWithGoogle() {
     this.auth.loginWithGoogle();
-    
-    if (this.auth != null) {
-      console.log(this.user)
+    if (this.auth.afAuth.auth.currentUser != null) {
       this.sendCont.emit(4);
     } else {
-      console.log('no logueado')
+      this.sendCont.emit(0);
     }
-
   }
+
+  logOut () {
+    this.auth.afAuth.auth.signOut();
+  }  
 
 }
