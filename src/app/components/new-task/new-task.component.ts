@@ -50,11 +50,11 @@ export class NewTaskComponent implements OnInit {
   }
 
   weights: any[] = [
-    { id: 1, name: '1' },
-    { id: 2, name: '2' },
-    { id: 3, name: '3' },
-    { id: 4, name: '4' },
-    { id: 5, name: '5' }
+    { id: 1, name: '1', bgcolor: '#f1c40f' },
+    { id: 2, name: '2', bgcolor: '#f39c12' },
+    { id: 3, name: '3', bgcolor: '#e67e22' },
+    { id: 4, name: '4', bgcolor: '#d35400' },
+    { id: 5, name: '5', bgcolor: '#e74c3c' }
   ];
 
   constructor() { }

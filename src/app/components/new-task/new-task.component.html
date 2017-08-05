@@ -1,4 +1,4 @@
-<span>Task name {{family.id}}</span>
+<!-- <span>Task name {{family.id}}</span>
 <div class="form-group">
   <input type="text" (change)='onTitleChange($event)' [value]='title' class="form-control" >
 </div>
@@ -9,6 +9,30 @@
     <option *ngFor="let weight of weights" [value]="weight.id">{{weight.name}}</option>
   </select>  
 </div>
+
+<div class="modal-footer addModalBtn">
+  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addNewTask()">Add</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+</div> -->
+
+<span>Task name {{family.id}}</span>
+<div class="form-group">
+  <input type="text" (change)='onTitleChange($event)' [value]='title' class="form-control">
+</div>
+<span>Weight</span>
+<ul class="weightsSelect">
+  <li *ngFor='let weight of weights'>
+    <div class="weight">
+      <label for="{{weight.id}}">
+        <input type="radio" id="{{weight.id}}" name="taskWeight" value="{{weight.id}}" (change)='onWeightChange($event)'>
+        <span>
+          <p [style.background]='weight.bgcolor'>{{weight.id}}</p>
+          <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="" class="check">
+        </span>
+      </label>
+    </div>
+  </li>
+</ul>
 
 <div class="modal-footer addModalBtn">
   <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addNewTask()">Add</button>

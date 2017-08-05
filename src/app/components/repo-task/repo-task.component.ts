@@ -12,9 +12,21 @@ export class RepoTaskComponent implements OnInit {
   @Input() af;
   @Input() family;
   myClass = 'cont';
+  bgcolor = '';
   constructor() { }
 
   ngOnInit() {
+    if (this.task.getWeight() == 1) {
+      this.bgcolor = '#f1c40f';
+    } else if (this.task.getWeight() == 2) {
+      this.bgcolor = '#f39c12';
+    } else if (this.task.getWeight() == 3) {
+      this.bgcolor = '#e67e22';
+    } else if (this.task.getWeight() == 4) {
+      this.bgcolor = '#d35400';
+    } else {
+      this.bgcolor = '#e74c3c';
+    }
   }
 
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
@@ -42,7 +54,4 @@ export class RepoTaskComponent implements OnInit {
     this.tasks.splice(index, 1);
     this.af.object('/Families/Family' + this.family.getId()).update(this.family);
   }
-
-
-
 }
