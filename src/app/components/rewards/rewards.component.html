@@ -1,3 +1,9 @@
-<p>
-  rewards works!
-</p>
+<div class="family-reward">
+  <h3>
+    <i class="fa fa-trophy" aria-hidden="true"></i> THIS WEEK'S PRICE
+    <i class="fa fa-trophy" aria-hidden="true"></i>
+  </h3>
+  <div *ngFor="let reward of rewards">
+    <app-reward [reward]='reward'></app-reward>
+  </div>
+</div>

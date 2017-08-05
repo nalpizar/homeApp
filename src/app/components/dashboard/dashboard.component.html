@@ -1,4 +1,5 @@
 <div>
+    <app-rewards [rewards]='family.getRewards()'></app-rewards>
     <app-users (emitId)='currentId($event)' [members]='family.getMembers()' [currentProfile]='currentProfile'></app-users>
     <!--ejemplo-->
     <!--<div class="user-info" *ngFor='let user of users'>
