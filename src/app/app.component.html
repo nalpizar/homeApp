@@ -1,6 +1,6 @@
 <div *ngIf='isDataLoaded'>
     <div *ngIf="showCont==0">
-        <app-sign-in></app-sign-in>
+        <app-sign-in (sendCont)='showContent($event)'></app-sign-in>
     </div>
     <div *ngIf="showCont==1">
         <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
@@ -14,9 +14,8 @@
         <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
         <app-stars></app-stars>
     </div>
-    <div>
-        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' *ngIf="showCont==4" [family]='family' [af]='af' [user]='user'
+    <div *ngIf="showCont==4">
+        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' [family]='family' [af]='af' [user]='user'
             [users]='family.getMembers()' (sendCont)='recievedCont($event)'></app-profile-selector>
     </div>
-
 </div>

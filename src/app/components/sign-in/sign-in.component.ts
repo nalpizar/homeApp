@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { AuthService } from '../../shared/auth.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import * as firebase from 'firebase/app';
@@ -11,15 +11,26 @@ import * as firebase from 'firebase/app';
 export class SignInComponent implements OnInit {
   user = null;
 
+  @Output() sendCont = new EventEmitter();
+
   constructor(private auth: AuthService, public db: AngularFireDatabase) { }
 
   ngOnInit() {
     this.auth.getAuthState().subscribe(
     (user) => this.user = user);
+    
   }
 
   loginWithGoogle() {
     this.auth.loginWithGoogle();
+    
+    if (this.auth != null) {
+      console.log(this.user)
+      this.sendCont.emit(4);
+    } else {
+      console.log('no logueado')
+    }
+
   }
 
 }
