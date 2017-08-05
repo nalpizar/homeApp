@@ -24,7 +24,7 @@ export class ConfigComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    this.option = 'new_member';
   }
 
 }

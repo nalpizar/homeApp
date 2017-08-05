@@ -5,26 +5,27 @@
 <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Add New...</h4>
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <select class="form-control" (change)="onSelect($event.target.value)">
-            <option value="">Select your action</option>
-            <option value="new_member">Add new family member</option>
-            <option value="new_task">Add new task</option>
-            <option value="new_reward">Add new reward</option>
-          </select>
+      <div *ngIf="option === 'new_member'">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Add New Member</h4>
         </div>
-        <div *ngIf="option === 'new_member'">
+        <div class="modal-body">
           <app-new-user [family]='family' [af]='af'></app-new-user>
         </div>
-        <div *ngIf="option === 'new_task'">
+      </div>
+      <div *ngIf="option === 'new_task'">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Add New Task</h4>
+        </div>
+        <div class="modal-body">
           <app-new-task [family]='family' [af]='af'></app-new-task>
         </div>
-        <div *ngIf="option === 'new_reward'">
+      </div>
+      <div *ngIf="option === 'new_reward'">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Add New Reward</h4>
+        </div>
+        <div class="modal-body">
           <app-new-reward [family]='family' [af]='af' [users]='users' [rewards]='rewards'></app-new-reward>
         </div>
       </div>
@@ -39,9 +40,9 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Wrapper for slides -->
   <ul class="nav nav-pills nav-justified">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Family</a></li>
-    <li data-target="#myCarousel" data-slide-to="1"><a href="#">Tasks</a></li>
-    <li data-target="#myCarousel" data-slide-to="2"><a href="#">Rewards</a></li>
+    <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#" (click)='onSelect(option= "new_member")'>Family</a></li>
+    <li data-target="#myCarousel" data-slide-to="1"><a href="#" (click)='onSelect(option= "new_task")'>Tasks</a></li>
+    <li data-target="#myCarousel" data-slide-to="2"><a href="#" (click)='onSelect(option= "new_reward")'>Rewards</a></li>
   </ul>
   <div class="carousel-inner">
     <div class="item active" style="background:#ce8f5a">
