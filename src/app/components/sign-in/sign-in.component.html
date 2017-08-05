@@ -1,3 +1,20 @@
-<button class="" (click)="loginWithGoogle()">Login with Google</button>
-<button class="" (click)="logOut()">Logout</button>
-
+<div class="sign-in">
+    <h1>Sign In</h1>
+    <div class="sign-in-logo">
+        <img src="../../../assets/images/sign-in-logo.png" alt="">
+        <h2>Home Chores</h2>
+        <h3>Where the family works together</h3>
+    </div>
+    <form>
+        <div class="form-group">
+            <input class="email" type="email" placeholder="Email" id="email">
+        </div>
+        <div class="form-group">
+            <input class="password" placeholder="Password" type="password" id="pwd">
+        </div>
+        <button type="submit" class="loginbtn">Login</button>
+        <button class="loginGooglebtn" (click)="loginWithGoogle()">Login with Google</button>
+        <!--<button class="" (click)="logOut()">Logout</button>-->
+        <span>Don't have an account?<a href=""> Sign up</a></span>
+    </form>
+</div>
