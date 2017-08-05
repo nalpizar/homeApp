@@ -12,6 +12,7 @@ export class WeekComponent implements OnInit {
   @Input() taskRepo;
   @Input() users;
   @Input() currentUserId;
+  @Input() currentProfile;
 
   currentDay: Day;
   currentTask: Task;

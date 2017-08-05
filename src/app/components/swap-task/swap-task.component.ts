@@ -12,6 +12,8 @@ export class SwapTaskComponent implements OnInit {
   @Input() index;
   @Input() users;
   @Input() currentUserId;
+  @Input() currentProfile;
+
   myClass = 'cont';
   bgColor = '';
   color = '';

@@ -1,4 +1,4 @@
-<div class="taskcont" >
+<div class="taskcont">
   <div [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
     <div class="task" [style.backgroundColor]="bgColor">
       <div class="task-name" (click)='changeStates(task)'>
@@ -6,7 +6,7 @@
       </div>
       <app-stars [task]='task'></app-stars>
       <div class="actions">
-        <a (click)='sendTask()' [style.color]="color" data-toggle="modal" data-target="#relieveUser">
+        <a *ngIf="currentProfile == task.userId" (click)='sendTask()' [style.color]="color" data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
     </a>
         <a (click)='setHurry(task)' [style.color]="color">

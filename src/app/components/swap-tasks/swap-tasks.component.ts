@@ -10,6 +10,7 @@ export class SwapTasksComponent implements OnInit {
   @Input() users;
   @Input() currentUserId;
   @Input() tasks;
+  @Input() currentProfile;
 
   constructor() { }
 

@@ -11,6 +11,7 @@ export class TasksComponent implements OnInit {
   @Input() users;
   @Input() currentUserId;
   @Input() tasks;
+  @Input() currentProfile;
 
   @Output() sendTaskSelected = new EventEmitter();
 

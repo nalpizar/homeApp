@@ -11,6 +11,7 @@ export class DayComponent implements OnInit {
   @Input() taskRepo;
   @Input() users;
   @Input() currentUserId;
+  @Input() currentProfile;
 
   @Output() emitCurrentDay = new EventEmitter;
   @Output() emitCurrentTask = new EventEmitter;

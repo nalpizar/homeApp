@@ -11,44 +11,47 @@ export class TaskComponent implements OnInit {
   @Input() index;
   @Input() users;
   @Input() currentUserId;
+  @Input() currentProfile;
+
   myClass = 'cont';
   bgColor = '';
   color = '';
 
-  
+
 
   @Output() sendTaskSelected = new EventEmitter;
 
   setHurry(pTask) {
 
-    if(pTask.status == 0 ){
-    
-    pTask.status = 3;
-    this.bgColor = '#555377';
-    this.color = '#ffffff';
+    if (pTask.status == 0) {
+
+      pTask.status = 3;
+      this.bgColor = '#555377';
+      this.color = '#ffffff';
 
     }
   };
 
-  changeStates(pTask){
-    
-    if(pTask.status == 0 || pTask.status == 3 ){
+  changeStates(pTask) {
+
+    if (pTask.status == 0 || pTask.status == 3) {
 
       pTask.status = 1;
       this.bgColor = '#349B72';
       this.color = '#ffffff';
 
-    }else{
-      if(pTask.status== 1){
+    } else {
+      if (pTask.status == 1) {
 
-      pTask.status = 2;
-      this.bgColor = '#9B7C34';
-      this.color = '#ffffff';
+        pTask.status = 2;
+        this.bgColor = '#9B7C34';
+        this.color = '#ffffff';
 
-    }};
+      }
+    };
 
   };
-  
+
 
   constructor() { }
 
