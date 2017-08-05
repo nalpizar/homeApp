@@ -1,7 +1,7 @@
 <div class="container">
     <span>{{day.dayName}} <a (click)='sendDay(day)' [style.color]="color" data-toggle="modal" data-target="#newTask"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></span>
 </div>
-<app-tasks (sendTaskSelected)='taskReceived($event)' [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks
-    [currentProfile]='currentProfile'></app-tasks>
 <app-swap-tasks (sendTaskSelected)='taskReceived($event)' [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks
     [currentProfile]='currentProfile'></app-swap-tasks>
+<app-tasks (sendTaskSelected)='taskReceived($event)' [day]='day' [users]='users' [currentUserId]='currentUserId' [tasks]=tasks
+    [currentProfile]='currentProfile'></app-tasks>
