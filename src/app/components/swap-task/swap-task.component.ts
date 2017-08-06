@@ -40,7 +40,16 @@ export class SwapTaskComponent implements OnInit {
         pTask.status = 2;
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
+        
 
+      }else{
+        if(pTask.status == 2){
+          
+          pTask.status = 0;
+          this.bgColor = '#ce8f5a';
+          this.color = '#ffffff';
+
+        }
       }
     };
   };
