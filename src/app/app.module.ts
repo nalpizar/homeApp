@@ -55,10 +55,15 @@ import { ProfileSelectorComponent } from './components/profile-selector/profile-
 import { ProfilesComponent } from './components/profiles/profiles.component';
 import { RewardsConfigComponent } from './components/rewards-config/rewards-config.component';
 import { RewardConfigComponent } from './components/reward-config/reward-config.component';
+import { SortPipe } from './pipes/sort.pipe';
+import { OrderByPipe } from './pipes/order-by.pipe';
 
 const appRoutes: Routes = [
   { path: '', component: SignInComponent }
 ];
+
+import { OrderModule } from 'ngx-order-pipe';
+
 
 @NgModule({
   declarations: [
@@ -95,7 +100,9 @@ const appRoutes: Routes = [
     ProfileSelectorComponent,
     ProfilesComponent,
     RewardsConfigComponent,
-    RewardConfigComponent
+    RewardConfigComponent,
+    SortPipe,
+    OrderByPipe
   ],
   imports: [
     BrowserModule,
