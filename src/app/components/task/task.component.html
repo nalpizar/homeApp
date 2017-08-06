@@ -4,7 +4,7 @@
       <div class="task-name" (click)='changeStates(task)'>
         <span [style.color]="color">{{task.name}}</span>
       </div>
-      <app-stars [task]='task'></app-stars>
+      <app-stars *ngIf="task.status == 2" [task]='task'></app-stars>
       <div class="actions">
         <a *ngIf="currentProfile == task.userId && task.status == 0" (click)='sendTask()' [style.color]="color" data-toggle="modal"
           data-target="#relieveUser">
