@@ -21,14 +21,18 @@ export class SwapTaskComponent implements OnInit {
   @Output() sendTaskSelected = new EventEmitter;
 
   setHurry(pTask) {
-    pTask.status = 3;
-    this.bgColor = '#555377';
-    this.color = '#ffffff';
+    if (pTask.status == 4) {
+
+      pTask.status = 3;
+      this.bgColor = '#555377';
+      this.color = '#ffffff';
+
+    }
   };
 
-  changeStates(pTask) {
+ changeStates(pTask) {
 
-    if (pTask.status == 0 || pTask.status == 3) {
+    if (pTask.status == 3 || pTask.status == 4) {
 
       pTask.status = 1;
       this.bgColor = '#349B72';
@@ -41,8 +45,17 @@ export class SwapTaskComponent implements OnInit {
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
 
+      }else{
+        if(pTask.status == 2){
+          
+          pTask.status = 4;
+          this.bgColor = '#ce8f5a';
+          this.color = '#ffffff';
+
+        }
       }
     };
+
   };
 
   constructor() { }

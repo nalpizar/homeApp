@@ -1,8 +1,9 @@
 .task-score {
     font-size: 2.1rem;
     color: #ffe500;
-    height: 65px;
-    line-height: 65px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
     width: 125px;
-    display: inline-block;
+    display: block;
 }
