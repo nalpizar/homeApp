@@ -22,7 +22,6 @@ export class TaskComponent implements OnInit {
   @Output() sendTaskSelected = new EventEmitter;
 
   setHurry(pTask) {
-
     if (pTask.status == 0) {
 
       pTask.status = 3;
@@ -47,6 +46,14 @@ export class TaskComponent implements OnInit {
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
 
+      }else{
+        if(pTask.status == 2){
+          
+          pTask.status = 0;
+          this.bgColor = '#ce8f5a';
+          this.color = '#ffffff';
+
+        }
       }
     };
 
