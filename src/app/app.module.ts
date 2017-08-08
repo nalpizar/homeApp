@@ -55,6 +55,7 @@ import { ProfileSelectorComponent } from './components/profile-selector/profile-
 import { ProfilesComponent } from './components/profiles/profiles.component';
 import { RewardsConfigComponent } from './components/rewards-config/rewards-config.component';
 import { RewardConfigComponent } from './components/reward-config/reward-config.component';
+import { SingleRewardComponent } from './components/single-reward/single-reward.component';
 
 const appRoutes: Routes = [
   { path: '', component: SignInComponent }
@@ -95,7 +96,8 @@ const appRoutes: Routes = [
     ProfileSelectorComponent,
     ProfilesComponent,
     RewardsConfigComponent,
-    RewardConfigComponent
+    RewardConfigComponent,
+    SingleRewardComponent
   ],
   imports: [
     BrowserModule,

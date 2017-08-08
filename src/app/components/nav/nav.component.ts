@@ -9,6 +9,7 @@ export class NavComponent implements OnInit {
   @Output() sendCont = new EventEmitter();
   @Input() currentProfile;
   @Input() users;
+  @Input() rewards;
 
   sentCont(pCont) {
       this.sendCont.emit(pCont);
