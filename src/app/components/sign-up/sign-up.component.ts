@@ -3,13 +3,10 @@ import { Router } from "@angular/router";
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from "../../shared/auth.service";
 
-// import { ReactiveFormsModule } from '@angular/forms';
-
-
 @Component({
   selector: 'sign-up',
   templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.scss']
+  styleUrls: ['./sign-up.component.css']
 })
 export class UserLoginComponent implements OnInit {
   @Output() sendCont = new EventEmitter();
@@ -20,11 +17,8 @@ export class UserLoginComponent implements OnInit {
   constructor(private fb: FormBuilder, public auth: AuthService,
     private router: Router) { }
 
-
   ngOnInit() {
   }
-
-
 
   /// Social Login
 

@@ -1,17 +1,15 @@
-<div *ngIf="!auth.currentUser; else alreadyLoggedIn">
-  <button (click)="signInWithGoogle()" class="button btn-social btn-google">
-      <i class="fa fa-google-plus fa-lg"></i> Connect Google
-    </button>
+<div class="sign-in" *ngIf="!auth.currentUser; else alreadyLoggedIn">
+  <div class="sign-in-logo">
+    <img src="../../../assets/images/sign-in-logo.png" alt="">
+    <h2>Home Chores</h2>
+    <h3>Where the family works together</h3>
+  </div>
   <sign-up-form></sign-up-form>
+  <button (click)="signInWithGoogle()" class="button btn-social btn-google">Connect with Google</button>
 </div>
-
-
-<div>
-  <span>test</span>
-</div>
-
 
 <ng-template #alreadyLoggedIn>
+  <span>Test para usuario por primera vez</span>
   <button>Go to Dashboard?</button>
   <button>Select profile?</button>
   <button>Go to config?</button>

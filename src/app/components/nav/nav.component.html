@@ -25,24 +25,11 @@
       </div>
       <app-single-reward [currentProfile]='currentProfile' [rewards]='rewards'></app-single-reward>
       <div class="menu-options">
-        <!-- User logged in -->
-        <div class="box" *ngIf="auth.currentUser">
-            <h3>Howdy, {{ auth.currentUserDisplayName }}</h3>
-            <img class="card-img-top" [src]="auth.currentUser.photoURL || 'https://api.adorable.io/avatars/109/fire.png'" width=50px>
-            <p class="text-truncate">UID: {{ auth.currentUserId }}</p>
-            <button class="button" (click)="logout()">Logout</button>
-
-      </div>
-
-        <!-- User NOT logged in -->
-        <div class="box" *ngIf="!auth.currentUser">
-            <h3>Howdy, {{ auth.currentUserDisplayName }}</h3>
-            <p class="card-text">Login to get started...</p>
-            <button class="button" routerLink="/login">Login</button>
-
-        </div>
         <ul>
-          <li (click)="toogleMenu()"><a a href="#" (click)="sentCont(0)">Sign In</a></li>
+          <!-- User NOT logged in -->
+          <li *ngIf="!auth.currentUser" (click)="toogleMenu()"><a a href="#" (click)="sentCont(0)">Sign In</a></li>
+          <!-- User logged in -->
+          <li *ngIf="auth.currentUser" (click)="toogleMenu()"><a href="#" (click)="logout()"><i class="glyphicon glyphicon-log-out"></i> Sign Out</a></li>
           <li (click)="toogleMenu()"><a href="#" (click)="sentCont(2)"><i class="fa fa-gears" aria-hidden="true"></i> Configuration</a></li>
           <li (click)="toogleMenu()"><a href="#" (click)="sentCont(3)"><i class="fa fa-star-o" aria-hidden="true"></i> View metrics</a></li>
           <li (click)="toogleMenu()"><a href="#" (click)="sentCont(4)"><i class="fa fa-user-o" aria-hidden="true"></i> Switch user</a></li>
