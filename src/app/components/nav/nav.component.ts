@@ -10,6 +10,7 @@ export class NavComponent implements OnInit {
   @Input() currentProfile;
   @Input() users;
   @Input() logOutUser;
+  @Input() rewards;
 
   sentCont(pCont) {
     this.sendCont.emit(pCont);
