@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { AuthService } from "../../shared/auth.service";
+
 
 @Component({
   selector: 'app-nav',
@@ -15,10 +17,15 @@ export class NavComponent implements OnInit {
       this.sendCont.emit(pCont);
   }
 
-  constructor() { }
+  constructor(public auth: AuthService) { }
 
   ngOnInit() {
     
+  }
+
+  logout() {
+    this.auth.signOut();
+    this.sendCont.emit(0);
   }
 
   toogleMenu() {

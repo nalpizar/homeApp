@@ -1,3 +1,22 @@
-<p>
-  sign-up works!
-</p>
+<div *ngIf="!auth.currentUser; else alreadyLoggedIn">
+    <button (click)="signInWithGoogle()" class="button btn-social btn-google">
+      <i class="fa fa-google-plus fa-lg"></i> Connect Google
+    </button>
+    <sign-up-form></sign-up-form>
+</div>
+
+
+<div>
+  <span>test</span>
+</div>
+
+
+<ng-template #alreadyLoggedIn>
+  <button>Go to Dashboard?</button>
+  <button>Select profile?</button>
+  <button>Go to config?</button>
+</ng-template>
+
+
+
+

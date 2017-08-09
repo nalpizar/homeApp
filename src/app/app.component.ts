@@ -31,7 +31,7 @@ import { Star } from './models/star';
 })
 export class AppComponent {
   private family: Family;
-  private showCont = 0;
+  private showCont = 1;
   private avatars: Avatar[] = [];
   private taskRep: TaskRep[] = [];
   private skins: Skin[] = [];
