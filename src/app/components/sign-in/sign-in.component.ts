@@ -12,25 +12,34 @@ export class SignInComponent implements OnInit {
   user = null;
 
   @Output() sendCont = new EventEmitter();
+  @Output() mainUser = new EventEmitter();
+  @Output() logOutUser = new EventEmitter();
 
   constructor(private auth: AuthService, public db: AngularFireDatabase) { }
 
   ngOnInit() {
     this.auth.getAuthState().subscribe(
       (user) => this.user = user);
+    this.mainUser.emit(this.user);
+    this.logOutUser.emit(this.auth);
+
+
   }
 
   loginWithGoogle() {
-    console.log(this.user)
     if (this.user == null) {
       this.auth.loginWithGoogle();
     } else {
       this.sendCont.emit(4);
+      this.mainUser.emit(this.user);
+      console.log(this.auth.afAuth.auth.currentUser.displayName);
     }
     let temp = setInterval(() => {    //<<<---    using ()=> syntax
-      console.log(this.user)
+
       if (this.user != null) {
         this.sendCont.emit(4);
+        this.mainUser.emit(this.user);
+
         clearInterval(temp);
       }
     }, 1000);
@@ -38,7 +47,6 @@ export class SignInComponent implements OnInit {
 
   logOut() {
     this.auth.afAuth.auth.signOut();
-    console.log(this.user)
   }
 
 }

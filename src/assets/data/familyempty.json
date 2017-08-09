@@ -1,0 +1,59 @@
+{
+    "idFamily": 1,
+    "members": [
+        {
+            "id": 1,
+            "name": "Admin",
+            "age": 0,
+            "avatarId": "100",
+            "skinId": "0",
+            "type": "admin"
+        }
+    ],
+    "taskRepository": [
+        {}
+    ],
+    "week": [
+        {
+            "id": 1,
+            "days": [
+                {
+                    "id": 1,
+                    "dayName": "Monday",
+                    "tasks": []
+                },
+                {
+                    "id": 2,
+                    "dayName": "Tuesday",
+                    "tasks": []
+                },
+                {
+                    "id": 3,
+                    "dayName": "Wednesday",
+                    "tasks": []
+                },
+                {
+                    "id": 4,
+                    "dayName": "Thursday",
+                    "tasks": []
+                },
+                {
+                    "id": 5,
+                    "dayName": "Friday",
+                    "tasks": []
+                },
+                {
+                    "id": 6,
+                    "dayName": "Saturday",
+                    "tasks": []
+                },
+                {
+                    "id": 7,
+                    "dayName": "Sunday",
+                    "tasks": []
+                }
+            ]
+        }
+    ],
+    "rewards": []
+}
