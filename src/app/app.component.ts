@@ -32,9 +32,12 @@ import { Star } from './models/star';
 export class AppComponent {
   private family: Family;
   private showCont = 0;
+  private mainUser;
+  private logOutUser;
   private avatars: Avatar[] = [];
   private taskRep: TaskRep[] = [];
   private skins: Skin[] = [];
+
 
   private users: User[] = [];
   private currentProfile = 1;
@@ -51,15 +54,28 @@ export class AppComponent {
   isDataLoaded: boolean = false;
 
   constructor(private http: Http, public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
-    this.items = af.object('/Families/Family' + 1);
-    this.items.forEach(item => {
-      this.loadFromJson(item);
-    });
+
+    let temp = setInterval(() => {    //<<<---    using ()=> syntax
+      if (this.mainUser != null) {
+        console.log(this.mainUser.uid);
+        console.log(this.mainUser.displayName);
+        console.log(this.mainUser);
+        this.items = af.object('/Families/Family' + this.mainUser.uid);
+        this.items.forEach(item => {
+          this.loadFromJson(item);
+        });
+        clearInterval(temp);
+      }
+    }, 1000);
+
+
+
   }
 
 
 
   loadData(familyUrl: string, avatarUrl: string, skinUrl: string, pData: Family) {
+
     this.http.get(avatarUrl).map(res => res.json()).subscribe((data) => {
       for (var avatar of data) {
         let tempAvatar = new Avatar(avatar.avatarId, avatar.nombre, avatar.url);
@@ -78,64 +94,82 @@ export class AppComponent {
       //this.af.object('/Families/Family' + data.idFamily).update(data);
       //this.af.object('/Families/Family' + data.idFamily).update(this.family);
       let data = JSON.parse(JSON.stringify(pData));
-      this.family = new Family(data.idFamily);
 
-
-      for (var member of data.members) {
-        let tempMember = new User(member.id, member.name, member.age, member.type, member.avatarId);
-        tempMember.setAvatar(member.avatarId);
-        tempMember.setSkin(member.skinId);
-        this.family.addMembers(tempMember);
-
-
-      }
-
-
-      for (var taskRep of data.taskRepository) {
-        let temptask = new TaskRep(taskRep.id, taskRep.name, taskRep.weight);
-        this.family.addTaskRep(temptask);
-
-      }
-
-      for (var week of data.week) {
-
-        let tempWeek = new Week(week.id);
-        for (var day of week.days) {
-          let tempDay = new Day(day.id, day.dayName);
-          for (var task of day.tasks) {
-            let tempScore = new Score(task.score);
-            let numbers = [1, 2, 3, 4, 5];
-            for (let num of numbers) {
-              var newStar = new Star(num, false);
-              tempScore.addStar(newStar)
-            }
-            let tempTask = new Task(task.id, task.name, task.position, task.weight, task.status, task.swapedTo, tempScore, task.userId);
-            tempDay.addTask(tempTask);
-          }
-          tempWeek.addWeekDays(tempDay);
+      if (data.idFamily == null) {
+        this.family = new Family(this.mainUser.uid);
+        for (var member of data2.members) {
+          let tempMember = new User(member.id, this.mainUser.displayName, member.age, member.type, member.avatarId);
+          tempMember.setAvatar(member.avatarId);
+          tempMember.setSkin(member.skinId);
+          this.family.addMembers(tempMember);
         }
+        for (var week of data2.week) {
 
-        this.family.addWeek(tempWeek);
+          let tempWeek = new Week(week.id);
+          for (var day of week.days) {
+            let tempDay = new Day(day.id, day.dayName);
+            tempWeek.addWeekDays(tempDay);
+          }
+          this.family.addWeek(tempWeek);
+        }
+        this.isDataLoaded = true;
+        console.log(this.family);
+        this.af.object('/Families/Family' + this.mainUser.uid).update(this.family);
+      } else {
+        this.family = new Family(data.idFamily);
+        for (var member of data.members) {
+          let tempMember = new User(member.id, member.name, member.age, member.type, member.avatarId);
+          tempMember.setAvatar(member.avatarId);
+          tempMember.setSkin(member.skinId);
+          this.family.addMembers(tempMember);
 
 
+        }
+        if (data.taskRepository != null) {
+          for (var taskRep of data.taskRepository) {
+            let temptask = new TaskRep(taskRep.id, taskRep.name, taskRep.weight);
+            this.family.addTaskRep(temptask);
+
+          }
+        }
+        for (var week of data.week) {
+
+          let tempWeek = new Week(week.id);
+          for (var day of week.days) {
+            let tempDay = new Day(day.id, day.dayName);
+            if (day.tasks != null) {
+              for (var task of day.tasks) {
+                let tempScore = new Score(task.score);
+                let numbers = [1, 2, 3, 4, 5];
+                for (let num of numbers) {
+                  var newStar = new Star(num, false);
+                  tempScore.addStar(newStar)
+                }
+                let tempTask = new Task(task.id, task.name, task.position, task.weight, task.status, task.swapedTo, tempScore, task.userId);
+                tempDay.addTask(tempTask);
+              }
+            }
+            tempWeek.addWeekDays(tempDay);
+          }
+
+          this.family.addWeek(tempWeek);
+
+
+        }
+        if (data.rewards != null) {
+          for (var reward of data.rewards) {
+            let tempReward = new Reward(reward.id, reward.name, reward.awardedTo);
+            this.family.addRewards(tempReward);
+
+          }
+        }
+        this.isDataLoaded = true;
+        console.log(this.family);
+        console.log(this.avatars);
+        console.log(this.skins);
+        console.log(data);
+        console.log(this.family);
       }
-
-
-      for (var reward of data.rewards) {
-        let tempReward = new Reward(reward.id, reward.name, reward.awardedTo);
-        this.family.addRewards(tempReward);
-
-      }
-
-      this.isDataLoaded = true;
-
-      console.log(this.family);
-      console.log(this.avatars);
-      console.log(this.skins);
-      console.log(data);
-      console.log(this.family);
-
-      //this.af.object('/Families/Family' + data.idFamily).update(this.family);
 
     });
 
@@ -144,7 +178,7 @@ export class AppComponent {
   }
 
   loadFromJson(pData) {
-    this.loadData('../assets/data/family.json', '../assets/data/avatars.json', '../assets/data/skin.json', pData);
+    this.loadData('../assets/data/familyempty.json', '../assets/data/avatars.json', '../assets/data/skin.json', pData);
 
   }
 
@@ -154,9 +188,15 @@ export class AppComponent {
 
   showContent(pcont) {
     this.showCont = pcont;
-    console.log(pcont)
   }
+  recivedMainUser(pMainUser) {
+    this.mainUser = pMainUser;
 
+  }
+  recivedLogOut(pLogOut) {
+    this.logOutUser = pLogOut;
+
+  }
   recievedCont(cont) {
     this.showCont = cont;
   }
