@@ -1,8 +1,8 @@
 <div *ngIf="!auth.currentUser; else alreadyLoggedIn">
-    <button (click)="signInWithGoogle()" class="button btn-social btn-google">
+  <button (click)="signInWithGoogle()" class="button btn-social btn-google">
       <i class="fa fa-google-plus fa-lg"></i> Connect Google
     </button>
-    <sign-up-form></sign-up-form>
+  <sign-up-form></sign-up-form>
 </div>
 
 
@@ -16,7 +16,3 @@
   <button>Select profile?</button>
   <button>Go to config?</button>
 </ng-template>
-
-
-
-

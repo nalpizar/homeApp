@@ -15,11 +15,11 @@
         <app-stars></app-stars>
     </div>
     <div *ngIf="showCont==4">
-        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' [family]='family' [af]='af' [user]='user'
-            [users]='family.getMembers()' (sendCont)='recievedCont($event)'></app-profile-selector>
+        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' [family]='family' [af]='af' [user]='user' [users]='family.getMembers()'
+            (sendCont)='recievedCont($event)'></app-profile-selector>
     </div>
     <div class="column is-8" *ngIf="showCont==0">
-      <!--<router-outlet></router-outlet>-->
-      <sign-up></sign-up>
+        <!--<router-outlet></router-outlet>-->
+        <sign-up (sendCont)='showContent($event)'></sign-up>
     </div>
 </div>

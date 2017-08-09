@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from "@angular/router";
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from "../../shared/auth.service";
@@ -12,25 +12,25 @@ import { AuthService } from "../../shared/auth.service";
   styleUrls: ['./sign-up.component.scss']
 })
 export class UserLoginComponent implements OnInit {
-
+  @Output() sendCont = new EventEmitter();
   userForm: FormGroup;
   newUser = true; // to toggle login or signup form
   passReset = false; // set to true when password reset is triggered
 
   constructor(private fb: FormBuilder, public auth: AuthService,
-              private router: Router) { }
+    private router: Router) { }
 
 
-  ngOnInit(){
-   }
+  ngOnInit() {
+  }
 
-   
-   
+
+
   /// Social Login
 
   signInWithGithub(): void {
     this.auth.githubLogin()
-    .then(() => this.afterSignIn());
+      .then(() => this.afterSignIn());
   }
 
   signInWithGoogle(): void {
@@ -62,6 +62,7 @@ export class UserLoginComponent implements OnInit {
     // Do after login stuff here, such router redirects, toast messages, etc.
     // this.router.navigate(['/']);
     console.log('entramosss!');
+    this.sendCont.emit(4);
   }
 
 
