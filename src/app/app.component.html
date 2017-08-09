@@ -4,7 +4,6 @@
 <div *ngIf='isDataLoaded'>
 
     <div *ngIf="showCont==1">
-
         <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [rewards]='family.getRewards()' [logOutUser]='logOutUser'
             [users]='family.getMembers()'></app-nav>
         <app-dashboard [family]='family' [af]='af' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-dashboard>
@@ -17,17 +16,6 @@
     <div *ngIf="showCont==3">
         <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [rewards]='family.getRewards()' [logOutUser]='logOutUser'
             [users]='family.getMembers()'></app-nav>
-
-        <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
-        <app-dashboard [family]='family' [af]='af' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-dashboard>
-    </div>
-    <div *ngIf="showCont==2">
-        <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
-        <app-config [family]='family' [af]='af' [tasks]='family.getTaskRep()' [users]='family.getMembers()' [rewards]='family.rewards'></app-config>
-    </div>
-    <div *ngIf="showCont==3">
-        <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
-
         <app-stars></app-stars>
     </div>
     <div *ngIf="showCont==4">
