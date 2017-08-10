@@ -27,6 +27,7 @@ export class SwapTaskComponent implements OnInit {
       pTask.status = 3;
       this.bgColor = '#555377';
       this.color = '#ffffff';
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 
     }
   };
@@ -38,13 +39,16 @@ export class SwapTaskComponent implements OnInit {
       pTask.status = 1;
       this.bgColor = '#349B72';
       this.color = '#ffffff';
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 
     } else {
       if (pTask.status == 1) {
 
         pTask.status = 2;
+        pTask.swapedTo = 0;
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
+        this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 
       } else {
         if (pTask.status == 2) {
@@ -52,6 +56,7 @@ export class SwapTaskComponent implements OnInit {
           pTask.status = 4;
           this.bgColor = '#ce8f5a';
           this.color = '#ffffff';
+          this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 
         }
       }
@@ -66,6 +71,22 @@ export class SwapTaskComponent implements OnInit {
       this.bgColor = '#555377';
       this.color = '#ffffff';
     }
+
+    if (this.task.status == 2) {
+      this.bgColor = '#9B7C34';
+      this.color = '#ffffff';
+    }
+
+    if (this.task.status == 1) {
+      this.bgColor = '#349B72';
+      this.color = '#ffffff';
+    }
+
+    if (this.task.status == 4) {
+      this.bgColor = '#ce8f5a';
+      this.color = '#ffffff';
+    }
+
   }
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
