@@ -9,7 +9,8 @@ import {Score} from'../../models/score';
   styleUrls: ['./stars.component.css']
 })
 export class StarsComponent implements OnInit {
-
+  @Input() family;
+  @Input() af;
   constructor() { }
 
   @Input() task;
@@ -156,7 +157,7 @@ export class StarsComponent implements OnInit {
     }
 
     console.log(this.currentStars);
-  
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 }
 
 

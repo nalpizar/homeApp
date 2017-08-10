@@ -13,7 +13,8 @@ export class SwapTaskComponent implements OnInit {
   @Input() users;
   @Input() currentUserId;
   @Input() currentProfile;
-
+  @Input() family;
+  @Input() af;
   myClass = 'cont';
   bgColor = '';
   color = '';
@@ -30,7 +31,7 @@ export class SwapTaskComponent implements OnInit {
     }
   };
 
- changeStates(pTask) {
+  changeStates(pTask) {
 
     if (pTask.status == 3 || pTask.status == 4) {
 
@@ -45,9 +46,9 @@ export class SwapTaskComponent implements OnInit {
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
 
-      }else{
-        if(pTask.status == 2){
-          
+      } else {
+        if (pTask.status == 2) {
+
           pTask.status = 4;
           this.bgColor = '#ce8f5a';
           this.color = '#ffffff';

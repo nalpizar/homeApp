@@ -12,6 +12,9 @@ export class DayComponent implements OnInit {
   @Input() users;
   @Input() currentUserId;
   @Input() currentProfile;
+  @Input() family;
+  @Input() af;
+
 
   @Output() emitCurrentDay = new EventEmitter;
   @Output() emitCurrentTask = new EventEmitter;

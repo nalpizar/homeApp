@@ -16,6 +16,8 @@ export class AddTaskComponent implements OnInit {
   @Input() taskRepo;
   @Input() currentUserId;
   @Input() currentDay;
+  @Input() family;
+  @Input() af;
 
 
   constructor() { }
@@ -42,6 +44,7 @@ export class AddTaskComponent implements OnInit {
     var newTask = new Task(tempTask.getId(), tempTask.getName(), 9, tempTask.getWeight(), 0, 0, newScore, this.currentUserId);
     console.log(newTask);
     this.currentDay.addTask(newTask);
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 
 
   }

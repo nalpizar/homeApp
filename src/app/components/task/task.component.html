@@ -4,22 +4,22 @@
       <div class="task-name" (click)='changeStates(task)'>
         <span [style.color]="color">{{task.name}}</span>
       </div>
-      <app-stars *ngIf="task.status == 2" [task]='task'></app-stars>
+      <app-stars *ngIf="task.status == 2" [task]='task' [family]='family' [af]='af'></app-stars>
       <div class="waterMark" *ngIf="task.status == 1">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-          <span>In Progress</span>
+        <span>In Progress</span>
       </div>
       <div class="waterMark" *ngIf="task.status == 2">
         <i class="fa  fa-check" aria-hidden="true"></i>
-          <span>Completed</span>
+        <span>Completed</span>
       </div>
       <div class="waterMark" *ngIf="task.status == 3">
         <i class="fa  fa-exclamation-circle" aria-hidden="true"></i>
-          <span>Hurry</span>
+        <span>Hurry</span>
       </div>
       <div class="waterMark" *ngIf="task.status == 4">
         <i class="fa  fa-exchange" aria-hidden="true"></i>
-          <span>Swapped</span>
+        <span>Swapped</span>
       </div>
       <div class="actions">
         <a *ngIf="currentProfile == task.userId && task.status == 0" (click)='sendTask()' [style.color]="color" data-toggle="modal"
@@ -32,6 +32,6 @@
       </div>
     </div>
   </div>
-  <div class="delete" (click)='day.deleteTask(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+  <div class="delete" (click)='deleteTask()'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
   <div class="swaped" *ngIf="task.swapedTo"></div>
 </div>

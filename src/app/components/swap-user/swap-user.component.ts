@@ -10,6 +10,8 @@ export class SwapUserComponent implements OnInit {
   @Input() currentTask;
   @Input() currentUserId;
   @Input() users;
+  @Input() family;
+  @Input() af;
 
   swapedToId = 0;
 

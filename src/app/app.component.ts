@@ -54,6 +54,7 @@ export class AppComponent {
     let temp = setInterval(() => {
       if (auth.authState != null) {
         console.log(auth.authState);
+        // this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
         this.items = this.af.object('/Families/Family' + 1);
         this.items.forEach(item => {
           this.loadFromJson(item);
@@ -130,10 +131,10 @@ export class AppComponent {
             let tempDay = new Day(day.id, day.dayName);
             if (day.tasks != null) {
               for (var task of day.tasks) {
-                let tempScore = new Score(task.score);
-                let numbers = [1, 2, 3, 4, 5];
-                for (let num of numbers) {
-                  var newStar = new Star(num, false);
+                let tempScore = new Score(task.score.id);
+               // let numbers = [1, 2, 3, 4, 5];
+                for (let star of task.score.stars) {
+                  var newStar = new Star(star.id, star.status);
                   tempScore.addStar(newStar)
                 }
                 let tempTask = new Task(task.id, task.name, task.position, task.weight, task.status, task.swapedTo, tempScore, task.userId);
@@ -160,6 +161,7 @@ export class AppComponent {
         console.log(this.skins);
         console.log(data);
         console.log(this.family);
+        //this.af.object('/Families/Family' + 1).update(this.family);
       }
 
     });
