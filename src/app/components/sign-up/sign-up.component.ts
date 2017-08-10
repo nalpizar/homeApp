@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { Router } from "@angular/router";
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from "../../shared/auth.service";
@@ -18,6 +18,8 @@ export class UserLoginComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit() {
+    console.log(this.auth)
+
   }
 
   /// Social Login
@@ -57,6 +59,10 @@ export class UserLoginComponent implements OnInit {
     // this.router.navigate(['/']);
     console.log('entramosss!');
     this.sendCont.emit(4);
+  }
+
+  private isSignIn(pCont): void {
+    this.sendCont.emit(pCont);
   }
 
 

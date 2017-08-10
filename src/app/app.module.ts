@@ -45,8 +45,8 @@ import { AdminFamilyComponent } from './components/admin-family/admin-family.com
 import { AdminTasksComponent } from './components/admin-tasks/admin-tasks.component';
 import { NewUserComponent } from './components/new-user/new-user.component';
 import { NewRewardComponent } from './components/new-reward/new-reward.component';
-import { UserLoginComponent }   from './components/sign-up/sign-up.component';
-import { UserFormComponent }    from './components/sign-up-form/sign-up-form.component';
+import { UserLoginComponent } from './components/sign-up/sign-up.component';
+import { UserFormComponent } from './components/sign-up-form/sign-up-form.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { RepoTaskComponent } from './components/./repo-task/repo-task.component';
@@ -61,6 +61,7 @@ import { ProfilesComponent } from './components/profiles/profiles.component';
 import { RewardsConfigComponent } from './components/rewards-config/rewards-config.component';
 import { RewardConfigComponent } from './components/reward-config/reward-config.component';
 import { SingleRewardComponent } from './components/single-reward/single-reward.component';
+import { LoggedInComponent } from './components/logged-in/logged-in.component';
 
 const appRoutes: Routes = [
   // { path: '', component: SignInComponent }
@@ -104,7 +105,8 @@ const appRoutes: Routes = [
     ProfilesComponent,
     RewardsConfigComponent,
     RewardConfigComponent,
-    SingleRewardComponent
+    SingleRewardComponent,
+    LoggedInComponent
   ],
   imports: [
     BrowserModule,
@@ -112,7 +114,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     RouterModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes, {useHash: true}),
+    RouterModule.forRoot(appRoutes, { useHash: true }),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule

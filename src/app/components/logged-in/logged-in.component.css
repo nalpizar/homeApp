@@ -1,0 +1,42 @@
+.sign-in {
+    background-image: url('../../../assets/images/sign-in-bg.jpg');
+    min-height: 736px;
+    height: 100%;
+    background-size: 100%;
+    padding: 20px 40px;
+    background-repeat: no-repeat
+}
+
+.sign-in-logo h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sign-in-logo h3 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 60%;
+    margin: 0 auto 10% auto;
+    line-height: 1.5;
+}
+
+.sign-in-logo img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+.btn-google {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'ralewaylight';
+    padding: 10px;
+    margin-top: 5%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}

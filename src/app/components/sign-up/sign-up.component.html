@@ -9,8 +9,5 @@
 </div>
 
 <ng-template #alreadyLoggedIn>
-  <span>Test para usuario por primera vez</span>
-  <button>Go to Dashboard?</button>
-  <button>Select profile?</button>
-  <button>Go to config?</button>
+  <app-logged-in (sendCont)="isSignIn($event)"></app-logged-in>
 </ng-template>
