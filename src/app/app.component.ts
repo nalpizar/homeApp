@@ -51,17 +51,22 @@ export class AppComponent {
   isDataLoaded: boolean = false;
 
   constructor(private http: Http, public auth: AuthService, public af: AngularFireDatabase) {
-    let temp = setInterval(() => {
-      if (auth.authState != null) {
-        console.log(auth.authState);
-        // this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
-        this.items = this.af.object('/Families/Family' + 1);
-        this.items.forEach(item => {
-          this.loadFromJson(item);
-        });
-        clearInterval(temp);
-      }
-    }, 1000);
+    if (this.family != null) {
+      console.log("family not null");
+    } else {
+      console.log("family null");
+      let temp = setInterval(() => {
+        if (auth.authState != null) {
+          console.log(auth.authState);
+          this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
+          //this.items = this.af.object('/Families/Family' + 1);
+          this.items.forEach(item => {
+            this.loadFromJson(item);
+          });
+          clearInterval(temp);
+        }
+      }, 1000);
+    }
   }
 
 
@@ -132,7 +137,7 @@ export class AppComponent {
             if (day.tasks != null) {
               for (var task of day.tasks) {
                 let tempScore = new Score(task.score.id);
-               // let numbers = [1, 2, 3, 4, 5];
+                // let numbers = [1, 2, 3, 4, 5];
                 for (let star of task.score.stars) {
                   var newStar = new Star(star.id, star.status);
                   tempScore.addStar(newStar)
@@ -163,6 +168,7 @@ export class AppComponent {
         console.log(this.family);
         //this.af.object('/Families/Family' + 1).update(this.family);
       }
+
 
     });
 
