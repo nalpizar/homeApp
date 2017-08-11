@@ -154,3 +154,14 @@
     -webkit-transform: translateY(10%);
     transform: translateY(10%);
 }
+
+@media (min-width: 1240px) {
+    .topBox, #myCarousel {
+        position: absolute;
+        width: 70%;
+        left: 30%;
+    }
+    #myCarousel {
+        top: 20%;
+    }
+}

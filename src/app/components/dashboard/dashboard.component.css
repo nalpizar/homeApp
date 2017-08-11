@@ -1,0 +1,6 @@
+@media (min-width: 1240px) {
+    app-rewards, app-users, app-week {
+        position: relative;
+        left: 30%;
+    }   
+}

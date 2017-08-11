@@ -104,4 +104,14 @@ button.close {
 
 }
 
+@media (min-width: 1240px) {
+    .task {
+        padding: 15px 75px;
+    }
+    .task .actions i {
+        margin: 0;
+        float: right;
+    }
+}
+
 

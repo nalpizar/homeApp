@@ -6,3 +6,9 @@ h3 {
     text-align: center;
     color: #f39c12;
 }
+
+@media (min-width: 1240px) {
+    .family-reward {
+        width: 70%; 
+    }  
+}

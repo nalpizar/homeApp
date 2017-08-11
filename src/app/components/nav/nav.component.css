@@ -121,3 +121,18 @@ header {
     font-size: 1.4rem;
     margin: 0;
 }
+
+@media (min-width: 1240px) {
+    #menu-toogle { display: none}
+
+    .slide {
+        position: absolute;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        background: #fff;
+        transition: 1s;
+        z-index: 8;
+        margin-top: 9px;
+    }   
+}
