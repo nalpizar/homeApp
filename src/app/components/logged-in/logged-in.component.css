@@ -8,14 +8,49 @@
 }
 
 .carousel {
-    border: 1px solid #000;
     width: 86%;
     margin: 30px auto 0 auto;
 }
 
+.carousel-indicators {
+    bottom: 19px;
+    left: 15px;
+}
+
 .item-cont {
     width: 100%;
-    height: 500px;
+    order: 1px solid #eee;
+}
+
+.item-cont img {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.welcome-text h1 {
+    color: #4dd0e1;
+    font-weight: 600;
+}
+
+.welcome-text h3 {
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+button {
+    background: #4dd0e1;
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-family: 'ralewaylight';
+    margin: 0 auto;
+    display: block;
 }
 
 /*iPhone 6+ Portrait*/
