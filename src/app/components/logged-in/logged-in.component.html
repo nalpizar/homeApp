@@ -1,21 +1,23 @@
-<!--<div class="sign-in">
+<div class="loading sign-in" *ngIf='isNewUser == null'>Loading...</div>
+
+<div class="sign-in" *ngIf='isNewUser == false'>
   <div class="sign-in-logo">
     <img src="../../../assets/images/sign-in-logo.png" alt="">
     <h2>Home Chores</h2>
     <h3>Where the family works together</h3>
     <h2>You are currently logged</h2>
   </div>
-  <button (click)="isSignIn()" class="button btn-social btn-google">Please Click to Continue</button>
-</div>-->
+  <button (click)="isSignIn(4)" class="button2 btn-google">Please Click to Continue</button>
+</div>
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div *ngIf='isNewUser == true' id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
- 
+
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
@@ -48,10 +50,11 @@
           <h3>Add the rewards</h3>
         </div>
         <hr>
-        <button (click)="isSignIn()" class="button btn-social btn-google">Go to configuration</button>
+        <button (click)="isSignIn(2)" class="button btn-social btn-google">Go to configuration</button>
         <img src="../../../assets/images/slide-3.png" alt="">
       </div>
     </div>
   </div>
-</div> <!-- Carousel -->
+</div>
+<!-- Carousel -->
 <!--<button (click)="isSignIn()" class="button btn-social btn-google">Please Click to Continue</button>-->

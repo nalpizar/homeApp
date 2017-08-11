@@ -1,5 +1,5 @@
 <div *ngIf="showCont==0">
-    <sign-up (sendCont)='showContent($event)'></sign-up>
+    <sign-up (sendCont)='showContent($event)' [isNewUser]='isNewUser'></sign-up>
 </div>
 <div *ngIf='isDataLoaded'>
     <div *ngIf="showCont==1">

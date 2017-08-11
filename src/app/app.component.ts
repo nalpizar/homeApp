@@ -30,8 +30,9 @@ import { Star } from './models/star';
 })
 export class AppComponent {
   private family: Family;
-  private showCont = 0
-  ;
+  private showCont = 0;
+  private isNewUser = null;
+
   private avatars: Avatar[] = [];
   private taskRep: TaskRep[] = [];
   private skins: Skin[] = [];
@@ -54,7 +55,7 @@ export class AppComponent {
     let temp = setInterval(() => {
       if (auth.authState != null) {
         console.log(auth.authState);
-        // this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
+        //this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
         this.items = this.af.object('/Families/Family' + 1);
         this.items.forEach(item => {
           this.loadFromJson(item);
@@ -92,6 +93,7 @@ export class AppComponent {
         let data = JSON.parse(JSON.stringify(pData));
 
         if (data.idFamily == null) {
+          this.isNewUser = true;
           this.family = new Family(this.auth.currentUser.uid);
           for (var member of data2.members) {
             let tempMember = new User(member.id, this.auth.currentUser.displayName, member.age, member.type, member.avatarId);
@@ -112,6 +114,7 @@ export class AppComponent {
           console.log(this.family);
           this.af.object('/Families/Family' + this.auth.currentUser.uid).update(this.family);
         } else {
+          this.isNewUser = false;
           this.family = new Family(data.idFamily);
           for (var member of data.members) {
             let tempMember = new User(member.id, member.name, member.age, member.type, member.avatarId);
