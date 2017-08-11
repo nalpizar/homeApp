@@ -13,6 +13,6 @@ export class LoggedInComponent implements OnInit {
   }
 
   isSignIn() {
-    this.sendCont.emit(4);
+    this.sendCont.emit(2);
   }
 }
