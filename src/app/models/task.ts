@@ -14,8 +14,6 @@ export class Task {
 	private userId: number;
 
 
-
-
 	constructor(id: number, name: string, position: number, weight: number, status: number, swapedTo: number, score: Score, userId: number) {
 		this.setId(id);
 		this.setName(name);

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../models/task';
+import { OrderModule } from 'ngx-order-pipe';
 
 @Component({
   selector: 'app-tasks',

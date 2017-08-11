@@ -62,6 +62,7 @@ import { RewardsConfigComponent } from './components/rewards-config/rewards-conf
 import { RewardConfigComponent } from './components/reward-config/reward-config.component';
 import { SingleRewardComponent } from './components/single-reward/single-reward.component';
 import { LoggedInComponent } from './components/logged-in/logged-in.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 const appRoutes: Routes = [
   // { path: '', component: SignInComponent }
