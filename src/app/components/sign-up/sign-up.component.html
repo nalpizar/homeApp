@@ -1,3 +1,13 @@
-<p>
-  sign-up works!
-</p>
+<div class="sign-in" *ngIf="!auth.currentUser; else alreadyLoggedIn">
+  <div class="sign-in-logo">
+    <img src="../../../assets/images/sign-in-logo.png" alt="">
+    <h2>Home Chores</h2>
+    <h3>Where the family works together</h3>
+  </div>
+  <sign-up-form></sign-up-form>
+  <button (click)="signInWithGoogle()" class="button btn-social btn-google">Connect with Google</button>
+</div>
+
+<ng-template #alreadyLoggedIn>
+  <app-logged-in (sendCont)="isSignIn($event)"></app-logged-in>
+</ng-template>

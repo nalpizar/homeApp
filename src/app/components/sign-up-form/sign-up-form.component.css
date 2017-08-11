@@ -16,20 +16,15 @@
    color:    #fff;
 }
 
-h1 {
-    text-align: center;
-    font-size: 12px;
+h3 {
     color: #fff;
-    margin: 20px 0 30px 0;
+    text-align: center;
+    font-family: 'ralewaylight';
 }
 
-.sign-in {
-    background-image: url('../../../assets/images/sign-in-bg.jpg');
-    min-height: 736px;
-    height: 100%;
-    background-size: 100%;
-    padding: 20px 40px;
-    background-repeat: no-repeat
+hr {
+    border-color: #fff;
+    margin-bottom: 30px;
 }
 
 .sign-in input {
@@ -44,6 +39,7 @@ h1 {
     color: #fff;
     border: 0;
     border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
 }
 
 .sign-in input.password {
@@ -57,8 +53,7 @@ h1 {
     outline: none;   
 }
 
-.loginbtn,
-.loginGooglebtn {
+.loginbtn {
     width: 100%;
     color: #fff;
     font-size: 14px;
@@ -69,50 +64,13 @@ h1 {
     border-radius: 20px;
 }
 
-.loginGooglebtn {
-    background-image: url('../../../assets/images/google-plus-logo.svg');
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: 20px;
-}
-
-.sign-in-logo img {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 10px auto;
-    display: block;
-}
-
-.sign-in-logo h2 {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.sign-in-logo h3 {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    width: 60%;
-    margin: 0 auto 10% auto;
-    line-height: 1.5;
-}
-
-span {
-    text-align: center;
-    font-size: 12px;
-    color: #fff;
-    margin-bottom: 30px;
-    display: block;
-    margin-top: 55px;
-}
-
+.existing-user,
 a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.form-group {
-    margin-bottom: 2rem;
+    color: #fff !important;
+    float: right;
+    width: 100%;
+    text-decoration: underline !important;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 13px;
 }

@@ -1,21 +1,22 @@
+<div *ngIf="showCont==0">
+    <sign-up (sendCont)='showContent($event)'></sign-up>
+</div>
 <div *ngIf='isDataLoaded'>
-    <div *ngIf="showCont==0">
-        <app-sign-in (sendCont)='showContent($event)'></app-sign-in>
-    </div>
     <div *ngIf="showCont==1">
-        <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
+        <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
         <app-dashboard [family]='family' [af]='af' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-dashboard>
     </div>
     <div *ngIf="showCont==2">
-        <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
+        <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
         <app-config [family]='family' [af]='af' [tasks]='family.getTaskRep()' [users]='family.getMembers()' [rewards]='family.rewards'></app-config>
     </div>
     <div *ngIf="showCont==3">
-        <app-nav (sendCont)='showContent($event)' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
+        <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
         <app-stars></app-stars>
     </div>
     <div *ngIf="showCont==4">
-        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' [family]='family' [af]='af' [user]='user'
-            [users]='family.getMembers()' (sendCont)='recievedCont($event)'></app-profile-selector>
+        <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' [family]='family' [af]='af' [user]='user' [users]='family.getMembers()'
+            (sendCont)='recievedCont($event)'></app-profile-selector>
     </div>
+
 </div>

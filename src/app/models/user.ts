@@ -15,6 +15,7 @@ export class User {
         this.setName(name);
         this.setAge(age);
         this.setAvatar(avatarId);
+        this.setType(type);
     }
 
     getId() { return this.id }
@@ -22,11 +23,13 @@ export class User {
     getAge() { return this.age }
     getAvatar() { return this.avatarId }
     getSkin() { return this.skinId }
+    getType() { return this.type }
 
     setId(value) { this.id = value; }
     setName(value) { this.name = value; }
     setAge(value) { this.age = value; }
     setAvatar(value) { this.avatarId = value; }
     setSkin(value) { this.skinId = value; }
+    setType(value) { this.type = value; }
 
 }

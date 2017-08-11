@@ -10,6 +10,8 @@ export class SwapUserComponent implements OnInit {
   @Input() currentTask;
   @Input() currentUserId;
   @Input() users;
+  @Input() family;
+  @Input() af;
 
   swapedToId = 0;
 
@@ -24,6 +26,7 @@ export class SwapUserComponent implements OnInit {
       this.currentTask.setSwapedTo(0);
     } else {
       this.currentTask.setSwapedTo(swapedTo);
+      this.currentTask.setStatus(4);
     }
     console.log(this.currentTask);
 

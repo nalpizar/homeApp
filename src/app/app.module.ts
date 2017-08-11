@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { CoreModule } from './shared/core.module';
 import { AuthService } from './shared/auth.service';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import 'hammer-timejs';
 
@@ -31,7 +35,7 @@ import { TaskComponent } from './components/task/task.component';
 import { NewTaskComponent } from './components/new-task/new-task.component';
 import { RewardsComponent } from './components/rewards/rewards.component';
 import { RewardComponent } from './components/reward/reward.component';
-import { SignInComponent } from './components/sign-in/sign-in.component';
+// import { SignInComponent } from './components/sign-in/sign-in.component';
 import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
 import { StarsComponent } from './components/stars/stars.component';
@@ -41,7 +45,8 @@ import { AdminFamilyComponent } from './components/admin-family/admin-family.com
 import { AdminTasksComponent } from './components/admin-tasks/admin-tasks.component';
 import { NewUserComponent } from './components/new-user/new-user.component';
 import { NewRewardComponent } from './components/new-reward/new-reward.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { UserLoginComponent } from './components/sign-up/sign-up.component';
+import { UserFormComponent } from './components/sign-up-form/sign-up-form.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { RepoTaskComponent } from './components/./repo-task/repo-task.component';
@@ -55,14 +60,14 @@ import { ProfileSelectorComponent } from './components/profile-selector/profile-
 import { ProfilesComponent } from './components/profiles/profiles.component';
 import { RewardsConfigComponent } from './components/rewards-config/rewards-config.component';
 import { RewardConfigComponent } from './components/reward-config/reward-config.component';
-import { SortPipe } from './pipes/sort.pipe';
+import { SingleRewardComponent } from './components/single-reward/single-reward.component';
+import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { OrderByPipe } from './pipes/order-by.pipe';
 
-const appRoutes: Routes = [
-  { path: '', component: SignInComponent }
-];
 
-import { OrderModule } from 'ngx-order-pipe';
+const appRoutes: Routes = [
+  // { path: '', component: SignInComponent }
+];
 
 
 @NgModule({
@@ -77,7 +82,7 @@ import { OrderModule } from 'ngx-order-pipe';
     NewTaskComponent,
     RewardsComponent,
     RewardComponent,
-    SignInComponent,
+    // SignInComponent,
     UsersComponent,
     UserComponent,
     StarsComponent,
@@ -87,7 +92,9 @@ import { OrderModule } from 'ngx-order-pipe';
     AdminTasksComponent,
     NewUserComponent,
     NewRewardComponent,
-    SignUpComponent,
+    // SignUpComponent,
+    UserLoginComponent,
+    UserFormComponent,
     DashboardComponent,
     AddTaskComponent,
     RepoTaskComponent,
@@ -101,14 +108,17 @@ import { OrderModule } from 'ngx-order-pipe';
     ProfilesComponent,
     RewardsConfigComponent,
     RewardConfigComponent,
-    SortPipe,
+    SingleRewardComponent,
+    LoggedInComponent,
     OrderByPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes, {useHash: true}),
+    RouterModule.forRoot(appRoutes, { useHash: true }),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule

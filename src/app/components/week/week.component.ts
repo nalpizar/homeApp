@@ -13,6 +13,8 @@ export class WeekComponent implements OnInit {
   @Input() users;
   @Input() currentUserId;
   @Input() currentProfile;
+  @Input() family;
+  @Input() af;
 
   currentDay: Day;
   currentTask: Task;

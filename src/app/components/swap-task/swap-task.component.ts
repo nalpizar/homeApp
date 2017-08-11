@@ -13,7 +13,8 @@ export class SwapTaskComponent implements OnInit {
   @Input() users;
   @Input() currentUserId;
   @Input() currentProfile;
-
+  @Input() family;
+  @Input() af;
   myClass = 'cont';
   bgColor = '';
   color = '';
@@ -21,28 +22,46 @@ export class SwapTaskComponent implements OnInit {
   @Output() sendTaskSelected = new EventEmitter;
 
   setHurry(pTask) {
-    pTask.status = 3;
-    this.bgColor = '#555377';
-    this.color = '#ffffff';
+    if (pTask.status == 4) {
+
+      pTask.status = 3;
+      this.bgColor = '#555377';
+      this.color = '#ffffff';
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+
+    }
   };
 
   changeStates(pTask) {
 
-    if (pTask.status == 0 || pTask.status == 3) {
+    if (pTask.status == 3 || pTask.status == 4) {
 
       pTask.status = 1;
       this.bgColor = '#349B72';
       this.color = '#ffffff';
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 
     } else {
       if (pTask.status == 1) {
 
         pTask.status = 2;
+        pTask.swapedTo = 0;
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
+        this.af.object('/Families/Family' + this.family.getId()).update(this.family);
 
+      } else {
+        if (pTask.status == 2) {
+
+          pTask.status = 4;
+          this.bgColor = '#ce8f5a';
+          this.color = '#ffffff';
+          this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+
+        }
       }
     };
+
   };
 
   constructor() { }
@@ -52,6 +71,22 @@ export class SwapTaskComponent implements OnInit {
       this.bgColor = '#555377';
       this.color = '#ffffff';
     }
+
+    if (this.task.status == 2) {
+      this.bgColor = '#9B7C34';
+      this.color = '#ffffff';
+    }
+
+    if (this.task.status == 1) {
+      this.bgColor = '#349B72';
+      this.color = '#ffffff';
+    }
+
+    if (this.task.status == 4) {
+      this.bgColor = '#ce8f5a';
+      this.color = '#ffffff';
+    }
+
   }
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {

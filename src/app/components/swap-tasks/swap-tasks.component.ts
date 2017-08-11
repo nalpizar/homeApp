@@ -13,6 +13,8 @@ export class SwapTasksComponent implements OnInit {
   @Input() currentUserId;
   @Input() tasks;
   @Input() currentProfile;
+  @Input() family;
+  @Input() af;
 
   @Output() sendTaskSelected = new EventEmitter();
 

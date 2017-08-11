@@ -26,10 +26,9 @@
     float: left;
     width: 45%;
 }
-.task .task-name,
-.task .task-score {
-    height: 65px;
-    line-height: 65px;
+.task .task-name {
+    height: 32px;
+    line-height: 32px;
 }
 .task span {
     color: #efd199;
@@ -84,6 +83,25 @@ button.close {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 5;
+}
+
+.waterMark{
+    font-size: xx-large;
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    left: 37%;
+    opacity: 0.3;
+    width: 55% !important;
+}
+
+.waterMark span{
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+
 }
 
 

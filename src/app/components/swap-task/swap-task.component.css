@@ -1,5 +1,5 @@
 .task {
-    background: #d37c33;
+    background: #ce8f5a;
     padding: 15px;
     min-height: 100px;
     border-bottom: 1px solid #efd199;
@@ -26,10 +26,9 @@
     float: left;
     width: 45%;
 }
-.task .task-name,
-.task .task-score {
-    height: 65px;
-    line-height: 65px;
+.task .task-name {
+    height: 32px;
+    line-height: 32px;
 }
 .task span {
     color: #efd199;
@@ -79,6 +78,25 @@ button.close {
     -moz-transition: 400ms ease;
     -o-transition: 400ms ease;
     transition: 400ms ease;
+}
+
+.waterMark{
+    font-size: xx-large;
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+    left: 37%;
+    opacity: 0.3;
+    width: 55% !important;
+}
+
+.waterMark span{
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+
 }
 
 

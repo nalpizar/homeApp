@@ -1,0 +1,11 @@
+<div class="single-reward" *ngIf="flag">
+  <h3>
+    <i class="fa fa-trophy" aria-hidden="true"></i> THIS IS YOUR WEEK'S PRICE
+    <i class="fa fa-trophy" aria-hidden="true"></i>
+  </h3>
+  <div *ngFor="let reward of rewards">
+    <div class="container">
+      <h4 *ngIf="reward.getAwardedTo() == currentProfile">{{reward.name}}</h4>
+   </div>
+  </div>
+</div>
