@@ -8,7 +8,7 @@ export class Task {
 	private name: string;
 	private position: number;
 	private weight: number;
-	private status: number; //0=default - 1=started - 2=completed - 3=onHurry - 4=swaped
+	status: number; //0=default - 1=started - 2=completed - 3=onHurry - 4=swaped
 	private swapedTo: number;
 	private score: Score;
 	private userId: number;
