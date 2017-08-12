@@ -74,3 +74,11 @@ a {
     margin-bottom: 10px;
     font-size: 13px;
 }
+
+@media (min-width: 1240px) {
+    form {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

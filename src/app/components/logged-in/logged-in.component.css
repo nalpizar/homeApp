@@ -109,3 +109,13 @@ and (orientation : portrait) {
         height: 600px;
     }
 }
+
+@media (min-width: 1240px) {
+    .btn-google {
+        width: 30% !important;
+    }
+    .sign-in {
+        min-height: 900px;
+        padding: 10% 40px;
+    }
+}

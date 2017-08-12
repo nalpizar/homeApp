@@ -91,3 +91,9 @@ button:focus {
 .modal-content {
     border-radius: 0;
 }
+
+@media (min-width: 1240px) {
+    body {
+        font-size: 1.8em;
+    }
+}
