@@ -94,15 +94,16 @@
 
 .config-container .tasks-heading li:first-child, .config-container .users-heading li:first-child, .config-container .rewards-heading li:first-child {
     width: 90px;
+    text-align: center;
 }
 
 .config-container .users-heading li:nth-child(2) {
-    width: 150px;
+    width: 130px;
     text-align: center;
 }
 
 .config-container .rewards-heading li:nth-child(2) {
-    width: 300px;
+    width: 230px;
     text-align: center;
 }
 
@@ -153,4 +154,15 @@
 .modal.fade .modal-dialog {
     -webkit-transform: translateY(10%);
     transform: translateY(10%);
+}
+
+@media (min-width: 1240px) {
+    .topBox, #myCarousel {
+        position: absolute;
+        width: 70%;
+        left: 30%;
+    }
+    #myCarousel {
+        top: 20%;
+    }
 }

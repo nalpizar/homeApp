@@ -9,5 +9,5 @@
 </div>
 
 <ng-template #alreadyLoggedIn>
-  <app-logged-in (sendCont)="isSignIn($event)"></app-logged-in>
+  <app-logged-in [isNewUser]='isNewUser' (sendCont)="isSignIn($event)"></app-logged-in>
 </ng-template>

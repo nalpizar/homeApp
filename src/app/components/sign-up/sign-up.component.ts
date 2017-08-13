@@ -10,6 +10,7 @@ import { AuthService } from "../../shared/auth.service";
 })
 export class UserLoginComponent implements OnInit {
   @Output() sendCont = new EventEmitter();
+  @Input() isNewUser;
   userForm: FormGroup;
   newUser = true; // to toggle login or signup form
   passReset = false; // set to true when password reset is triggered

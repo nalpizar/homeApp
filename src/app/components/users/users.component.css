@@ -23,3 +23,9 @@
 .carousel-control {
     opacity: initial;
 }
+
+@media (min-width: 1240px) {
+    #usersCarousel {
+        width: 70%;
+    }
+}

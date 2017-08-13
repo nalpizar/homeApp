@@ -1,3 +1,58 @@
+.carousel-indicators li {
+    max-width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators .active {
+    margin: 1px 3px;
+}
+
+.carousel {
+    width: 86%;
+    margin: 30px auto 0 auto;
+}
+
+.carousel-indicators {
+    bottom: 19px;
+    left: 15px;
+}
+
+.item-cont {
+    width: 100%;
+    order: 1px solid #eee;
+}
+
+.item-cont img {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.welcome-text h1 {
+    color: #4dd0e1;
+    font-weight: 600;
+}
+
+.welcome-text h3 {
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+button {
+    background: #4dd0e1;
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-family: 'ralewaylight';
+    margin: 0 auto;
+    display: block;
+}
+
 .sign-in {
     background-image: url('../../../assets/images/sign-in-bg.jpg');
     min-height: 736px;
@@ -29,14 +84,38 @@
     margin: 0 auto 10px auto;
     display: block;
 }
-
+.button2 {
+ background: transparent !important;
+}
 .btn-google {
-    width: 100%;
-    color: #fff;
-    font-size: 14px;
-    font-family: 'ralewaylight';
-    padding: 10px;
-    margin-top: 5%;
-    border: 1px solid #fff;
-    border-radius: 20px;
+    width: 100% !important;
+    color: #fff!important;
+    font-size: 14px!important;
+    font-family: 'ralewaylight'!important;
+    padding: 10px!important;
+    margin-top: 5%!important;
+    border: 1px solid #fff!important;
+    border-radius: 20px!important;
+}
+
+.loading{width: 100%; padding: 30% 0; text-align: center; color: #ffffff; font-size: 22px;}
+
+/*iPhone 6+ Portrait*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+    .item-cont {
+        height: 600px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .btn-google {
+        width: 30% !important;
+    }
+    .sign-in {
+        min-height: 900px;
+        padding: 10% 40px;
+    }
 }

@@ -1,9 +1,60 @@
-<div class="sign-in">
+<div class="loading sign-in" *ngIf='isNewUser == null'>Loading...</div>
+
+<div class="sign-in" *ngIf='isNewUser == false'>
   <div class="sign-in-logo">
     <img src="../../../assets/images/sign-in-logo.png" alt="">
     <h2>Home Chores</h2>
     <h3>Where the family works together</h3>
     <h2>You are currently logged</h2>
   </div>
-  <button (click)="isSignIn()" class="button btn-social btn-google">Please Click to Continue</button>
+  <button (click)="isSignIn(4)" class="button2 btn-google">Please Click to Continue</button>
 </div>
+
+<div *ngIf='isNewUser == true' id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="item-cont">
+        <div class="welcome-text">
+          <h1>Let's get started!</h1>
+          <h2>First things first...</h2>
+          <h3>Add your family members</h3>
+        </div>
+        <hr>
+        <img src="../../../assets/images/slide-1.png" alt="">
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-cont">
+        <div class="welcome-text">
+          <h1>Almost there</h1>
+          <h2>Next step...</h2>
+          <h3>Add your family chores</h3>
+        </div>
+        <hr>
+        <img src="../../../assets/images/slide-2.png" alt="">
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-cont">
+        <div class="welcome-text">
+          <h1>Wait, wait!</h1>
+          <h2>Rewards are important...</h2>
+          <h3>Add the rewards</h3>
+        </div>
+        <hr>
+        <button (click)="isSignIn(2)" class="button btn-social btn-google">Go to configuration</button>
+        <img src="../../../assets/images/slide-3.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Carousel -->
+<!--<button (click)="isSignIn()" class="button btn-social btn-google">Please Click to Continue</button>-->

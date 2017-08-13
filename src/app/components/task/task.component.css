@@ -24,7 +24,7 @@
 .cont{z-index: 2;position: relative;}
 .task div {
     float: left;
-    width: 45%;
+    width: 90%;
 }
 .task .task-name {
     height: 32px;
@@ -102,6 +102,30 @@ button.close {
     text-transform: uppercase;
     vertical-align: middle;
 
+}
+
+@media (max-width: 320px) {
+    .waterMark {
+        font-size: large !important;
+        width: 90% !important;
+        top: 15%;
+    }
+}
+
+@media (min-width: 768px) {
+    .task {
+        padding: 15px 50px;
+    }
+    .task .actions i {
+        margin: 0;
+        float: right;
+    }
+}
+
+@media (min-width: 1240px) {
+    .task {
+        padding: 15px 75px;
+    }
 }
 
 

@@ -43,3 +43,9 @@
     color: #fff;
     margin-left: 10px;
 }
+
+@media (min-width: 1240px) {
+    #week {
+        width: 70%;
+    }
+}

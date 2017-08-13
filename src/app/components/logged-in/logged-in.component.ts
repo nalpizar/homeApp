@@ -7,12 +7,13 @@ import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 })
 export class LoggedInComponent implements OnInit {
   @Output() sendCont = new EventEmitter();
+  @Input() isNewUser;
   constructor() { }
 
   ngOnInit() {
   }
 
-  isSignIn() {
-    this.sendCont.emit(4);
+  isSignIn(pCont) {
+    this.sendCont.emit(pCont);
   }
 }
