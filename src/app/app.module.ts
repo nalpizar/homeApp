@@ -62,10 +62,13 @@ import { RewardsConfigComponent } from './components/rewards-config/rewards-conf
 import { RewardConfigComponent } from './components/reward-config/reward-config.component';
 import { SingleRewardComponent } from './components/single-reward/single-reward.component';
 import { LoggedInComponent } from './components/logged-in/logged-in.component';
+import { OrderByPipe } from './pipes/order-by.pipe';
+
 
 const appRoutes: Routes = [
   // { path: '', component: SignInComponent }
 ];
+
 
 @NgModule({
   declarations: [
@@ -106,7 +109,8 @@ const appRoutes: Routes = [
     RewardsConfigComponent,
     RewardConfigComponent,
     SingleRewardComponent,
-    LoggedInComponent
+    LoggedInComponent,
+    OrderByPipe
   ],
   imports: [
     BrowserModule,

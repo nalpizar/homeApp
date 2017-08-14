@@ -39,30 +39,30 @@ export class TaskComponent implements OnInit {
       pTask.status = 1;
       this.bgColor = '#349B72';
       this.color = '#ffffff';
-      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+
     } else {
       if (pTask.status == 1) {
 
         pTask.status = 2;
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
-        this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+
       } else {
         if (pTask.status == 2) {
 
           pTask.status = 0;
           this.bgColor = '#ce8f5a';
-          this.color = '#ffffff';
+          this.color = '#efd199';
           for (var task of this.task.getScore().getStars()) {
             task.status = false;
           }
-
-
-          this.af.object('/Families/Family' + this.family.getId()).update(this.family);
         }
       }
     };
-
+    this.day.getTasks().sort(function (a, b) {
+      return a.status - b.status;
+    });
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
   };
 
 
