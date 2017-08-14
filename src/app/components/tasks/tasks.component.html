@@ -1,4 +1,4 @@
-<div *ngFor="let task of day.getTasks() | orderBy:'status'; let i = index">
+<div *ngFor="let task of day.getTasks(); let i = index">
   <div *ngIf="task.userId == currentUserId">
     <app-task [task]='task' [day]='day' [index]='i' [users]='users' [currentUserId]='currentUserId' [currentProfile]='currentProfile'
       (sendTaskSelected)="receivedTaskSelected($event)" [family]='family' [af]='af'></app-task>
