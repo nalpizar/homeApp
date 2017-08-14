@@ -29,8 +29,8 @@ export class SwapUserComponent implements OnInit {
       this.currentTask.setStatus(4);
     }
     console.log(this.currentTask);
-
-    this.swapedToId = null;
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+    this.swapedToId = 0;
   }
 
   onSwapedTo(event) {

@@ -39,7 +39,7 @@ export class SwapTaskComponent implements OnInit {
       pTask.status = 1;
       this.bgColor = '#349B72';
       this.color = '#ffffff';
-      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+
 
     } else {
       if (pTask.status == 1) {
@@ -48,7 +48,7 @@ export class SwapTaskComponent implements OnInit {
         pTask.swapedTo = 0;
         this.bgColor = '#9B7C34';
         this.color = '#ffffff';
-        this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+
 
       } else {
         if (pTask.status == 2) {
@@ -56,12 +56,15 @@ export class SwapTaskComponent implements OnInit {
           pTask.status = 4;
           this.bgColor = '#ce8f5a';
           this.color = '#ffffff';
-          this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+
 
         }
       }
     };
-
+    this.day.getTasks().sort(function (a, b) {
+      return a.status - b.status;
+    });
+    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
   };
 
   constructor() { }
