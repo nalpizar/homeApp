@@ -83,7 +83,7 @@ export class SwapTaskComponent implements OnInit {
     }
 
     if (this.task.status == 4) {
-      this.bgColor = '#ce8f5a';
+      this.bgColor = '#fea961';
       this.color = '#ffffff';
     }
 
