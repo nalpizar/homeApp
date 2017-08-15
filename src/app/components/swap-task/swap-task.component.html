@@ -33,5 +33,5 @@
       </div>
     </div>
   </div>
-  <div class="delete" (click)='day.deleteTask(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+  <div *ngIf="currentProfile==1" class="delete" (click)='day.deleteTask(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
 </div>

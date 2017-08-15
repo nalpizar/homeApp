@@ -33,38 +33,39 @@ export class SwapTaskComponent implements OnInit {
   };
 
   changeStates(pTask) {
+    if (this.currentProfile == this.currentUserId || this.currentProfile == 1) {
+      if (pTask.status == 3 || pTask.status == 4) {
 
-    if (pTask.status == 3 || pTask.status == 4) {
-
-      pTask.status = 1;
-      this.bgColor = '#349B72';
-      this.color = '#ffffff';
-
-
-    } else {
-      if (pTask.status == 1) {
-
-        pTask.status = 2;
-        pTask.swapedTo = 0;
-        this.bgColor = '#9B7C34';
+        pTask.status = 1;
+        this.bgColor = '#349B72';
         this.color = '#ffffff';
 
 
       } else {
-        if (pTask.status == 2) {
+        if (pTask.status == 1) {
 
-          pTask.status = 4;
-          this.bgColor = '#ce8f5a';
+          pTask.status = 2;
+          pTask.swapedTo = 0;
+          this.bgColor = '#9B7C34';
           this.color = '#ffffff';
 
 
+        } else {
+          if (pTask.status == 2) {
+
+            pTask.status = 4;
+            this.bgColor = '#ce8f5a';
+            this.color = '#ffffff';
+
+
+          }
         }
-      }
-    };
-    this.day.getTasks().sort(function (a, b) {
-      return a.status - b.status;
-    });
-    this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+      };
+      this.day.getTasks().sort(function (a, b) {
+        return a.status - b.status;
+      });
+      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+    }
   };
 
   constructor() { }
@@ -94,12 +95,14 @@ export class SwapTaskComponent implements OnInit {
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
     //This event is not triggering.
-    console.log('swipe');
-    if (action === this.SWIPE_ACTION.RIGHT) {
-      this.myClass = "cont swiperight";
-    }
-    if (action === this.SWIPE_ACTION.LEFT) {
-      this.myClass = "cont swipeleft";
+    if (this.currentProfile == 1) {
+      console.log('swipe');
+      if (action === this.SWIPE_ACTION.RIGHT) {
+        this.myClass = "cont swiperight";
+      }
+      if (action === this.SWIPE_ACTION.LEFT) {
+        this.myClass = "cont swipeleft";
+      }
     }
   }
 

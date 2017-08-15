@@ -26,12 +26,12 @@
           data-toggle="modal" data-target="#relieveUser">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
     </a>
-        <a *ngIf="currentProfile != task.userId" (click)='setHurry(task)' [style.color]="color">
-      <i class="fa fa-hard-of-hearing" aria-hidden="true"></i>
+        <a *ngIf="currentProfile != task.userId && task.status == 0" (click)='setHurry(task)' [style.color]="color ">
+      <i class="fa fa-hard-of-hearing " aria-hidden="true "></i>
     </a>
       </div>
     </div>
   </div>
-  <div class="delete" (click)='deleteTask()'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
-  <div class="swaped" *ngIf="task.swapedTo"></div>
+  <div *ngIf="currentProfile==1" class="delete " (click)='deleteTask()'><i class="fa fa-trash-o " aria-hidden="true "></i></div>
+  <div class="swaped " *ngIf="task.swapedTo"></div>
 </div>
