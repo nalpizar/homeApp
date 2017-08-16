@@ -1,7 +1,9 @@
 <div class="taskcont">
-    <div [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
-        <span class="weight" [style.background]='bgcolor'><span>{{task.weight}}</span></span>
-        <span>{{task.name}}</span>
-    </div>
+    <ul [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)" class="container oneHeight">
+        <li>
+            <span class="weight" [style.background]='bgcolor'></span> {{task.weight}}
+        </li>
+        <li><span>{{task.name}}</span></li>
+    </ul>
     <div class="delete" (click)='deleteTaskRep(index)'><i class="fa fa-trash-o" aria-hidden="true"></i></div>
 </div>

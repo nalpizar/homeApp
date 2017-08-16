@@ -1,6 +1,5 @@
 <div class="rewardscont">
-  <ul [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
-
+  <ul [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)" class="container oneHeight">
     <li>
       <div *ngFor='let user of users'>
         <img *ngIf="user.getId() == rewardedId" src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">

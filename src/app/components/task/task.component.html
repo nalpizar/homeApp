@@ -1,6 +1,6 @@
 <div class="taskcont">
   <div [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
-    <div class="task" [style.backgroundColor]="bgColor">
+    <div class="task oneHeight" [style.backgroundColor]="bgColor">
       <div class="task-name" (click)='changeStates(task)'>
         <span [style.color]="color">{{task.name}}</span>
       </div>
@@ -24,11 +24,11 @@
       <div class="actions">
         <a *ngIf="currentProfile == task.userId && (task.status == 0 || task.status == 4)" (click)='sendTask()' [style.color]="color"
           data-toggle="modal" data-target="#relieveUser">
-      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-    </a>
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </a>
         <a *ngIf="currentProfile != task.userId && task.status == 0" (click)='setHurry(task)' [style.color]="color ">
-      <i class="fa fa-hard-of-hearing " aria-hidden="true "></i>
-    </a>
+          <i class="fa fa-hard-of-hearing " aria-hidden="true "></i>
+        </a>
       </div>
     </div>
   </div>

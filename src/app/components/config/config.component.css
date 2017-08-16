@@ -4,9 +4,9 @@
     display: block;
     padding: 10px;
     width: 177px;
-    color: #fff;
     text-transform: uppercase;
     font-family: 'ralewaylight';
+    font-size: 1.5em;
 }
 
 .carousel,
@@ -23,9 +23,8 @@
 }
 
 .page-title {
-    text-align: center;
     margin: 20px 0;
-    font-size: 1em;
+    color: #a2a2a2;
 }
 
 .nav-justified > li {
@@ -35,7 +34,7 @@
 .nav-justified > li > a {
     border-radius: 0;
     margin-bottom: 0;
-    color: #fff;
+    font-size: 1.5em;
 }
 
 .nav-pills > li + li {
@@ -46,21 +45,18 @@
 .nav-pills > li[data-slide-to="1"] a { background-color: #8d4c8e; }
 .nav-pills > li[data-slide-to="2"] a { background-color: #6287a2; }
 
+.carousel-inner {
+    overflow: initial;
+}
+
 .config-container {
     line-height: 1.4;
 }
 
-.config-container ul {
-    padding-left: 0;
-}
-
 .config-container ul li {
     list-style: none;
-    height: 55px;
-    padding: 5px 20px;
-    border-bottom: 1px solid #fff;
-    line-height: 40px;
-    color: #fff;
+    line-height: 100px;
+    font-size: 1.8em;
 }
 
 .config-container ul li img {
@@ -69,7 +65,6 @@
 }
 
 .config-container .tasks-heading, .config-container .users-heading, .config-container .rewards-heading {
-    height: 55px;
     margin-bottom: 0;
     border-bottom: 1px solid #fff;
 }
@@ -87,24 +82,24 @@
 }
 
 .config-container .tasks-heading li, .config-container .users-heading li, .config-container .rewards-heading li {
-    float: left;
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    display: inline-block;
+    text-align: center;
 }
 
 .config-container .tasks-heading li:first-child, .config-container .users-heading li:first-child, .config-container .rewards-heading li:first-child {
-    width: 90px;
-    text-align: center;
+    width: 20%;
 }
 
 .config-container .users-heading li:nth-child(2) {
-    width: 130px;
-    text-align: center;
+    width: 45%;
 }
 
-.config-container .rewards-heading li:nth-child(2) {
-    width: 230px;
-    text-align: center;
+.config-container .users-heading li:nth-child(3) {
+    width: 15%;
+}
+
+.config-container .rewards-heading li:nth-child(2), .config-container .tasks-heading li:nth-child(2) {
+    width: 79%;
 }
 
 .config-container .tasks-desc li {

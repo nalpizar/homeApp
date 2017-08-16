@@ -1,18 +1,21 @@
 .userscont li {
     display: inline-block;
-    width: 90px;
-    padding: 5px 20px;
+    width: 20%;
     list-style-type: none;
-}
-
-.userscont li:nth-child(2) {
-    width: 130px;
+    font-size: 1.8em;
     text-align: center;
 }
 
+.userscont li:nth-child(2) {
+    width: 45%;
+}
+
+.userscont li:nth-child(3) {
+    width: 15%;
+}
+
 .userscont img {
-    width: 40px;
-    margin-right: 10px;
+    width: 60px;
 }
 
 .swipeleft{
@@ -49,10 +52,13 @@
     color: #ffffff;
     }
 
-    .cont{height: 55px;
-    padding: 5px 0;
+.cont{
     border-bottom: 1px solid #fff;
-    line-height: 40px;
-    color: #fff;z-index: 2;position: relative;background: #ce8f5a;}
+    line-height: 100px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    background: #ce8f5a;
+}
 
 

@@ -31,8 +31,8 @@
           <!-- User logged in -->
           <li *ngIf="auth.currentUser" (click)="toogleMenu()"><a href="#" (click)="logout()"><i class="glyphicon glyphicon-log-out"></i> Sign Out</a></li>
           <li *ngIf="currentProfile == 1" (click)="toogleMenu()"><a href="#" (click)="sentCont(2)"><i class="fa fa-gears" aria-hidden="true"></i> Configuration</a></li>
-          <li (click)="toogleMenu()"><a href="#" (click)="sentCont(3)"><i class="fa fa-star-o" aria-hidden="true"></i> View metrics</a></li>
-          <li (click)="toogleMenu()"><a href="#" (click)="sentCont(4)"><i class="fa fa-user-o" aria-hidden="true"></i> Switch user</a></li>
+          <li (click)="toogleMenu()"><a href="#" (click)="sentCont(3)"><i class="fa fa-star" aria-hidden="true"></i> View metrics</a></li>
+          <li (click)="toogleMenu()"><a href="#" (click)="sentCont(4)"><i class="fa fa-user" aria-hidden="true"></i> Switch user</a></li>
         </ul>
       </div>
     </div>

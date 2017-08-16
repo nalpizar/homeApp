@@ -1,18 +1,27 @@
+.taskcont li {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    list-style-type: none;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.taskcont li:nth-child(2) {
+    width: 79%;
+}
+
 .weight {
-    width: 40px;
-    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: block;
-    float: left;
-    margin-right: 50px;
+    z-index: -1;
 }
-
-.weight span {
-    margin: 0 auto;
-    display: table;
-}
-
-
 
 .swipeleft{
    left:-50px; 
@@ -48,10 +57,13 @@
     color: #ffffff;
     }
 
-    .cont{height: 55px;
-    padding: 5px 20px;
+.cont{
     border-bottom: 1px solid #fff;
-    line-height: 40px;
-    color: #fff;z-index: 2;position: relative;background: #8d4c8e;}
+    line-height: 100px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    background: #8d4c8e;
+}  
 
 

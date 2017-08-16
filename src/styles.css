@@ -31,9 +31,28 @@
 }
 
 body {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.4;
     font-family: 'ralewaylight';
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.oneHeight {
+    min-height: 100px;
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+a:focus, a:hover {
+    color: #fff;
 }
 
 button {
@@ -92,8 +111,57 @@ button:focus {
     border-radius: 0;
 }
 
+.carousel-control {
+    width: 0;
+    left: auto;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    height: 100px;
+}
+
+.carousel-control.left i,
+.carousel-control.right i {
+    position: absolute;
+    top: 30px;
+    z-index: 5;
+    display: inline-block;
+    color: #fff;
+    text-shadow: none;
+    font-size: 40px;
+}
+
+.carousel-control.left i {
+    left: 15px;
+}
+
+.carousel-control.right i {
+    right: 15px;
+}
+
+.carousel-control {
+    opacity: initial;
+}
+
+@media (min-width: 768px) {
+    .container {
+        min-width: 100% !important;
+    }
+    .carousel-control.left i {
+        left: 45px;
+    }
+    .carousel-control.right i {
+        right: 45px;
+    }
+}
+
 @media (min-width: 1240px) {
-    body {
-        font-size: 1.8em;
+    .carousel-control.left i {
+        left: 70px;
+    }
+    .carousel-control.right i {
+        right: 70px;
     }
 }

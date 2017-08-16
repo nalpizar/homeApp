@@ -1,5 +1,5 @@
 <div class="userscont">
-  <ul [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
+  <ul [ngClass]='myClass' (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)" class="container oneHeight">
     <li><img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar"></li>
     <li><span>{{user.name}}</span></li>
     <li><span>{{user.age}}</span></li>

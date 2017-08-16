@@ -1,17 +1,17 @@
 .rewardscont li {
     display: inline-block;
-    width: 85px;
-    padding: 5px;
+    width: 20%;
     list-style-type: none;
-}
-
-.rewardscont li:nth-child(2) {
-    width: 230px;
+    font-size: 1.8em;
     text-align: center;
 }
 
+.rewardscont li:nth-child(2) {
+    width: 79%;
+}
+
 .rewardscont>ul>li>div {
-    width: 40px;
+    width: 60px;
     margin: 0 auto;
 }
 
@@ -20,8 +20,7 @@
 }
 
 .rewardscont>ul>li>img {
-    width: 40px;
-    margin: 0 18px;
+    width: 60px;
 }
 
 .swipeleft{
@@ -59,11 +58,11 @@
     }
 
 .cont{
-    height: 55px;
-    padding: 5px 0;
     border-bottom: 1px solid #fff;
-    line-height: 40px;
-    color: #fff;z-index: 2;position: relative;background: #6287a2;
+    line-height: 100px;
+    z-index: 2;
+    position: relative;
+    background: #6287a2;
 }
 
 
