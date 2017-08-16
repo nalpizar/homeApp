@@ -1,13 +1,17 @@
+<button type="button" class="close" data-dismiss="modal" (click)="resetForm()">X</button>
+<span class="isDone">{{isDone}}</span>
 <span>User name {{family.id}}</span>
 <div class="form-group">
-  <input type="text" (change)='onNameChange($event)' [value]='name' class="form-control">
+  <span class="error">{{errorName}}</span>
+  <input placeholder="User Name" type="text" (change)='onNameChange($event)' [value]='name' class="form-control">
 </div>
 <span>Age</span>
 <div class="form-group">
-  <input type="number" (change)='onAgeChange($event)' [value]='age' class="form-control">
+  <span class="error">{{errorAge}}</span>
+  <input placeholder="User Age" type="number" (change)='onAgeChange($event)' [value]='age' class="form-control">
 </div>
 
 <div class="modal-footer addUser addModalBtn">
-  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addNewUser()">Add</button>
-  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+  <button type="button" class="btn btn-default" (click)="addNewUser()">Add</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="resetForm()">Cancel</button>
 </div>

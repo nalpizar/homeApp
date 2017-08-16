@@ -1,24 +1,28 @@
 <!-- Modal New Task-->
+
 <div class="modal fade" id="newTask" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" (click)="resetForm()">X</button>
         <h4 class="modal-title" id="myModalLabel">Add Task</h4>
+
         <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
       </div>
+      <span class="taskadded">{{addedTask}}</span>
       <div class="modal-body">
 
         <div class="windowTasks">
           <ul>
-            <li *ngFor='let task of taskRepo' (click)="sendTask(this.task)" data-dismiss="modal" >
-              <div>{{task.getName()}}  <br/> Weight: {{task.getWeight()}}</div>
+            <li *ngFor='let task of taskRepo' (click)="sendTask(this.task)">
+              <div id="{{task.getId()}}">{{task.getName()}} <br/> Weight: {{task.getWeight()}}</div>
             </li>
           </ul>
         </div>
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="resetForm()">Cancel</button>
       </div>
     </div>
   </div>

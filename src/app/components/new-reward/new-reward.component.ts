@@ -12,8 +12,10 @@ export class NewRewardComponent implements OnInit {
   @Input() af;
   @Input() users;
   @Input() rewards;
-
-  name: string = 'Reward';
+  errorReward: string = "";
+  errorUser: string = "";
+  isDone: string = "";
+  name: string = "";
   awardedTo: number = null;
 
   constructor() { }
@@ -22,34 +24,66 @@ export class NewRewardComponent implements OnInit {
   }
 
   addAward() {
-
+    this.errorReward = "";
+    this.errorUser = "";
+    this.isDone = "";
     let user = false;
-    if (this.rewards.length > 0) {
-      for (var reward of this.rewards) {
-        if (reward.getAwardedTo() == this.awardedTo) {
-          user = true;
-        }
-      }
-      if (user == false) {
-        let index = this.rewards.length;
-        index--;
-        let newId = this.rewards[index].getId();
-        newId++;
-        let rewardTo = new Reward(newId, this.name, this.awardedTo);
-        this.family.addRewards(rewardTo);
-        this.af.object('/Families/Family' + this.family.getId()).update(this.family);
-        this.awardedTo = null;
-        this.name = 'Reward';
-      }
-    } else {
-      let rewardTo = new Reward(0, this.name, this.awardedTo);
-      this.family.addRewards(rewardTo);
-      this.af.object('/Families/Family' + this.family.getId()).update(this.family);
-      this.awardedTo = null;
-      this.name = 'Reward';
+
+
+    if (this.name == "") {
+      this.errorReward = "Please enter the reward name";
     }
 
+    if (this.awardedTo == null) {
+      this.errorUser = "Please select the user";
+    }
 
+    for (var reward of this.rewards) {
+      if (reward.getAwardedTo() == this.awardedTo) {
+        user = true;
+        this.errorUser = "This user already received a reward";
+      }
+    }
+
+    if (this.name != "" && this.awardedTo != null) {
+      if (this.rewards.length > 0) {
+
+        if (user == false) {
+          let index = this.rewards.length;
+          index--;
+          let newId = this.rewards[index].getId();
+          newId++;
+          let rewardTo = new Reward(newId, this.name, this.awardedTo);
+          this.family.addRewards(rewardTo);
+          this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+          var resetForm = <HTMLFormElement>document.getElementById("myForm");
+          resetForm.reset();
+          this.name = "";
+          this.awardedTo = null;
+          this.isDone = "The reward has been created successfully";
+        }
+      } else {
+        let rewardTo = new Reward(0, this.name, this.awardedTo);
+        this.family.addRewards(rewardTo);
+        this.af.object('/Families/Family' + this.family.getId()).update(this.family);
+        var resetForm = <HTMLFormElement>document.getElementById("myForm");
+        resetForm.reset();
+        this.name = "";
+        this.awardedTo = null;
+        this.isDone = "The reward has been created successfully";
+
+      }
+    }
+  }
+
+  resetForm() {
+    this.name = "";
+    this.errorReward = "";
+    this.awardedTo = null;
+    this.errorUser = "";
+    this.isDone = "";
+    var resetForm = <HTMLFormElement>document.getElementById("myForm");
+    resetForm.reset();
   }
 
   onAwardedTo(event) {

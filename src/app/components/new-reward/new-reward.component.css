@@ -67,3 +67,9 @@ input[type=radio]:checked + span img.check {
     background: #5ec0ca;
     color: #fff;
 }
+
+
+.error{color: #990000; font-weight: bold;}
+.isDone{color: #007700;  font-weight: bold;}
+.close{color: #5ec0ca;top: -42px;right: 20px;position: absolute;font-weight: bolder; font-size: 20px;}
+

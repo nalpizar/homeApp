@@ -14,6 +14,8 @@ export class ConfigComponent implements OnInit {
   @Input() rewards;
   @Input() af;
   @Input() family;
+  @Input() currentProfile;
+
 
   option: string;
 

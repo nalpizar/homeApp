@@ -8,7 +8,8 @@
     </div>
     <div *ngIf="showCont==2">
         <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
-        <app-config [family]='family' [af]='af' [tasks]='family.getTaskRep()' [users]='family.getMembers()' [rewards]='family.rewards'></app-config>
+        <app-config [family]='family' [af]='af' [tasks]='family.getTaskRep()' [users]='family.getMembers()' [rewards]='family.rewards'
+            [currentProfile]='currentProfile'></app-config>
     </div>
     <div *ngIf="showCont==3">
         <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>

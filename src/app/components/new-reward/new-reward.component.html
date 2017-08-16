@@ -1,34 +1,40 @@
-<span>Awarded to: {{family.getId()}}</span>
-<ul class="usersSelect">
-  <li>
-    <div class="user">
-      <label for="family">
+<button type="button" class="close" data-dismiss="modal" (click)="resetForm()">X</button>
+<span class="isDone">{{isDone}}</span>
+<span>Awarded to:</span>
+<span class="error">{{errorUser}}</span>
+<form id="myForm">
+  <ul class="usersSelect">
+    <li>
+      <div class="user">
+        <label for="family">
         <input type="radio" id="0" name="rewardTo" value="0" (change)='onAwardedTo($event)'>
         <span>
           <img src="../../../assets/images/avatar0.png" alt="family avatar">
           <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="" class="check">
         </span>
       </label>
-    </div>
-  </li>
-  <li *ngFor='let user of users'>
-    <div class="user">
-      <label for="{{user.getId()}}">
+      </div>
+    </li>
+    <li *ngFor='let user of users'>
+      <div class="user">
+        <label for="{{user.getId()}}">
           <input type="radio" id="{{user.getId()}}" name="rewardTo" value="{{user.getId()}}" (change)='onAwardedTo($event)'>
           <span>
           <img src="../../../assets/images/avatar{{user.getAvatar()}}.png" alt="user avatar">
           <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="" class="check">
           </span>
       </label>
-    </div>
-  </li>
-</ul>
-<span>Premio</span>
+      </div>
+    </li>
+  </ul>
+</form>
+<span>Reward</span>
+<span class="error">{{errorReward}}</span>
 <div class="form-group">
-  <input type="text" (change)='onNameChange($event)' [value]='name' class="form-control">
+  <input placeholder="Reward Name" type="text" (change)='onNameChange($event)' [value]='name' class="form-control">
 </div>
 
 <div class="modal-footer addUser addModalBtn">
-  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addAward()">Add</button>
-  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+  <button type="button" class="btn btn-default" (click)="addAward()">Add</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="resetForm()">Cancel</button>
 </div>

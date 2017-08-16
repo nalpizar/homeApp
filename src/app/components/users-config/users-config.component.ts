@@ -10,6 +10,7 @@ export class UsersConfigComponent implements OnInit {
   @Input() users;
   @Input() family;
   @Input() af;
+  @Input() currentProfile;
 
   constructor() { }
 

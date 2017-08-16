@@ -14,27 +14,33 @@
   <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addNewTask()">Add</button>
   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 </div> -->
-
-<span>Task name {{family.id}}</span>
+<button type="button" class="close" data-dismiss="modal" (click)="resetForm()">X</button>
+<span class="isDone">{{isDone}}</span>
+<span>Task name</span>
+<span class="error">{{errorName}}</span>
 <div class="form-group">
-  <input type="text" (change)='onTitleChange($event)' [value]='title' class="form-control">
+  <input placeholder="Task Name" type="text" (change)='onTitleChange($event)' [value]='name' class="form-control">
 </div>
 <span>Weight</span>
-<ul class="weightsSelect">
-  <li *ngFor='let weight of weights'>
-    <div class="weight">
-      <label for="{{weight.id}}">
+<span class="error">{{errorWeight}}</span>
+<form id="myForm">
+  <ul class="weightsSelect">
+    <li *ngFor='let weight of weights'>
+      <div class="weight">
+        <label for="{{weight.id}}">
+       
         <input type="radio" id="{{weight.id}}" name="taskWeight" value="{{weight.id}}" (change)='onWeightChange($event)'>
         <span>
           <p [style.background]='weight.bgcolor'>{{weight.id}}</p>
-          <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="" class="check">
+          <img class="check" style="display:none" src="../../../assets/images/check-bg.png" alt="">
         </span>
       </label>
-    </div>
-  </li>
-</ul>
+      </div>
+    </li>
+  </ul>
+</form>
 
 <div class="modal-footer addModalBtn">
-  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addNewTask()">Add</button>
-  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+  <button type="button" class="btn btn-default" (click)="addNewTask()">Add</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="resetForm()">Cancel</button>
 </div>

@@ -10,6 +10,7 @@ export class UserConfigComponent implements OnInit {
   @Input() index;
   @Input() users;
   @Input() family;
+  @Input() currentProfile;
   @Input() af;
   myClass = 'cont';
 
@@ -21,13 +22,15 @@ export class UserConfigComponent implements OnInit {
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
     //This event is not triggering.
+    console.log(this.index);
+    if (this.index > 0) {
+      if (action === this.SWIPE_ACTION.RIGHT) {
+        this.myClass = "cont swiperight";
+      }
+      if (action === this.SWIPE_ACTION.LEFT) {
+        this.myClass = "cont swipeleft";
 
-    if (action === this.SWIPE_ACTION.RIGHT) {
-      this.myClass = "cont swiperight";
-    }
-    if (action === this.SWIPE_ACTION.LEFT) {
-      this.myClass = "cont swipeleft";
-
+      }
     }
   }
 
