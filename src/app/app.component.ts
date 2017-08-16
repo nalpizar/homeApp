@@ -95,8 +95,13 @@ export class AppComponent {
         if (data.idFamily == null) {
           this.isNewUser = true;
           this.family = new Family(this.auth.currentUser.uid);
+          let tempMember;
           for (var member of data2.members) {
-            let tempMember = new User(member.id, this.auth.currentUser.displayName, member.age, member.type, member.avatarId);
+            if (this.auth.currentUser.displayName == null) {
+              tempMember = new User(member.id, "Admin_Name", member.age, member.type, member.avatarId);
+            } else {
+              tempMember = new User(member.id, this.auth.currentUser.displayName, member.age, member.type, member.avatarId);
+            }
             tempMember.setAvatar(member.avatarId);
             tempMember.setSkin(member.skinId);
             this.family.addMembers(tempMember);

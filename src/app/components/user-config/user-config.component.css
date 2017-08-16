@@ -39,17 +39,15 @@
 }
 
 .delete{
-    padding: 6px 35px;
+       padding: 25px 35px;
     background-color: #d33b18;
     width: 100px;
-    height: 55px;
     z-index: 1;
     display: inline-block;
     right: 0;
     position: absolute;
     top:0px;
-    font-size: 32px;
-    color: #ffffff;
+    font-size: 40px;
     }
 
 .cont{

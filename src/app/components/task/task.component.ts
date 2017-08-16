@@ -52,7 +52,7 @@ export class TaskComponent implements OnInit {
 
             pTask.status = 0;
             this.bgColor = '#ce8f5a';
-            this.color = '#efd199';
+            this.color = '#ffffff';
             for (var task of this.task.getScore().getStars()) {
               task.status = false;
             }
