@@ -56,11 +56,7 @@ export class AppComponent {
       if (auth.authState != null) {
         console.log(auth.authState);
         this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
-<<<<<<< HEAD
         //this.items = this.af.object('/Families/Family' + 1);
-=======
-        // this.items = this.af.object('/Families/Family' + 1);
->>>>>>> e1a1f1ccdf1d81c887b42fefc178a89e46c89c87
         this.items.forEach(item => {
           this.loadFromJson(item);
         });
