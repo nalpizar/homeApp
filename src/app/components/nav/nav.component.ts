@@ -26,6 +26,7 @@ export class NavComponent implements OnInit {
   logout() {
     this.auth.signOut();
     this.sendCont.emit(0);
+    location.reload();
   }
 
   toogleMenu() {

@@ -13,7 +13,7 @@
     </div>
     <div *ngIf="showCont==3">
         <app-nav (sendCont)='showContent($event)' [rewards]='family.getRewards()' [currentProfile]='currentProfile' [users]='family.getMembers()'></app-nav>
-        <app-stars></app-stars>
+        <app-view-metrics [family]='family' [af]='af'></app-view-metrics>
     </div>
     <div *ngIf="showCont==4">
         <app-profile-selector (currentProfile)='recievedCurrentProfile($event)' [family]='family' [af]='af' [user]='user' [users]='family.getMembers()'

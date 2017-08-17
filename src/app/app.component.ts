@@ -55,8 +55,8 @@ export class AppComponent {
     let temp = setInterval(() => {
       if (auth.authState != null) {
         console.log(auth.authState);
-        //this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
-        this.items = this.af.object('/Families/Family' + 1);
+        this.items = this.af.object('/Families/Family' + auth.currentUser.uid);
+        //this.items = this.af.object('/Families/Family' + 1);
         this.items.forEach(item => {
           this.loadFromJson(item);
         });

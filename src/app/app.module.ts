@@ -63,6 +63,7 @@ import { RewardConfigComponent } from './components/reward-config/reward-config.
 import { SingleRewardComponent } from './components/single-reward/single-reward.component';
 import { LoggedInComponent } from './components/logged-in/logged-in.component';
 import { OrderByPipe } from './pipes/order-by.pipe';
+import { ViewMetricsComponent } from './components/view-metrics/view-metrics.component';
 
 
 const appRoutes: Routes = [
@@ -110,7 +111,8 @@ const appRoutes: Routes = [
     RewardConfigComponent,
     SingleRewardComponent,
     LoggedInComponent,
-    OrderByPipe
+    OrderByPipe,
+    ViewMetricsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<div class="family-reward oneHeight">
+  <h4>
+    <i class="fa fa-trophy" aria-hidden="true"></i> THIS WEEK'S FAMILY PROGRESS
+    <i class="fa fa-trophy" aria-hidden="true"></i>
+  </h4>
+  <h4>
+    {{prog}}%
+
+  </h4>
+  <table cellpadding="0" cellspacing="0" align="center">
+    <tr>
+      <td width="25%">Monday</td>
+      <td width="50%" bgcolor="#cccccc">
+        <div class="weekpro" [style.width.%]="wValue"></div>
+      </td>
+      <td width="25%">Sunday</td>
+    </tr>
+
+  </table>
+</div>
+<div class="members" *ngFor="let member of family.getMembers()">
+  <app-user [user]='member' [family]='family'></app-user>
+</div>

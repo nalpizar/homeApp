@@ -1,25 +1,8 @@
-<!-- <span>Task name {{family.id}}</span>
-<div class="form-group">
-  <input type="text" (change)='onTitleChange($event)' [value]='title' class="form-control" >
-</div>
-<span>Weight</span>
-<div class="form-group">
-  <select class="form-control" (change)='onWeightChange($event)'>
-    <option value="">Select a weight</option>
-    <option *ngFor="let weight of weights" [value]="weight.id">{{weight.name}}</option>
-  </select>  
-</div>
-
-<div class="modal-footer addModalBtn">
-  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="addNewTask()">Add</button>
-  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-</div> -->
-<button type="button" class="close" data-dismiss="modal" (click)="resetForm()">X</button>
 <span class="isDone">{{isDone}}</span>
 <span>Task name</span>
 <span class="error">{{errorName}}</span>
 <div class="form-group">
-  <input placeholder="Task Name" type="text" (change)='onTitleChange($event)' [value]='name' class="form-control">
+  <input placeholder="Task Name" type="text" (change)='onTitleChange($event)' [value]='title' class="form-control">
 </div>
 <span>Weight</span>
 <span class="error">{{errorWeight}}</span>
