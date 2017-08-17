@@ -14,13 +14,13 @@ export class NavComponent implements OnInit {
   @Input() rewards;
 
   sentCont(pCont) {
-      this.sendCont.emit(pCont);
+    this.sendCont.emit(pCont);
   }
 
   constructor(public auth: AuthService) { }
 
   ngOnInit() {
-    
+
   }
 
   logout() {
@@ -29,10 +29,10 @@ export class NavComponent implements OnInit {
   }
 
   toogleMenu() {
-      var slide = document.getElementById('slide');
-      var overlay = document.getElementById('overlay');
-      slide.classList.toggle("slide-menu");
-      overlay.classList.toggle("slide-overlay");
+    var slide = document.getElementById('slide');
+    var overlay = document.getElementById('overlay');
+    slide.classList.toggle("slide-menu");
+    overlay.classList.toggle("slide-overlay");
   }
 
 }

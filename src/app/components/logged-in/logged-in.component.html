@@ -1,15 +1,4 @@
-<div class="loading sign-in" *ngIf='isNewUser == null'>Loading...</div>
-
-<div class="sign-in" *ngIf='isNewUser == false'>
-  <div class="sign-in-logo">
-    <img src="../../../assets/images/sign-in-logo.png" alt="">
-    <h2>Home Chores</h2>
-    <h4>Where the family works together</h4>
-    <h3>You are currently logged</h3>
-  </div>
-  <button (click)="isSignIn(4)" class="button2 btn-google">Please Click to Continue</button>
-</div>
-
+<div class="loading sign-in" *ngIf='isNewUser == null || isNewUser == false'>Loading...</div>
 <div *ngIf='isNewUser == true' id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">

@@ -11,6 +11,13 @@ export class LoggedInComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let temp = setInterval(() => {
+      if (this.isNewUser == false) {
+        this.sendCont.emit(4);
+        clearInterval(temp);
+      }
+    }, 1000);
+
   }
 
   isSignIn(pCont) {
