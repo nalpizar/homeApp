@@ -11,6 +11,7 @@ import { Score } from '../../models/score';
 export class StarsComponent implements OnInit {
     @Input() family;
     @Input() af;
+    @Input() currentProfile;
     constructor() { }
 
     @Input() task;
@@ -92,72 +93,73 @@ export class StarsComponent implements OnInit {
 
 
     rateScore(value) {
+        if (this.currentProfile != this.task.getUserId()) {
+            //Reset all the values for the stars in case the user press more than one time
+            for (let currentStar of this.currentStars) {
+                currentStar.setStatus(false);
+            }
 
-        //Reset all the values for the stars in case the user press more than one time
-        for (let currentStar of this.currentStars) {
-            currentStar.setStatus(false);
+            this.emptyStar = true;
+            this.emptyStar2 = true;
+            this.emptyStar3 = true;
+            this.emptyStar4 = true;
+            this.emptyStar5 = true;
+
+            switch (value) {
+                case 1: {
+                    this.currentStars[0].setStatus(true);
+                    this.emptyStar = false;
+
+                    break;
+                }
+                case 2: {
+                    this.currentStars[0].setStatus(true);
+                    this.currentStars[1].setStatus(true);
+                    this.emptyStar = false;
+                    this.emptyStar2 = false;
+
+                    break;
+                }
+                case 3: {
+                    this.currentStars[0].setStatus(true);
+                    this.currentStars[1].setStatus(true);
+                    this.currentStars[2].setStatus(true);
+                    this.emptyStar = false;
+                    this.emptyStar2 = false;
+                    this.emptyStar3 = false;
+                    break;
+                }
+                case 4: {
+                    this.currentStars[0].setStatus(true);
+                    this.currentStars[1].setStatus(true);
+                    this.currentStars[2].setStatus(true);
+                    this.currentStars[3].setStatus(true);
+                    this.emptyStar = false;
+                    this.emptyStar2 = false;
+                    this.emptyStar3 = false;
+                    this.emptyStar4 = false;
+
+                    break;
+                }
+                case 5: {
+                    this.currentStars[0].setStatus(true);
+                    this.currentStars[1].setStatus(true);
+                    this.currentStars[2].setStatus(true);
+                    this.currentStars[3].setStatus(true);
+                    this.currentStars[4].setStatus(true);
+                    this.emptyStar = false;
+                    this.emptyStar2 = false;
+                    this.emptyStar3 = false;
+                    this.emptyStar4 = false;
+                    this.emptyStar5 = false;
+
+                    break;
+                }
+            }
+
+            console.log(this.currentStars);
+            this.af.object('/Families/Family' + this.family.getId()).update(this.family);
         }
-
-        this.emptyStar = true;
-        this.emptyStar2 = true;
-        this.emptyStar3 = true;
-        this.emptyStar4 = true;
-        this.emptyStar5 = true;
-
-        switch (value) {
-            case 1: {
-                this.currentStars[0].setStatus(true);
-                this.emptyStar = false;
-
-                break;
-            }
-            case 2: {
-                this.currentStars[0].setStatus(true);
-                this.currentStars[1].setStatus(true);
-                this.emptyStar = false;
-                this.emptyStar2 = false;
-
-                break;
-            }
-            case 3: {
-                this.currentStars[0].setStatus(true);
-                this.currentStars[1].setStatus(true);
-                this.currentStars[2].setStatus(true);
-                this.emptyStar = false;
-                this.emptyStar2 = false;
-                this.emptyStar3 = false;
-                break;
-            }
-            case 4: {
-                this.currentStars[0].setStatus(true);
-                this.currentStars[1].setStatus(true);
-                this.currentStars[2].setStatus(true);
-                this.currentStars[3].setStatus(true);
-                this.emptyStar = false;
-                this.emptyStar2 = false;
-                this.emptyStar3 = false;
-                this.emptyStar4 = false;
-
-                break;
-            }
-            case 5: {
-                this.currentStars[0].setStatus(true);
-                this.currentStars[1].setStatus(true);
-                this.currentStars[2].setStatus(true);
-                this.currentStars[3].setStatus(true);
-                this.currentStars[4].setStatus(true);
-                this.emptyStar = false;
-                this.emptyStar2 = false;
-                this.emptyStar3 = false;
-                this.emptyStar4 = false;
-                this.emptyStar5 = false;
-
-                break;
-            }
-        }
-
-        console.log(this.currentStars);
-        this.af.object('/Families/Family' + this.family.getId()).update(this.family);
     }
 
 

@@ -168,11 +168,7 @@ export class AppComponent {
             }
           }
           this.isDataLoaded = true;
-          console.log(this.family);
-          console.log(this.avatars);
-          console.log(this.skins);
-          console.log(data);
-          console.log(this.family);
+
           //this.af.object('/Families/Family' + 1).update(this.family);
         }
       }

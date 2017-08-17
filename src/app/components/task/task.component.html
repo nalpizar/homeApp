@@ -4,7 +4,7 @@
       <div class="task-name" (click)='changeStates(task)'>
         <span [style.color]="color">{{task.name}}</span>
       </div>
-      <app-stars *ngIf="task.status == 2" [task]='task' [family]='family' [af]='af'></app-stars>
+      <app-stars *ngIf="task.status == 2" [task]='task' [family]='family' [af]='af' [currentProfile]='currentProfile'></app-stars>
       <div class="waterMark" *ngIf="task.status == 1">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
         <span>In Progress</span>
